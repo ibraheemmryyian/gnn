@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+// Removed fs import for browser compatibility
 
 interface Company {
   [key: string]: string;
@@ -328,109 +328,7 @@ function identifySymbioticConnections(companies: Company[]): SymbioticConnection
   return uniqueConnections;
 }
 
-async function main(): Promise<void> {
-  try {
-    const companyDataRaw = fs.readFileSync("gulf_company_data.txt", "utf-8");
-    const parsedCompanies = parseCompanyData(companyDataRaw);
-    const symbioticConnections = identifySymbioticConnections(parsedCompanies);
-
-    // Save parsed companies
-    const companiesOutput = parsedCompanies
-      .map(company => JSON.stringify(company))
-      .join("\n");
-    fs.writeFileSync("parsed_companies.txt", companiesOutput);
-
-    // Save connections with enhanced data
-    const connectionsOutput = symbioticConnections
-      .map(conn => JSON.stringify(conn))
-      .join("\n");
-    fs.writeFileSync("symbiotic_connections.txt", connectionsOutput);
-    
-    console.log(`Found ${parsedCompanies.length} companies.`);
-    console.log(`Identified ${symbioticConnections.length} potential symbiotic connections.`);
-
-    // Enhanced analysis
-    const industries = new Set<string>();
-    const wasteTypes = new Set<string>();
-    const matchTypes = new Map<string, number>();
-    
-    for (const company of parsedCompanies) {
-      industries.add(company["Industry"] || "");
-      if (company["Volume"]) {
-        const wasteTypeInfo = company["Volume"].split(" of ");
-        if (wasteTypeInfo.length > 1) {
-          wasteTypes.add(wasteTypeInfo[1].replace(/\n/g, "").toLowerCase());
-        }
-      }
-    }
-
-    for (const conn of symbioticConnections) {
-      matchTypes.set(conn.match_type, (matchTypes.get(conn.match_type) || 0) + 1);
-    }
-
-    console.log(`Unique Industries: ${industries.size}`);
-    console.log(`Unique Waste Types: ${wasteTypes.size}`);
-    
-    console.log("\nMatch Types Distribution:");
-    for (const [type, count] of matchTypes.entries()) {
-      console.log(`  ${type}: ${count} connections`);
-    }
-
-    // Confidence analysis
-    const highConfidence = symbioticConnections.filter(c => c.confidence_score >= 0.8).length;
-    const mediumConfidence = symbioticConnections.filter(c => c.confidence_score >= 0.6 && c.confidence_score < 0.8).length;
-    const lowConfidence = symbioticConnections.filter(c => c.confidence_score < 0.6).length;
-    
-    console.log("\nConfidence Distribution:");
-    console.log(`  High confidence (≥0.8): ${highConfidence} connections`);
-    console.log(`  Medium confidence (0.6-0.8): ${mediumConfidence} connections`);
-    console.log(`  Low confidence (<0.6): ${lowConfidence} connections`);
-
-    // Industry connections analysis
-    const industryConnections: IndustryConnectionCount = {};
-    for (const conn of symbioticConnections) {
-      const pair = `${conn.producer_industry} -> ${conn.consumer_industry}`;
-      industryConnections[pair] = (industryConnections[pair] || 0) + 1;
-    }
-
-    console.log("\nTop Industry Connections:");
-    const sortedIndustryConnections = Object.entries(industryConnections)
-      .sort(([,a], [,b]) => b - a)
-      .slice(0, 10);
-    
-    for (const [pair, count] of sortedIndustryConnections) {
-      console.log(`  ${pair}: ${count} connections`);
-    }
-
-    // Network metrics
-    const numCompanies = parsedCompanies.length;
-    const maxPossibleConnections = numCompanies * (numCompanies - 1);
-    const connectionDensity = maxPossibleConnections > 0 
-      ? symbioticConnections.length / maxPossibleConnections 
-      : 0;
-    
-    const companiesWithWaste = parsedCompanies.filter(c => c["Waste Materials"]).length;
-    const companiesWithMaterials = parsedCompanies.filter(c => c["Materials"]).length;
-    const potentialProducers = companiesWithWaste;
-    const potentialConsumers = companiesWithMaterials;
-    
-    console.log(`\nNetwork Analysis:`);
-    console.log(`Total companies: ${numCompanies}`);
-    console.log(`Potential waste producers: ${potentialProducers}`);
-    console.log(`Potential material consumers: ${potentialConsumers}`);
-    console.log(`Total symbiotic connections: ${symbioticConnections.length}`);
-    console.log(`Connection density: ${(connectionDensity * 100).toFixed(2)}%`);
-    console.log(`Average connections per producer: ${(symbioticConnections.length / potentialProducers).toFixed(2)}`);
-
-    // GNN efficiency estimation
-    const efficiency = (symbioticConnections.length / (potentialProducers * potentialConsumers)) * 100;
-    console.log(`\nEstimated GNN Efficiency: ${efficiency.toFixed(2)}%`);
-    console.log(`Improvement over previous: ${efficiency > 18 ? '+' : ''}${(efficiency - 18).toFixed(2)}%`);
-
-  } catch (error) {
-    console.error("Error processing data:", error);
-  }
-}
+// Browser-compatible version - removed Node.js main function
 
 // Main AIMatchingEngine class
 class AIMatchingEngine {
@@ -481,7 +379,7 @@ class AIMatchingEngine {
     return identifySymbioticConnections(companies);
   }
 
-  public async processCompanies(filePath: string): Promise<{
+  public async processCompanies(data: string | File): Promise<{
     companies: Company[];
     connections: SymbioticConnection[];
     metrics: {
@@ -498,7 +396,18 @@ class AIMatchingEngine {
     };
   }> {
     try {
-      const companyDataRaw = fs.readFileSync(filePath, "utf-8");
+      let companyDataRaw: string;
+      
+      if (typeof data === 'string') {
+        // If it's already a string, use it directly
+        companyDataRaw = data;
+      } else if (data instanceof File) {
+        // If it's a File object (browser), read it
+        companyDataRaw = await data.text();
+      } else {
+        throw new Error("Invalid data type. Expected string or File object.");
+      }
+
       const companies = this.parseCompanyData(companyDataRaw);
       const connections = this.identifySymbioticConnections(companies);
 
@@ -579,8 +488,3 @@ export {
 
 // Default export for easier importing
 export default AIMatchingEngine;
-
-// Run main function if this file is executed directly
-if (require.main === module) {
-  main();
-}
