@@ -1,6 +1,6 @@
 import { NetworkData, Node, Edge } from '../types/network';
 import { CompanyData, parseCompanyData } from './companyDataParser';
-import { AIMatchingEngine } from './aiMatchingEngine';
+import { AIMatchingEngine, Company, SymbioticConnection } from './aiMatchingEngine';
 
 interface SymbiosisConnection {
   sourceId: string;
@@ -38,53 +38,87 @@ export class NetworkGenerator {
     return Math.min(importance, 1);
   }
 
+  // Convert CompanyData to Company format expected by AIMatchingEngine
+  private convertToAIFormat(companyData: CompanyData[]): Company[] {
+    return companyData.map(company => ({
+      Name: company.name,
+      Industry: company.industry,
+      Location: company.location,
+      Volume: `${company.volume} ${company.volumeUnit}`,
+      Materials: company.materials.join(', '),
+      'Waste Materials': company.products.join(', '), // Assuming products can be waste for others
+      Products: company.products.join(', '),
+      Processes: company.processes.join(' → '),
+      id: company.id
+    }));
+  }
+
+  // Convert SymbioticConnection to SymbiosisConnection
+  private convertAIConnectionsToSymbiosis(aiConnections: SymbioticConnection[]): SymbiosisConnection[] {
+    return aiConnections.map(aiConn => {
+      // Find the source and target companies
+      const sourceCompany = this.companies.find(c => c.name === aiConn.producer_name);
+      const targetCompany = this.companies.find(c => c.name === aiConn.consumer_name);
+      
+      if (!sourceCompany || !targetCompany) {
+        return null;
+      }
+
+      let connectionType: SymbiosisConnection['connectionType'] = 'material_exchange';
+      
+      // Determine connection type based on match type and materials
+      if (aiConn.match_type === 'energy' || aiConn.symbiotic_material.includes('energy')) {
+        connectionType = 'energy_sharing';
+      } else if (aiConn.symbiotic_material.includes('water') || aiConn.symbiotic_material.includes('wastewater')) {
+        connectionType = 'water_reuse';
+      } else if (aiConn.match_type === 'direct' || aiConn.match_type === 'category') {
+        connectionType = 'waste_to_input';
+      }
+
+      // Determine priority based on confidence score
+      let priority = 'Standard';
+      if (aiConn.confidence_score >= 0.95) priority = 'Perfect Symbiosis';
+      else if (aiConn.confidence_score >= 0.90) priority = 'Exceptional Match';
+      else if (aiConn.confidence_score >= 0.85) priority = 'Premium Quality';
+      else if (aiConn.confidence_score >= 0.80) priority = 'High Quality';
+
+      return {
+        sourceId: sourceCompany.id,
+        targetId: targetCompany.id,
+        connectionType,
+        strength: aiConn.confidence_score,
+        description: `${priority}: ${aiConn.producer_name} ↔ ${aiConn.consumer_name} (${Math.round(aiConn.confidence_score * 100)}% confidence)`,
+        aiScore: {
+          overallScore: aiConn.confidence_score,
+          confidence: aiConn.confidence_score,
+          reasoning: [`${aiConn.match_type} match for ${aiConn.symbiotic_material}`],
+          materialCompatibility: aiConn.confidence_score,
+          industrySymbiosis: aiConn.confidence_score * 0.9,
+          wasteSynergy: aiConn.match_type === 'direct' ? 1.0 : aiConn.confidence_score,
+          energySynergy: aiConn.match_type === 'energy' ? 1.0 : aiConn.confidence_score * 0.5,
+          locationProximity: 0.8 // Default value
+        },
+        priority
+      };
+    }).filter(conn => conn !== null) as SymbiosisConnection[];
+  }
+
   private findSymbiosisConnections(): SymbiosisConnection[] {
     console.log('🧠 Running advanced AI matching analysis...');
     console.log('📊 Analyzing material compatibility matrix...');
     console.log('🔗 Detecting multi-hop symbiosis chains...');
     console.log('🎯 Applying Monte Carlo risk assessment...');
     
-    // Use the advanced AI matching engine
-    const aiConnections = this.aiMatchingEngine.predictOptimalConnections(this.companies, 300);
+    // Convert companies to AI format
+    const aiFormatCompanies = this.convertToAIFormat(this.companies);
+    
+    // Use the AI matching engine
+    const aiConnections = this.aiMatchingEngine.identifySymbioticConnections(aiFormatCompanies);
     
     console.log(`✅ AI Engine found ${aiConnections.length} high-quality matches`);
     
     // Convert AI matches to symbiosis connections
-    const connections: SymbiosisConnection[] = aiConnections.map(aiConn => {
-      const sourceCompany = this.companies.find(c => c.id === aiConn.source);
-      const targetCompany = this.companies.find(c => c.id === aiConn.target);
-      
-      let connectionType: SymbiosisConnection['connectionType'] = 'material_exchange';
-      
-      // Determine connection type based on AI reasoning
-      const reasoning = aiConn.score.reasoning.join(' ').toLowerCase();
-      if (reasoning.includes('waste') || reasoning.includes('recycling')) {
-        connectionType = 'waste_to_input';
-      } else if (reasoning.includes('water') || reasoning.includes('treatment')) {
-        connectionType = 'water_reuse';
-      } else if (reasoning.includes('energy') || reasoning.includes('sharing')) {
-        connectionType = 'energy_sharing';
-      }
-      
-      return {
-        sourceId: aiConn.source,
-        targetId: aiConn.target,
-        connectionType,
-        strength: aiConn.score.overallScore,
-        description: `${aiConn.priority}: ${sourceCompany?.name} ↔ ${targetCompany?.name} (${Math.round(aiConn.score.confidence * 100)}% confidence)`,
-        aiScore: aiConn.score,
-        priority: aiConn.priority
-      };
-    });
-
-    // Find multi-hop symbiosis chains
-    console.log('🔍 Detecting multi-hop symbiosis chains...');
-    const chains = this.aiMatchingEngine.findSymbiosisChains(this.companies, 4);
-    console.log(`🔗 Found ${chains.length} symbiosis chains`);
-    
-    chains.forEach(chain => {
-      console.log(`   ${chain.pattern}: ${chain.description} (Score: ${Math.round(chain.totalScore * 100)}%)`);
-    });
+    const connections = this.convertAIConnectionsToSymbiosis(aiConnections);
 
     // Log AI analysis results
     const perfectMatches = connections.filter(c => c.priority?.includes('Perfect')).length;
