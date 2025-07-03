@@ -1,4 +1,4 @@
-// Removed fs import for browser compatibility
+// Complete AI Matching Engine - Browser Compatible
 
 interface Company {
   [key: string]: string;
@@ -177,6 +177,8 @@ function identifySymbioticConnections(companies: Company[]): SymbioticConnection
   // Enhanced material extraction and normalization
   function extractMaterials(text: string): Set<string> {
     const materials = new Set<string>();
+    if (!text) return materials;
+    
     const cleanText = text.toLowerCase()
       .replace(/[()]/g, '') // Remove parentheses
       .replace(/\s+/g, ' ') // Normalize whitespace
@@ -328,8 +330,6 @@ function identifySymbioticConnections(companies: Company[]): SymbioticConnection
   return uniqueConnections;
 }
 
-// Browser-compatible version - removed Node.js main function
-
 // Main AIMatchingEngine class
 class AIMatchingEngine {
   private materialCategories: MaterialCategory[];
@@ -377,6 +377,185 @@ class AIMatchingEngine {
 
   public identifySymbioticConnections(companies: Company[]): SymbioticConnection[] {
     return identifySymbioticConnections(companies);
+  }
+
+  /**
+   * Predicts optimal connections between companies based on AI analysis
+   * This method is used by the network generator
+   * @param companies Array of companies to analyze
+   * @returns Promise resolving to array of predicted connections
+   */
+  public async predictOptimalConnections(companies: Company[]): Promise<SymbioticConnection[]> {
+    if (!companies || companies.length < 2) {
+      return [];
+    }
+
+    // Use the existing identifySymbioticConnections method
+    const connections = this.identifySymbioticConnections(companies);
+    
+    // Sort by confidence score and return top connections (limit to prevent overwhelming results)
+    const sortedConnections = connections
+      .sort((a, b) => b.confidence_score - a.confidence_score)
+      .slice(0, Math.min(50, connections.length)); // Limit to top 50 connections
+    
+    return sortedConnections;
+  }
+
+  /**
+   * Find waste-to-input matches between two companies
+   * @param producer Company that produces waste
+   * @param consumer Company that might use the waste
+   * @returns Array of symbiotic connections
+   */
+  private findWasteToInputMatches(producer: Company, consumer: Company): SymbioticConnection[] {
+    const connections: SymbioticConnection[] = [];
+    
+    if (!producer["Waste Materials"] || !consumer["Materials"]) {
+      return connections;
+    }
+
+    const producerWasteTerms = this.extractMaterials(producer["Waste Materials"]);
+    const consumerMaterialTerms = this.extractMaterials(consumer["Materials"]);
+    
+    const matches = this.findMatches(producerWasteTerms, consumerMaterialTerms);
+    
+    for (const match of matches) {
+      const volumeParts = producer["Volume"]?.split(" of ");
+      const wasteType = volumeParts && volumeParts.length > 1 
+        ? volumeParts[1].replace(/\n/g, "").toLowerCase()
+        : "general";
+      
+      connections.push({
+        producer_name: producer["Name"] || "",
+        producer_industry: producer["Industry"] || "",
+        consumer_name: consumer["Name"] || "",
+        consumer_industry: consumer["Industry"] || "",
+        symbiotic_material: match.material,
+        waste_type: wasteType,
+        match_type: match.matchType,
+        confidence_score: match.confidence
+      });
+    }
+    
+    return connections;
+  }
+
+  /**
+   * Extract materials from text
+   */
+  private extractMaterials(text: string): Set<string> {
+    const materials = new Set<string>();
+    if (!text) return materials;
+    
+    const cleanText = text.toLowerCase()
+      .replace(/[()]/g, '') // Remove parentheses
+      .replace(/\s+/g, ' ') // Normalize whitespace
+      .trim();
+    
+    // Split by various delimiters
+    const parts = cleanText.split(/[,;|&+\n]/).map(part => part.trim());
+    
+    for (const part of parts) {
+      if (part.length > 0) {
+        materials.add(part);
+        
+        // Also add individual words for better matching
+        const words = part.split(/\s+/);
+        for (const word of words) {
+          if (word.length > 2) { // Ignore very short words
+            materials.add(word);
+          }
+        }
+      }
+    }
+    
+    return materials;
+  }
+
+  /**
+   * Find matches between waste and materials
+   */
+  private findMatches(wasteTerms: Set<string>, materialTerms: Set<string>): Array<{material: string, matchType: string, confidence: number}> {
+    const matches: Array<{material: string, matchType: string, confidence: number}> = [];
+    
+    // Direct matches
+    for (const waste of wasteTerms) {
+      for (const material of materialTerms) {
+        if (waste === material) {
+          matches.push({
+            material: waste,
+            matchType: 'direct',
+            confidence: this.calculateConfidence('direct', waste, material)
+          });
+        }
+      }
+    }
+    
+    // Category matches
+    for (const waste of wasteTerms) {
+      const wasteCategory = this.materialToCategory.get(waste);
+      if (wasteCategory) {
+        for (const material of materialTerms) {
+          const materialCategory = this.materialToCategory.get(material);
+          if (materialCategory && wasteCategory === materialCategory) {
+            matches.push({
+              material: `${waste} -> ${material}`,
+              matchType: 'category',
+              confidence: this.calculateConfidence('category', waste, material)
+            });
+          }
+        }
+      }
+    }
+    
+    // Substring matches (one contains the other)
+    for (const waste of wasteTerms) {
+      for (const material of materialTerms) {
+        if (waste.includes(material) || material.includes(waste)) {
+          if (Math.abs(waste.length - material.length) <= 3) { // Similar length
+            matches.push({
+              material: `${waste} ≈ ${material}`,
+              matchType: 'processed',
+              confidence: this.calculateConfidence('processed', waste, material)
+            });
+          }
+        }
+      }
+    }
+    
+    // Energy potential matches
+    const energyMaterials = ['biomass', 'wood', 'organic', 'waste', 'oil', 'gas', 'fuel'];
+    for (const waste of wasteTerms) {
+      if (energyMaterials.some(em => waste.includes(em))) {
+        for (const material of materialTerms) {
+          if (material.includes('energy') || material.includes('fuel') || material.includes('power')) {
+            matches.push({
+              material: `${waste} -> energy`,
+              matchType: 'energy',
+              confidence: this.calculateConfidence('energy', waste, material)
+            });
+          }
+        }
+      }
+    }
+    
+    return matches;
+  }
+
+  /**
+   * Calculate match confidence
+   */
+  private calculateConfidence(matchType: string, producerMat: string, consumerMat: string): number {
+    if (matchType === 'direct') return 1.0;
+    if (matchType === 'category') return 0.8;
+    if (matchType === 'processed') return 0.6;
+    if (matchType === 'energy') return 0.4;
+    
+    // Adjust based on material specificity
+    const avgLength = (producerMat.length + consumerMat.length) / 2;
+    if (avgLength > 10) return Math.min(1.0, 0.8 + (avgLength - 10) * 0.02);
+    
+    return 0.5;
   }
 
   public async processCompanies(data: string | File): Promise<{
