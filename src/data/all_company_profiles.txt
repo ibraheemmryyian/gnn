@@ -1,0 +1,3510 @@
+Company 11
+Name: EcoSystems
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Vilnius, Lithuania
+Volume: 88999 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 12
+Name: EcoWorks
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Sofia, Bulgaria
+Volume: 68588 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 13
+Name: PrimeCenter
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Oslo, Norway
+Volume: 31252 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 14
+Name: SmartCare
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Brno, Czech Republic
+Volume: 56434 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 15
+Name: NovaMart
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Amsterdam, Netherlands
+Volume: 30736 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 16
+Name: PureIndustries
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Dublin, Ireland
+Volume: 91463 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 17
+Name: NextGenCorp
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Amsterdam, Netherlands
+Volume: 37192 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 18
+Name: MediMart
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Warsaw, Poland
+Volume: 38030 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 19
+Name: NextGenCare
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Oslo, Norway
+Volume: 82082 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 20
+Name: GlobalIndustries
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Brno, Czech Republic
+Volume: 5691 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 21
+Name: EcoIndustries
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Vilnius, Lithuania
+Volume: 96247 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 22
+Name: UrbanCenter
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Luxembourg City, Luxembourg
+Volume: 72861 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 23
+Name: NextGenDynamics
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Brno, Czech Republic
+Volume: 75715 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 24
+Name: UrbanIndustries
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Warsaw, Poland
+Volume: 29232 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 25
+Name: NeoMart
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Zagreb, Croatia
+Volume: 37132 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 26
+Name: NeoGroup
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Brno, Czech Republic
+Volume: 46969 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 27
+Name: NextGenSolutions
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Amsterdam, Netherlands
+Volume: 57315 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 28
+Name: EcoIndustries
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Brno, Czech Republic
+Volume: 37964 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 29
+Name: UrbanCenter
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Zagreb, Croatia
+Volume: 77175 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 30
+Name: SmartSolutions
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Vilnius, Lithuania
+Volume: 99904 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 31
+Name: UrbanCorp
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Dublin, Ireland
+Volume: 38197 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 32
+Name: NovaCare
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Warsaw, Poland
+Volume: 16929 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 33
+Name: MediCenter
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Vienna, Austria
+Volume: 62183 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 34
+Name: PureGroup
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Oslo, Norway
+Volume: 32222 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 35
+Name: MediMart
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Tallinn, Estonia
+Volume: 60969 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 36
+Name: GreenCorp
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Amsterdam, Netherlands
+Volume: 48671 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 37
+Name: BlueGroup
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Athens, Greece
+Volume: 38928 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 38
+Name: PrimeGroup
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Brno, Czech Republic
+Volume: 93249 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 39
+Name: UrbanCenter
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Zagreb, Croatia
+Volume: 42436 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 40
+Name: TransCenter
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Luxembourg City, Luxembourg
+Volume: 61477 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 41
+Name: NextGenCorp
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Amsterdam, Netherlands
+Volume: 24029 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 42
+Name: BlueMart
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Tallinn, Estonia
+Volume: 36262 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 43
+Name: NovaIndustries
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Zagreb, Croatia
+Volume: 7975 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 44
+Name: GlobalSystems
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Vienna, Austria
+Volume: 75947 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 45
+Name: SmartGroup
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Brussels, Belgium
+Volume: 74633 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 46
+Name: SmartSolutions
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Oslo, Norway
+Volume: 5216 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 47
+Name: SmartCare
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Athens, Greece
+Volume: 26827 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 48
+Name: EcoSystems
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Amsterdam, Netherlands
+Volume: 61738 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 49
+Name: NeoCorp
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Brussels, Belgium
+Volume: 88578 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 50
+Name: PrimeDynamics
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Lisbon, Portugal
+Volume: 89252 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 51
+Name: TransCare
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Warsaw, Poland
+Volume: 18291 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 52
+Name: GreenGroup
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Zagreb, Croatia
+Volume: 83866 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 53
+Name: BlueGroup
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Ljubljana, Slovenia
+Volume: 55150 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 54
+Name: EcoIndustries
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Bucharest, Romania
+Volume: 15513 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 55
+Name: BlueGroup
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Amsterdam, Netherlands
+Volume: 14742 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 56
+Name: EcoSystems
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Zagreb, Croatia
+Volume: 60890 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 57
+Name: MediIndustries
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Helsinki, Finland
+Volume: 62567 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 58
+Name: PrimeSolutions
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Warsaw, Poland
+Volume: 21896 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 59
+Name: BlueCare
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Oslo, Norway
+Volume: 76361 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 60
+Name: PureSolutions
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Warsaw, Poland
+Volume: 50049 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 61
+Name: BlueIndustries
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Ljubljana, Slovenia
+Volume: 25225 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 62
+Name: GreenGroup
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Helsinki, Finland
+Volume: 18996 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 63
+Name: PrimeSolutions
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Athens, Greece
+Volume: 43659 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 64
+Name: NeoNetworks
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Oslo, Norway
+Volume: 46402 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 65
+Name: TransDynamics
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Ljubljana, Slovenia
+Volume: 96077 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 66
+Name: NextGenMart
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Brno, Czech Republic
+Volume: 22207 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 67
+Name: BlueGroup
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Zagreb, Croatia
+Volume: 9015 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 68
+Name: EcoGroup
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Ljubljana, Slovenia
+Volume: 57556 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 69
+Name: NextGenDynamics
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Amsterdam, Netherlands
+Volume: 16711 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 70
+Name: GreenNetworks
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Helsinki, Finland
+Volume: 67175 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 71
+Name: BlueIndustries
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Brussels, Belgium
+Volume: 51141 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 72
+Name: PrimeCenter
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Amsterdam, Netherlands
+Volume: 54498 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 73
+Name: MediIndustries
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Vienna, Austria
+Volume: 17162 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 74
+Name: SmartGroup
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Vienna, Austria
+Volume: 36494 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 75
+Name: MediCenter
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Warsaw, Poland
+Volume: 93041 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 76
+Name: MediCare
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Warsaw, Poland
+Volume: 27489 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 77
+Name: MediWorks
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Bucharest, Romania
+Volume: 16988 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 78
+Name: EcoMart
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Ljubljana, Slovenia
+Volume: 37424 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 79
+Name: NextGenCare
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Bucharest, Romania
+Volume: 29336 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 80
+Name: UrbanIndustries
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Dublin, Ireland
+Volume: 82209 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 81
+Name: NextGenSolutions
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Vilnius, Lithuania
+Volume: 28008 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 82
+Name: NextGenWorks
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Dublin, Ireland
+Volume: 12776 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 83
+Name: MediMart
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Bucharest, Romania
+Volume: 95576 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 84
+Name: PrimeCare
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Bucharest, Romania
+Volume: 36058 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 85
+Name: BlueDynamics
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Warsaw, Poland
+Volume: 54357 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 86
+Name: EcoGroup
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Oslo, Norway
+Volume: 98202 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 87
+Name: GlobalCenter
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Lisbon, Portugal
+Volume: 85657 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 88
+Name: BlueNetworks
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Oslo, Norway
+Volume: 26195 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 89
+Name: UrbanIndustries
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Brno, Czech Republic
+Volume: 88448 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 90
+Name: PureWorks
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Oslo, Norway
+Volume: 48539 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 91
+Name: MediGroup
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Vienna, Austria
+Volume: 72403 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 92
+Name: BlueSolutions
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Ljubljana, Slovenia
+Volume: 17967 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+
+Company 93
+Name: NextGenMart
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Bucharest, Romania
+Volume: 28613 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 94
+Name: EcoGroup
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Sofia, Bulgaria
+Volume: 8974 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 95
+Name: PrimeIndustries
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Brussels, Belgium
+Volume: 30298 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 96
+Name: NextGenWorks
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Helsinki, Finland
+Volume: 99794 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 97
+Name: NextGenWorks
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Dublin, Ireland
+Volume: 77153 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 98
+Name: SmartSystems
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled containers
+Location: Vienna, Austria
+Volume: 57088 metric tons of plastic pellets
+Materials: Post-consumer plastics, HDPE, LDPE
+Processes: Sorting → Shredding → Washing → Pelletizing
+
+Company 99
+Name: GlobalDynamics
+Industry: Hospital
+Products: Medical imaging services, Emergency care, Surgical procedures
+Location: Lisbon, Portugal
+Volume: 52322 metric tons of medical waste
+Materials: Medical supplies, Electricity, Sterile water
+Processes: Patient intake → Diagnosis → Treatment → Discharge
+
+Company 100
+Name: SmartSystems
+Industry: Furniture Production
+Products: Office chairs, Wooden tables, Bookshelves
+Location: Brussels, Belgium
+Volume: 76941 metric tons of wood waste
+Materials: Plywood, Steel frames, Foam padding
+Processes: Cutting → Assembling → Upholstering → Polishing
+
+Company 101
+Name: BlueCorp
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Vilnius, Lithuania
+Volume: 22604 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 102
+Name: SmartDynamics
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Helsinki, Finland
+Volume: 72179 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 103
+Name: PrimeCorp
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Sofia, Bulgaria
+Volume: 70773 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 104
+Name: NeoCorp
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Zagreb, Croatia
+Volume: 90384 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 105
+Name: SmartSolutions
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Athens, Greece
+Volume: 84306 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 106
+Name: NeoSystems
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Luxembourg City, Luxembourg
+Volume: 12641 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 107
+Name: UrbanNetworks
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Helsinki, Finland
+Volume: 90530 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 108
+Name: BlueCare
+Industry: Supermarket
+Products: Fresh produce, Packaged goods, Household items
+Location: Brussels, Belgium
+Volume: 92789 metric tons of organic waste
+Materials: Fruits and vegetables, Plastic packaging, Cardboard
+Processes: Procurement → Shelving → Checkout → Inventory management
+
+Company 109
+Name: GlobalNetworks
+Industry: Water Treatment
+Products: Purified water, Treated sludge
+Location: Vienna, Austria
+Volume: 16201 cubic meters of treated water
+Materials: Raw water, Coagulants, Energy
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 110
+Name: UrbanSystems
+Industry: Electronics Manufacturing
+Products: Smartphones, Tablets, Wearable devices
+Location: Brussels, Belgium
+Volume: 81858 metric tons of e-waste
+Materials: Silicon wafers, Lithium-ion batteries, Copper wiring
+Processes: PCB printing → Component assembly → Firmware installation → Quality control
+Company 111
+Name: GreenCycle Solutions
+Industry: Textile Recycling
+Products: Recycled fibers, Sustainable fabrics
+Location: Berlin, Germany
+Volume: 45000 metric tons of textile waste
+Materials: Cotton, Polyester, Wool
+Processes: Collection → Sorting → Shredding → Fiber regeneration
+
+Company 112
+Name: BioWaste Innovations
+Industry: Biogas Production
+Products: Biogas, Organic fertilizer
+Location: Paris, France
+Volume: 70000 metric tons of organic waste
+Materials: Food waste, Agricultural residues, Sewage sludge
+Processes: Anaerobic digestion → Gas purification → Digestate processing
+
+Company 113
+Name: ReGen Metals
+Industry: Metal Recycling
+Products: Recycled aluminum, Steel ingots
+Location: London, UK
+Volume: 90000 metric tons of metal scrap
+Materials: Aluminum cans, Steel beams, Copper wires
+Processes: Collection → Sorting → Melting → Casting
+
+Company 114
+Name: AquaPurify
+Industry: Industrial Wastewater Treatment
+Products: Treated industrial water, Recovered chemicals
+Location: Rome, Italy
+Volume: 120000 cubic meters of industrial wastewater
+Materials: Chemical effluents, Heavy metals, Suspended solids
+Processes: Pre-treatment → Biological treatment → Chemical precipitation → Sludge dewatering
+
+Company 115
+Name: E-Scrap Solutions
+Industry: Electronic Waste Recycling
+Products: Recovered rare earth metals, Recycled plastics
+Location: Madrid, Spain
+Volume: 60000 metric tons of electronic waste
+Materials: Circuit boards, Batteries, Cables
+Processes: Dismantling → Shredding → Separation → Refining
+
+Company 116
+Name: PharmaCycle
+Industry: Pharmaceutical Waste Management
+Products: Safely disposed pharmaceutical waste, Recovered solvents
+Location: Dublin, Ireland
+Volume: 25000 metric tons of pharmaceutical waste
+Materials: Expired medications, Contaminated packaging, Laboratory waste
+Processes: Segregation → Incineration → Chemical treatment → Secure landfill
+
+Company 117
+Name: ConStruct Recycling
+Industry: Construction and Demolition Waste
+Products: Recycled concrete, Aggregates
+Location: Warsaw, Poland
+Volume: 150000 metric tons of construction waste
+Materials: Concrete, Bricks, Wood, Asphalt
+Processes: Demolition → Crushing → Screening → Sorting
+
+Company 118
+Name: GreenPrint Packaging
+Industry: Sustainable Packaging Production
+Products: Biodegradable packaging, Recycled paperboard
+Location: Stockholm, Sweden
+Volume: 30000 metric tons of packaging waste
+Materials: Recycled paper, Corn starch, Bioplastics
+Processes: Pulping → Molding → Printing → Coating
+
+Company 119
+Name: SolarCycle
+Industry: Solar Panel Recycling
+Products: Recycled silicon, Glass, Aluminum
+Location: Vienna, Austria
+Volume: 15000 metric tons of solar panel waste
+Materials: Photovoltaic cells, Glass panels, Aluminum frames
+Processes: Disassembly → Material separation → Purification
+
+Company 120
+Name: AgriWaste Convert
+Industry: Agricultural Waste Conversion
+Products: Biochar, Animal feed supplements
+Location: Budapest, Hungary
+Volume: 80000 metric tons of agricultural waste
+Materials: Crop residues, Animal manure, Food processing by-products
+Processes: Composting → Pyrolysis → Fermentation
+
+Company 121
+Name: MarineClean Tech
+Industry: Ocean Plastic Recycling
+Products: Recycled ocean plastics, Marine-grade polymers
+Location: Lisbon, Portugal
+Volume: 10000 metric tons of ocean plastic
+Materials: PET bottles, Fishing nets, Plastic fragments
+Processes: Collection → Cleaning → Shredding → Pelletizing
+
+Company 122
+Name: BioMed Waste Solutions
+Industry: Hospital
+Products: Sterilized medical instruments, Disposed sharps, Pathological waste
+Location: Brussels, Belgium
+Volume: 40000 metric tons of medical waste
+Materials: Syringes, Bandages, Human tissues, Laboratory cultures
+Processes: Segregation → Autoclaving → Incineration → Landfilling
+
+Company 123
+Name: FoodLoop Systems
+Industry: Food Waste Management
+Products: Composted food waste, Animal feed
+Location: Copenhagen, Denmark
+Volume: 55000 metric tons of food waste
+Materials: Restaurant waste, Supermarket discards, Household food scraps
+Processes: Collection → Sorting → Composting → Dehydration
+
+Company 124
+Name: TyreCycle
+Industry: Tyre Recycling
+Products: Rubber granules, Tyre-derived fuel
+Location: Prague, Czech Republic
+Volume: 35000 metric tons of tyre waste
+Materials: Car tyres, Truck tyres, Industrial tyres
+Processes: Shredding → Crumb rubber production → Pyrolysis
+
+Company 125
+Name: GlassCycle
+Industry: Glass Recycling
+Products: Cullet, Glass aggregates
+Location: Helsinki, Finland
+Volume: 65000 metric tons of glass waste
+Materials: Glass bottles, Jars, Window panes
+Processes: Collection → Sorting → Crushing → Melting
+
+Company 126
+Name: ChemicalReclaim
+Industry: Chemical Waste Treatment
+Products: Neutralized chemical waste, Recovered valuable chemicals
+Location: Amsterdam, Netherlands
+Volume: 20000 metric tons of chemical waste
+Materials: Acids, Bases, Solvents, Heavy metal solutions
+Processes: Neutralization → Precipitation → Filtration → Distillation
+
+Company 127
+Name: MineWaste Solutions
+Industry: Mining Waste Management
+Products: Reclaimed land, Treated mine water
+Location: Sofia, Bulgaria
+Volume: 100000 metric tons of mining waste
+Materials: Tailings, Overburden, Acid mine drainage
+Processes: Tailings dewatering → Phytoremediation → Water treatment
+
+Company 128
+Name: OilRecycle
+Industry: Used Oil Recycling
+Products: Re-refined base oils, Fuel oil
+Location: Bucharest, Romania
+Volume: 18000 metric tons of used oil
+Materials: Engine oil, Industrial lubricants, Hydraulic fluids
+Processes: Collection → Dehydration → Filtration → Distillation
+
+Company 129
+Name: BatteryRecharge
+Industry: Battery Recycling
+Products: Recovered lithium, Cobalt, Nickel
+Location: Zagreb, Croatia
+Volume: 12000 metric tons of battery waste
+Materials: Lithium-ion batteries, Lead-acid batteries, Nickel-cadmium batteries
+Processes: Discharging → Dismantling → Shredding → Hydrometallurgy
+
+Company 130
+Name: WoodWaste Innovations
+Industry: Wood Waste Recycling
+Products: Wood chips, Biomass fuel
+Location: Ljubljana, Slovenia
+Volume: 50000 metric tons of wood waste
+Materials: Sawdust, Wood scraps, Demolition wood
+Processes: Chipping → Drying → Pelletizing
+
+Company 131
+Name: GreenEnergy Solutions
+Industry: Waste-to-Energy
+Products: Electricity, Heat
+Location: Luxembourg City, Luxembourg
+Volume: 95000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste
+Processes: Incineration → Energy recovery → Ash disposal
+
+Company 132
+Name: HospitalWaste Pro
+Industry: Hospital
+Products: Safely processed medical waste, Recycled single-use plastics
+Location: Vilnius, Lithuania
+Volume: 38000 metric tons of medical waste
+Materials: Contaminated PPE, Surgical drapes, IV bags, Sharps containers
+Processes: Collection → Sterilization → Shredding → Landfill/Recycling
+
+Company 133
+Name: E-Textile Recycling
+Industry: Electronic Textile Recycling
+Products: Recovered metals, Recycled fabrics
+Location: Athens, Greece
+Volume: 8000 metric tons of electronic textiles
+Materials: Smart clothing, Heated blankets, Wearable electronics
+Processes: Disassembly → Material separation → Chemical treatment
+
+Company 134
+Name: PaperCycle
+Industry: Paper Recycling
+Products: Recycled paper pulp, Cardboard sheets
+Location: Dublin, Ireland
+Volume: 75000 metric tons of paper waste
+Materials: Newspapers, Magazines, Cardboard boxes, Office paper
+Processes: Collection → Sorting → Pulping → Papermaking
+
+Company 135
+Name: HazardousWaste Safe
+Industry: Hazardous Waste Management
+Products: Safely contained hazardous waste, Treated contaminated soil
+Location: Oslo, Norway
+Volume: 10000 metric tons of hazardous waste
+Materials: Industrial solvents, Pesticides, Asbestos, Medical sharps
+Processes: Encapsulation → Chemical treatment → Secure storage
+
+Company 136
+Name: WaterWise Solutions
+Industry: Water Conservation
+Products: Reclaimed greywater, Rainwater harvesting systems
+Location: Berlin, Germany
+Volume: 60000 cubic meters of greywater
+Materials: Used shower water, Laundry water, Rainwater
+Processes: Filtration → Disinfection → Storage → Reuse
+
+Company 137
+Name: PlasticUpcycle
+Industry: Plastic Upcycling
+Products: Furniture from recycled plastic, Building materials
+Location: Paris, France
+Volume: 22000 metric tons of plastic waste
+Materials: Plastic bottles, Bags, Films
+Processes: Cleaning → Shredding → Melting → Molding
+
+Company 138
+Name: SludgeTreat
+Industry: Sewage Sludge Treatment
+Products: Biogas, Soil conditioner
+Location: London, UK
+Volume: 40000 metric tons of sewage sludge
+Materials: Wastewater solids, Organic matter
+Processes: Anaerobic digestion → Dewatering → Drying
+
+Company 139
+Name: GreenBuilding Materials
+Industry: Sustainable Building Materials
+Products: Recycled content insulation, Eco-friendly concrete
+Location: Rome, Italy
+Volume: 50000 metric tons of construction waste
+Materials: Demolished concrete, Recycled glass, Fly ash
+Processes: Crushing → Mixing → Curing
+
+Company 140
+Name: HospitalClean
+Industry: Hospital
+Products: Decontaminated medical equipment, Safely disposed biohazardous waste
+Location: Madrid, Spain
+Volume: 42000 metric tons of medical waste
+Materials: Contaminated linens, Surgical waste, Laboratory cultures, Sharps
+Processes: Sterilization → Incineration → Autoclaving → Secure landfill
+
+Company 141
+Name: EcoFarm Waste
+Industry: Farm Waste Management
+Products: Composted manure, Crop residue mulch
+Location: Dublin, Ireland
+Volume: 70000 metric tons of farm waste
+Materials: Animal manure, Straw, Hay, Vegetable scraps
+Processes: Composting → Spreading → Anaerobic digestion
+
+Company 142
+Name: UrbanRecycle
+Industry: Mixed Waste Recycling
+Products: Sorted recyclables, Refuse-derived fuel
+Location: Warsaw, Poland
+Volume: 85000 metric tons of mixed municipal waste
+Materials: Paper, Plastic, Glass, Metals, Organics
+Processes: Mechanical sorting → Manual sorting → Baling
+
+Company 143
+Name: TextileRebirth
+Industry: Textile Upcycling
+Products: Fashion accessories from textile waste, Home decor
+Location: Stockholm, Sweden
+Volume: 10000 metric tons of textile waste
+Materials: Used clothing, Fabric scraps, Industrial textile waste
+Processes: Collection → Cleaning → Cutting → Sewing
+
+Company 144
+Name: WasteHeat Recovery
+Industry: Industrial Waste Heat Recovery
+Products: Recovered heat, Electricity
+Location: Vienna, Austria
+Volume: 30000 MWh of recovered heat
+Materials: Exhaust gases, Hot water, Steam
+Processes: Heat exchange → Power generation
+
+Company 145
+Name: BioFuel Innovate
+Industry: Biofuel Production
+Products: Biodiesel, Bioethanol
+Location: Budapest, Hungary
+Volume: 25000 metric tons of biomass
+Materials: Algae, Corn, Sugarcane, Vegetable oil
+Processes: Fermentation → Distillation → Transesterification
+
+Company 146
+Name: MineWater Treat
+Industry: Mine Water Treatment
+Products: Potable water, Recovered minerals
+Location: Lisbon, Portugal
+Volume: 50000 cubic meters of mine water
+Materials: Acidic mine drainage, Heavy metals, Suspended solids
+Processes: Neutralization → Flocculation → Filtration
+
+Company 147
+Name: HospitalSafe Disposal
+Industry: Hospital
+Products: Securely incinerated medical waste, Environmentally safe ash
+Location: Copenhagen, Denmark
+Volume: 35000 metric tons of medical waste
+Materials: Infectious waste, Pathological waste, Pharmaceutical waste, Sharps
+Processes: Collection → High-temperature incineration → Ash solidification
+
+Company 148
+Name: E-Waste Dismantle
+Industry: Electronic Waste Dismantling
+Products: Sorted electronic components, Raw materials
+Location: Prague, Czech Republic
+Volume: 40000 metric tons of electronic waste
+Materials: Computers, TVs, Mobile phones, Appliances
+Processes: Manual dismantling → Component separation → Material sorting
+
+Company 149
+Name: GreenCompost
+Industry: Composting
+Products: Organic compost, Soil amendments
+Location: Helsinki, Finland
+Volume: 60000 metric tons of organic waste
+Materials: Yard waste, Food scraps, Agricultural waste
+Processes: Shredding → Piling → Turning → Curing
+
+Company 150
+Name: IndustrialWater Reuse
+Industry: Industrial Water Recycling
+Products: Reused process water, Minimized discharge
+Location: Amsterdam, Netherlands
+Volume: 80000 cubic meters of industrial process water
+Materials: Cooling water, Boiler feedwater, Rinse water
+Processes: Filtration → Reverse osmosis → Disinfection
+
+Company 151
+Name: MedicalWaste Solutions
+Industry: Hospital
+Products: Safe disposal of cytotoxic waste, Recycled plastic medical devices
+Location: Sofia, Bulgaria
+Volume: 30000 metric tons of medical waste
+Materials: Chemotherapy waste, Dialysis waste, Syringes, Catheters
+Processes: Segregation → Chemical inactivation → Autoclaving → Recycling/Incineration
+
+Company 152
+Name: ConstructionDebris Recycle
+Industry: Construction Waste Recycling
+Products: Recycled aggregates, Wood chips
+Location: Bucharest, Romania
+Volume: 110000 metric tons of construction debris
+Materials: Concrete, Brick, Wood, Plasterboard
+Processes: Sorting → Crushing → Screening → Grinding
+
+Company 153
+Name: BioPlastics Innovate
+Industry: Bioplastics Production
+Products: Biodegradable packaging, Compostable cutlery
+Location: Zagreb, Croatia
+Volume: 15000 metric tons of bioplastic waste
+Materials: PLA, PHA, Starch-based polymers
+Processes: Fermentation → Polymerization → Molding
+
+Company 154
+Name: WasteOil Reclaim
+Industry: Waste Oil Re-refining
+Products: Lubricating oils, Asphalt binders
+Location: Ljubljana, Slovenia
+Volume: 20000 metric tons of waste oil
+Materials: Used motor oil, Industrial oils, Transformer oils
+Processes: Dehydration → Filtration → Distillation → Hydrotreating
+
+Company 155
+Name: BatteryRecycle Pro
+Industry: Battery Recycling
+Products: Recovered metals for new batteries, Recycled plastics
+Location: Luxembourg City, Luxembourg
+Volume: 10000 metric tons of battery waste
+Materials: EV batteries, Consumer batteries, Industrial batteries
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy
+
+Company 156
+Name: WoodWaste Biofuel
+Industry: Wood Waste to Biofuel
+Products: Bioethanol, Syngas
+Location: Athens, Greece
+Volume: 45000 metric tons of wood waste
+Materials: Forest residues, Sawmill waste, Urban wood waste
+Processes: Gasification → Fermentation → Distillation
+
+Company 157
+Name: MunicipalWaste Convert
+Industry: Municipal Solid Waste Treatment
+Products: Recyclables, Energy from waste
+Location: Dublin, Ireland
+Volume: 100000 metric tons of municipal solid waste
+Materials: Household waste, Commercial waste, Green waste
+Processes: Sorting → Composting → Anaerobic digestion → Incineration
+
+Company 158
+Name: HospitalWaste Management
+Industry: Hospital
+Products: Safe disposal of radioactive waste, Recycled paper and cardboard
+Location: Oslo, Norway
+Volume: 32000 metric tons of medical waste
+Materials: Radioactive isotopes, Contaminated paper, Cardboard packaging
+Processes: Segregation → Decay storage → Shielding → Recycling
+
+Company 159
+Name: E-Waste Precious Metals
+Industry: Precious Metal Recovery from E-Waste
+Products: Gold, Silver, Platinum, Palladium
+Location: Berlin, Germany
+Volume: 5000 metric tons of e-waste
+Materials: Circuit boards, Connectors, Processors
+Processes: Shredding → Chemical leaching → Electrorefining
+
+Company 160
+Name: PaperPulp Recycle
+Industry: Paper Pulp Recycling
+Products: Recycled paper pulp, Tissue paper
+Location: Paris, France
+Volume: 60000 metric tons of paper waste
+Materials: Mixed paper, OCC, De-inked pulp
+Processes: Repulping → Screening → Cleaning → Bleaching
+
+Company 161
+Name: HazardousWaste Incinerate
+Industry: Hazardous Waste Incineration
+Products: Detoxified waste, Energy recovery
+Location: London, UK
+Volume: 8000 metric tons of hazardous waste
+Materials: PCBs, Dioxins, Medical waste, Chemical residues
+Processes: High-temperature incineration → Flue gas treatment → Ash disposal
+
+Company 162
+Name: WaterReclaim Systems
+Industry: Water Reclamation
+Products: Reclaimed wastewater for irrigation, Industrial use
+Location: Rome, Italy
+Volume: 70000 cubic meters of wastewater
+Materials: Municipal wastewater, Industrial wastewater
+Processes: Primary treatment → Secondary treatment → Tertiary treatment → Disinfection
+
+Company 163
+Name: PlasticFilm Recycle
+Industry: Plastic Film Recycling
+Products: Recycled plastic pellets, Plastic lumber
+Location: Madrid, Spain
+Volume: 18000 metric tons of plastic film
+Materials: Agricultural film, Packaging film, Stretch film
+Processes: Cleaning → Shredding → Agglomeration → Extrusion
+
+Company 164
+Name: HospitalBiohazard
+Industry: Hospital
+Products: Secure disposal of pathological waste, Sterilized reusable instruments
+Location: Dublin, Ireland
+Volume: 37000 metric tons of medical waste
+Materials: Human organs, Tissues, Blood, Surgical instruments
+Processes: Segregation → Incineration → Autoclaving → Reuse/Disposal
+
+Company 165
+Name: SludgeEnergy
+Industry: Sludge to Energy
+Products: Biogas, Electricity
+Location: Warsaw, Poland
+Volume: 30000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Industrial sludge
+Processes: Anaerobic digestion → Combined heat and power
+
+Company 166
+Name: GreenConcrete
+Industry: Green Concrete Production
+Products: Concrete with recycled content, Low-carbon concrete
+Location: Stockholm, Sweden
+Volume: 40000 metric tons of concrete waste
+Materials: Recycled concrete aggregate, Fly ash, Slag
+Processes: Crushing → Grinding → Mixing
+
+Company 167
+Name: WasteToFuel
+Industry: Waste to Fuel
+Products: Syngas, Bio-oil
+Location: Vienna, Austria
+Volume: 20000 metric tons of mixed waste
+Materials: Municipal solid waste, Agricultural waste, Industrial waste
+Processes: Pyrolysis → Gasification
+
+Company 168
+Name: BioDiesel Refine
+Industry: Biodiesel Refining
+Products: Biodiesel, Glycerin
+Location: Budapest, Hungary
+Volume: 15000 metric tons of used cooking oil
+Materials: Used cooking oil, Animal fats, Vegetable oils
+Processes: Transesterification → Purification
+
+Company 169
+Name: MineTailings Reclaim
+Industry: Mine Tailings Reclamation
+Products: Reclaimed land, Recovered minerals
+Location: Lisbon, Portugal
+Volume: 80000 metric tons of mine tailings
+Materials: Fine-grained mining waste, Residual metals
+Processes: Dewatering → Revegetation → Chemical stabilization
+
+Company 170
+Name: HospitalInfectious
+Industry: Hospital
+Products: Safe handling of infectious waste, Disinfected surfaces
+Location: Copenhagen, Denmark
+Volume: 39000 metric tons of medical waste
+Materials: Contaminated dressings, Swabs, Gloves, Masks
+Processes: Segregation → Disinfection → Autoclaving → Incineration
+
+Company 171
+Name: E-Waste Circuit
+Industry: Circuit Board Recycling
+Products: Recovered copper, Gold, Silver
+Location: Prague, Czech Republic
+Volume: 7000 metric tons of circuit boards
+Materials: Printed circuit boards, Motherboards, Graphic cards
+Processes: Shredding → Mechanical separation → Hydrometallurgy
+
+Company 172
+Name: OrganicWaste Compost
+Industry: Organic Waste Composting
+Products: Nutrient-rich compost, Topsoil
+Location: Helsinki, Finland
+Volume: 50000 metric tons of organic waste
+Materials: Food scraps, Garden waste, Leaves
+Processes: Aerobic composting → Screening → Bagging
+
+Company 173
+Name: IndustrialEffluent Treat
+Industry: Industrial Effluent Treatment
+Products: Treated industrial wastewater, Reusable water
+Location: Amsterdam, Netherlands
+Volume: 90000 cubic meters of industrial effluent
+Materials: Textile dyes, Pharmaceutical residues, Metal plating waste
+Processes: Coagulation → Flocculation → Sedimentation → Activated sludge
+
+Company 174
+Name: MedicalWaste Incineration
+Industry: Hospital
+Products: Environmentally safe medical waste incineration, Reduced volume
+Location: Sofia, Bulgaria
+Volume: 33000 metric tons of medical waste
+Materials: Pathological waste, Sharps, Pharmaceutical waste, Infectious waste
+Processes: High-temperature incineration → Flue gas treatment → Ash disposal
+
+Company 175
+Name: DemolitionWaste Recycle
+Industry: Demolition Waste Recycling
+Products: Recycled concrete, Wood chips, Metal scrap
+Location: Bucharest, Romania
+Volume: 130000 metric tons of demolition waste
+Materials: Concrete slabs, Wooden beams, Steel rebar, Roofing materials
+Processes: Sorting → Crushing → Shredding → Magnetic separation
+
+Company 176
+Name: BioFuel from Waste
+Industry: Biofuel from Waste
+Products: Biogas, Bio-oil
+Location: Zagreb, Croatia
+Volume: 30000 metric tons of organic waste
+Materials: Agricultural waste, Food processing waste, Municipal organic waste
+Processes: Anaerobic digestion → Pyrolysis
+
+Company 177
+Name: WasteTyre Recycle
+Industry: Waste Tyre Recycling
+Products: Rubber powder, Playground surfaces
+Location: Ljubljana, Slovenia
+Volume: 25000 metric tons of waste tyres
+Materials: Car tyres, Truck tyres, Bicycle tyres
+Processes: Shredding → Granulation → Sieving
+
+Company 178
+Name: GlassBottle Recycle
+Industry: Glass Bottle Recycling
+Products: Glass cullet, New glass bottles
+Location: Luxembourg City, Luxembourg
+Volume: 55000 metric tons of glass bottles
+Materials: Clear glass, Green glass, Brown glass
+Processes: Collection → Sorting → Crushing → Melting → Molding
+
+Company 179
+Name: ChemicalWaste Neutralize
+Industry: Chemical Waste Neutralization
+Products: Neutralized chemical waste, Safe discharge
+Location: Athens, Greece
+Volume: 12000 metric tons of chemical waste
+Materials: Acidic waste, Alkaline waste, Cyanide waste
+Processes: pH adjustment → Oxidation/Reduction → Precipitation
+
+Company 180
+Name: HospitalSharps Disposal
+Industry: Hospital
+Products: Secure disposal of sharps, Prevention of needlestick injuries
+Location: Dublin, Ireland
+Volume: 28000 metric tons of medical waste
+Materials: Needles, Syringes, Scalpels, Lancets
+Processes: Collection in sharps containers → Incineration → Autoclaving
+
+Company 181
+Name: MineWater Treatment
+Industry: Mine Water Treatment
+Products: Treated mine water for discharge, Recovered metals
+Location: Oslo, Norway
+Volume: 60000 cubic meters of mine water
+Materials: Acid mine drainage, Heavy metals, Suspended solids
+Processes: Neutralization → Sedimentation → Filtration → Ion exchange
+
+Company 182
+Name: UsedOil Re-refine
+Industry: Used Oil Re-refining
+Products: Base oils, Lubricants
+Location: Berlin, Germany
+Volume: 10000 metric tons of used oil
+Materials: Used engine oil, Industrial lubricants
+Processes: Dehydration → Distillation → Hydrotreating → Blending
+
+Company 183
+Name: BatteryRecycle Systems
+Industry: Battery Recycling
+Products: Recovered materials for new batteries, Reduced environmental impact
+Location: Paris, France
+Volume: 8000 metric tons of battery waste
+Materials: Li-ion batteries, NiMH batteries, Alkaline batteries
+Processes: Disassembly → Mechanical separation → Chemical processing
+
+Company 184
+Name: WoodWaste Composting
+Industry: Wood Waste Composting
+Products: Wood compost, Mulch
+Location: London, UK
+Volume: 35000 metric tons of wood waste
+Materials: Tree trimmings, Sawdust, Wood chips
+Processes: Chipping → Piling → Turning → Curing
+
+Company 185
+Name: WasteToEnergy Plant
+Industry: Waste-to-Energy
+Products: Electricity, District heating
+Location: Rome, Italy
+Volume: 110000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste
+Processes: Incineration → Steam generation → Turbine power
+
+Company 186
+Name: HospitalPharmaceutical
+Industry: Hospital
+Products: Safe disposal of pharmaceutical waste, Compliance with regulations
+Location: Madrid, Spain
+Volume: 36000 metric tons of medical waste
+Materials: Expired drugs, Unused medications, Chemotherapy waste
+Processes: Segregation → Incineration → Chemical treatment → Secure landfill
+
+Company 187
+Name: E-Waste Recycling Center
+Industry: Electronic Waste Recycling
+Products: Recycled plastics, Metals, Glass
+Location: Dublin, Ireland
+Volume: 50000 metric tons of electronic waste
+Materials: Computers, TVs, Printers, Mobile phones
+Processes: Collection → Sorting → Shredding → Separation
+
+Company 188
+Name: PaperRecycle Mill
+Industry: Paper Recycling
+Products: Recycled paper, Cardboard
+Location: Warsaw, Poland
+Volume: 80000 metric tons of paper waste
+Materials: Office paper, Newspapers, Magazines, Corrugated cardboard
+Processes: Pulping → De-inking → Papermaking
+
+Company 189
+Name: HazardousWaste Storage
+Industry: Hazardous Waste Storage
+Products: Secure storage of hazardous waste, Environmental protection
+Location: Stockholm, Sweden
+Volume: 15000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Paints, Oils
+Processes: Containment → Labeling → Monitoring → Long-term storage
+
+Company 190
+Name: WaterTreatment Plant
+Industry: Water Treatment
+Products: Potable water, Treated wastewater
+Location: Vienna, Austria
+Volume: 100000 cubic meters of water
+Materials: Raw water, Wastewater
+Processes: Coagulation → Sedimentation → Filtration → Disinfection
+
+Company 191
+Name: PlasticRecycle Facility
+Industry: Plastic Recycling
+Products: Plastic pellets, Recycled plastic products
+Location: Budapest, Hungary
+Volume: 40000 metric tons of plastic waste
+Materials: PET, HDPE, PP, PVC
+Processes: Sorting → Washing → Shredding → Melting → Pelletizing
+
+Company 192
+Name: HospitalInfectiousWaste
+Industry: Hospital
+Products: Safe disposal of infectious waste, Prevention of disease transmission
+Location: Lisbon, Portugal
+Volume: 41000 metric tons of medical waste
+Materials: Blood-soaked materials, Contaminated sharps, Cultures, Swabs
+Processes: Segregation → Autoclaving → Incineration → Secure landfill
+
+Company 193
+Name: SludgeDewatering
+Industry: Sludge Dewatering
+Products: Dewatered sludge cake, Reduced volume
+Location: Copenhagen, Denmark
+Volume: 20000 metric tons of sludge
+Materials: Wastewater treatment sludge, Industrial sludge
+Processes: Thickening → Conditioning → Mechanical dewatering
+
+Company 194
+Name: GreenBuilding Solutions
+Industry: Green Building Materials
+Products: Recycled content drywall, Sustainable flooring
+Location: Prague, Czech Republic
+Volume: 30000 metric tons of construction waste
+Materials: Gypsum board, Carpet, Wood scraps
+Processes: Recycling → Manufacturing
+
+Company 195
+Name: WasteToBiofuel
+Industry: Waste to Biofuel
+Products: Bioethanol, Biogas
+Location: Helsinki, Finland
+Volume: 25000 metric tons of organic waste
+Materials: Food waste, Agricultural residues, Municipal organic waste
+Processes: Fermentation → Anaerobic digestion
+
+Company 196
+Name: MineWaste Treatment
+Industry: Mining Waste Treatment
+Products: Treated mine waste, Reclaimed land
+Location: Amsterdam, Netherlands
+Volume: 90000 metric tons of mining waste
+Materials: Tailings, Waste rock, Acid mine drainage
+Processes: Neutralization → Sedimentation → Revegetation
+
+Company 197
+Name: UsedOil Recycling
+Industry: Used Oil Recycling
+Products: Re-refined oil, Fuel oil
+Location: Sofia, Bulgaria
+Volume: 12000 metric tons of used oil
+Materials: Used engine oil, Industrial lubricants
+Processes: Filtration → Distillation → Hydrotreating
+
+Company 198
+Name: BatteryRecycle Center
+Industry: Battery Recycling
+Products: Recovered metals, Plastics
+Location: Bucharest, Romania
+Volume: 9000 metric tons of battery waste
+Materials: Lithium-ion batteries, Lead-acid batteries, Ni-Cd batteries
+Processes: Disassembly → Shredding → Separation
+
+Company 199
+Name: WoodWaste Energy
+Industry: Wood Waste to Energy
+Products: Electricity, Heat
+Location: Zagreb, Croatia
+Volume: 50000 metric tons of wood waste
+Materials: Forest residues, Sawmill waste, Urban wood waste
+Processes: Combustion → Steam generation
+
+Company 200
+Name: MunicipalWaste Recycle
+Industry: Municipal Solid Waste Recycling
+Products: Recyclables, Compost
+Location: Ljubljana, Slovenia
+Volume: 120000 metric tons of municipal solid waste
+Materials: Paper, Plastic, Glass, Organics
+Processes: Sorting → Composting → Baling
+
+Company 201
+Name: HospitalMedicalWaste
+Industry: Hospital
+Products: Safe and compliant medical waste disposal, Reduced environmental impact
+Location: Luxembourg City, Luxembourg
+Volume: 34000 metric tons of medical waste
+Materials: General medical waste, Sharps, Pathological waste, Pharmaceutical waste
+Processes: Segregation → Autoclaving → Incineration → Landfill
+
+Company 202
+Name: E-Waste Precious
+Industry: Precious Metal Recovery from E-Waste
+Products: Gold, Silver, Copper
+Location: Athens, Greece
+Volume: 6000 metric tons of e-waste
+Materials: Circuit boards, Connectors, Wires
+Processes: Shredding → Chemical leaching → Electrolysis
+
+Company 203
+Name: PaperRecycle Solutions
+Industry: Paper Recycling
+Products: Recycled paper products, Pulp
+Location: Dublin, Ireland
+Volume: 70000 metric tons of paper waste
+Materials: Mixed paper, Cardboard, Newspapers
+Processes: Collection → Sorting → Pulping
+
+Company 204
+Name: HazardousWaste Treatment
+Industry: Hazardous Waste Treatment
+Products: Detoxified waste, Safe disposal
+Location: Oslo, Norway
+Volume: 11000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Heavy metals
+Processes: Chemical treatment → Solidification → Secure landfill
+
+Company 205
+Name: WaterReuse Systems
+Industry: Water Reuse
+Products: Reclaimed water for non-potable uses, Reduced water consumption
+Location: Berlin, Germany
+Volume: 80000 cubic meters of wastewater
+Materials: Municipal wastewater, Industrial wastewater
+Processes: Advanced treatment → Disinfection → Distribution
+
+Company 206
+Name: PlasticRecycle Innovate
+Industry: Plastic Recycling
+Products: Recycled plastic pellets, Innovative plastic products
+Location: Paris, France
+Volume: 35000 metric tons of plastic waste
+Materials: Mixed plastics, Packaging, Films
+Processes: Sorting → Washing → Shredding → Extrusion
+
+Company 207
+Name: SludgeManagement
+Industry: Sludge Management
+Products: Treated sludge, Biogas
+Location: London, UK
+Volume: 45000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Biosolids
+Processes: Digestion → Dewatering → Drying
+
+Company 208
+Name: GreenConstruction
+Industry: Green Construction
+Products: Sustainable building materials, Reduced construction waste
+Location: Rome, Italy
+Volume: 60000 metric tons of construction waste
+Materials: Recycled concrete, Wood, Metal
+Processes: Demolition → Sorting → Recycling
+
+Company 209
+Name: WasteToHydrogen
+Industry: Waste to Hydrogen
+Products: Green hydrogen, Syngas
+Location: Madrid, Spain
+Volume: 10000 metric tons of organic waste
+Materials: Biomass, Plastic waste, Sewage sludge
+Processes: Gasification → Syngas purification → Hydrogen production
+
+Company 210
+Name: HospitalWaste Disposal
+Industry: Hospital
+Products: Comprehensive medical waste disposal services, Regulatory compliance
+Location: Dublin, Ireland
+Volume: 43000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical
+Processes: Collection → Segregation → Treatment (autoclaving/incineration) → Disposal
+
+Company 211
+Name: AgriWaste Bioenergy
+Industry: Agricultural Waste Bioenergy
+Products: Biogas, Electricity
+Location: Warsaw, Poland
+Volume: 60000 metric tons of agricultural waste
+Materials: Animal manure, Crop residues, Food processing waste
+Processes: Anaerobic digestion → Power generation
+
+Company 212
+Name: UrbanWaste Solutions
+Industry: Urban Waste Management
+Products: Recyclables, Compost, Energy from waste
+Location: Stockholm, Sweden
+Volume: 95000 metric tons of urban waste
+Materials: Household waste, Commercial waste, Green waste
+Processes: Sorting → Composting → Incineration
+
+Company 213
+Name: TextileRecycle Innovate
+Industry: Textile Recycling
+Products: Recycled fibers for new textiles, Upcycled textile products
+Location: Vienna, Austria
+Volume: 12000 metric tons of textile waste
+Materials: Post-consumer textiles, Industrial textile waste
+Processes: Sorting → Shredding → Fiber regeneration → Yarn spinning
+
+Company 214
+Name: WasteHeat Recovery Systems
+Industry: Waste Heat Recovery
+Products: Recovered heat for industrial processes, Reduced energy consumption
+Location: Budapest, Hungary
+Volume: 40000 MWh of recovered heat
+Materials: Industrial exhaust gases, Hot liquids
+Processes: Heat exchange → Energy transfer
+
+Company 215
+Name: BioFuel Production
+Industry: Biofuel Production
+Products: Biodiesel, Bioethanol
+Location: Lisbon, Portugal
+Volume: 30000 metric tons of biomass
+Materials: Algae, Corn, Sugarcane, Waste oils
+Processes: Fermentation → Transesterification
+
+Company 216
+Name: MineWater Management
+Industry: Mine Water Management
+Products: Treated mine water for discharge, Environmental compliance
+Location: Copenhagen, Denmark
+Volume: 70000 cubic meters of mine water
+Materials: Acid mine drainage, Heavy metals, Suspended solids
+Processes: Neutralization → Flocculation → Sedimentation
+
+Company 217
+Name: HospitalWaste Treatment
+Industry: Hospital
+Products: Advanced treatment of medical waste, Safe and compliant disposal
+Location: Prague, Czech Republic
+Volume: 38000 metric tons of medical waste
+Materials: Infectious waste, Pathological waste, Sharps, Pharmaceutical waste
+Processes: Autoclaving → Incineration → Chemical treatment → Secure landfill
+
+Company 218
+Name: E-Waste Dismantling Center
+Industry: Electronic Waste Dismantling
+Products: Sorted components for reuse, Raw materials for recycling
+Location: Helsinki, Finland
+Volume: 45000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs
+Processes: Manual dismantling → Component separation → Material sorting
+
+Company 219
+Name: OrganicCompost Solutions
+Industry: Organic Composting
+Products: High-quality organic compost, Soil improver
+Location: Amsterdam, Netherlands
+Volume: 70000 metric tons of organic waste
+Materials: Food scraps, Garden waste, Agricultural residues
+Processes: Aerobic composting → Screening → Quality control
+
+Company 220
+Name: IndustrialWater Treatment
+Industry: Industrial Water Treatment
+Products: Treated industrial wastewater, Water for reuse
+Location: Sofia, Bulgaria
+Volume: 100000 cubic meters of industrial wastewater
+Materials: Chemical waste, Heavy metals, Suspended solids
+Processes: Physical-chemical treatment → Biological treatment → Membrane filtration
+
+Company 221
+Name: MedicalWaste Disposal
+Industry: Hospital
+Products: Secure and environmentally responsible medical waste disposal
+Location: Bucharest, Romania
+Volume: 36000 metric tons of medical waste
+Materials: Infectious waste, Pathological waste, Sharps, Pharmaceutical waste
+Processes: Collection → Segregation → Treatment (autoclaving/incineration) → Landfill
+
+Company 222
+Name: ConstructionRecycle Solutions
+Industry: Construction Waste Recycling
+Products: Recycled aggregates, Wood chips, Metal scrap
+Location: Zagreb, Croatia
+Volume: 140000 metric tons of construction waste
+Materials: Concrete, Brick, Wood, Steel
+Processes: Sorting → Crushing → Shredding → Magnetic separation
+
+Company 223
+Name: BioPlastics Production
+Industry: Bioplastics Production
+Products: Biodegradable packaging, Compostable products
+Location: Ljubljana, Slovenia
+Volume: 18000 metric tons of bioplastic waste
+Materials: PLA, PHA, Starch-based polymers
+Processes: Fermentation → Polymerization → Extrusion
+
+Company 224
+Name: WasteOil Recovery
+Industry: Waste Oil Recovery
+Products: Re-refined base oils, Fuel oil
+Location: Luxembourg City, Luxembourg
+Volume: 15000 metric tons of waste oil
+Materials: Used engine oil, Industrial lubricants, Hydraulic fluids
+Processes: Dehydration → Filtration → Distillation
+
+Company 225
+Name: BatteryRecycle Tech
+Industry: Battery Recycling
+Products: Recovered lithium, Cobalt, Nickel, Manganese
+Location: Athens, Greece
+Volume: 11000 metric tons of battery waste
+Materials: Li-ion batteries, NiMH batteries, Lead-acid batteries
+Processes: Disassembly → Mechanical separation → Hydrometallurgy
+
+Company 226
+Name: WoodWaste Reuse
+Industry: Wood Waste Reuse
+Products: Recycled wood products, Biomass fuel
+Location: Dublin, Ireland
+Volume: 55000 metric tons of wood waste
+Materials: Pallets, Crates, Construction wood waste
+Processes: Sorting → Chipping → Grinding → Pelletizing
+
+Company 227
+Name: MunicipalWaste Energy
+Industry: Municipal Solid Waste to Energy
+Products: Electricity, Heat
+Location: Oslo, Norway
+Volume: 105000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste
+Processes: Incineration → Steam generation → Power generation
+
+Company 228
+Name: HospitalInfectiousWaste Disposal
+Industry: Hospital
+Products: Safe and compliant disposal of infectious medical waste
+Location: Berlin, Germany
+Volume: 39000 metric tons of medical waste
+Materials: Contaminated dressings, Swabs, Gloves, Masks, Blood-soaked materials
+Processes: Segregation → Autoclaving → Incineration → Secure landfill
+
+Company 229
+Name: E-Waste Recycling Solutions
+Industry: Electronic Waste Recycling
+Products: Recycled materials for new electronics, Reduced environmental impact
+Location: Paris, France
+Volume: 55000 metric tons of electronic waste
+Materials: Computers, TVs, Mobile phones, Appliances
+Processes: Collection → Sorting → Shredding → Separation → Refining
+
+Company 230
+Name: PaperRecycle Innovate
+Industry: Paper Recycling
+Products: Innovative recycled paper products, Sustainable packaging
+Location: London, UK
+Volume: 75000 metric tons of paper waste
+Materials: Mixed paper, Cardboard, Office paper
+Processes: Pulping → De-inking → Papermaking → Product manufacturing
+
+Company 231
+Name: HazardousWaste Management Solutions
+Industry: Hazardous Waste Management
+Products: Comprehensive hazardous waste management, Environmental protection
+Location: Rome, Italy
+Volume: 13000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Paints, Oils, Medical hazardous waste
+Processes: Collection → Segregation → Treatment → Disposal
+
+Company 232
+Name: WaterTreatment Innovations
+Industry: Water Treatment
+Products: Advanced water purification, Wastewater treatment
+Location: Madrid, Spain
+Volume: 110000 cubic meters of water
+Materials: Raw water, Wastewater
+Processes: Filtration → Disinfection → Advanced oxidation → Membrane separation
+
+Company 233
+Name: PlasticRecycle Systems
+Industry: Plastic Recycling
+Products: Recycled plastic pellets, Sustainable plastic products
+Location: Dublin, Ireland
+Volume: 42000 metric tons of plastic waste
+Materials: PET, HDPE, PP, PVC, Mixed plastics
+Processes: Sorting → Washing → Shredding → Melting → Pelletizing → Product manufacturing
+
+Company 234
+Name: HospitalBiohazard Waste
+Industry: Hospital
+Products: Safe and compliant disposal of biohazardous medical waste
+Location: Warsaw, Poland
+Volume: 40000 metric tons of medical waste
+Materials: Pathological waste, Blood, Body fluids, Microbiological waste
+Processes: Segregation → Autoclaving → Incineration → Secure landfill
+
+Company 235
+Name: SludgeDrying
+Industry: Sludge Drying
+Products: Dried sludge, Reduced volume, Energy recovery
+Location: Stockholm, Sweden
+Volume: 25000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Biosolids
+Processes: Dewatering → Thermal drying → Energy recovery
+
+Company 236
+Name: GreenBuilding Solutions
+Industry: Green Building Materials
+Products: Recycled content insulation, Eco-friendly flooring
+Location: Vienna, Austria
+Volume: 35000 metric tons of construction waste
+Materials: Recycled glass, Plastic, Textile fibers
+Processes: Recycling → Manufacturing
+
+Company 237
+Name: WasteToEnergy Solutions
+Industry: Waste to Energy
+Products: Electricity, Heat, Reduced landfill waste
+Location: Budapest, Hungary
+Volume: 130000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste
+Processes: Incineration → Steam generation → Power generation
+
+Company 238
+Name: BioDiesel Production
+Industry: Biodiesel Production
+Products: Biodiesel, Glycerin
+Location: Lisbon, Portugal
+Volume: 20000 metric tons of used cooking oil
+Materials: Used cooking oil, Animal fats, Vegetable oils
+Processes: Transesterification → Purification → Quality control
+
+Company 239
+Name: MineWaste Reclamation
+Industry: Mine Waste Reclamation
+Products: Reclaimed land, Environmental restoration
+Location: Copenhagen, Denmark
+Volume: 100000 metric tons of mine waste
+Materials: Tailings, Waste rock, Acid mine drainage
+Processes: Neutralization → Revegetation → Monitoring
+
+Company 240
+Name: HospitalWaste Management Services
+Industry: Hospital
+Products: Comprehensive medical waste management, Regulatory compliance
+Location: Prague, Czech Republic
+Volume: 42000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic
+Processes: Collection → Segregation → Treatment (autoclaving/incineration/chemical) → Disposal
+
+Company 241
+Name: E-Waste Component Recovery
+Industry: Electronic Waste Component Recovery
+Products: Reusable electronic components, Raw materials
+Location: Helsinki, Finland
+Volume: 8000 metric tons of e-waste
+Materials: Circuit boards, Processors, Memory chips, Displays
+Processes: Manual dismantling → Component testing → Material sorting
+
+Company 242
+Name: OrganicWaste Recycling
+Industry: Organic Waste Recycling
+Products: Organic compost, Biogas
+Location: Amsterdam, Netherlands
+Volume: 80000 metric tons of organic waste
+Materials: Food waste, Garden waste, Agricultural residues
+Processes: Composting → Anaerobic digestion
+
+Company 243
+Name: IndustrialWater Reuse Systems
+Industry: Industrial Water Reuse
+Products: Reused process water, Minimized water discharge
+Location: Sofia, Bulgaria
+Volume: 120000 cubic meters of industrial process water
+Materials: Cooling water, Boiler feedwater, Rinse water, Chemical effluents
+Processes: Filtration → Reverse osmosis → Disinfection → Recycling
+
+Company 244
+Name: MedicalWaste Incineration Services
+Industry: Hospital
+Products: Safe and environmentally sound medical waste incineration
+Location: Bucharest, Romania
+Volume: 35000 metric tons of medical waste
+Materials: Pathological waste, Sharps, Pharmaceutical waste, Infectious waste
+Processes: High-temperature incineration → Flue gas treatment → Ash disposal → Regulatory reporting
+
+Company 245
+Name: DemolitionWaste Management
+Industry: Demolition Waste Management
+Products: Recycled construction materials, Reduced landfill waste
+Location: Zagreb, Croatia
+Volume: 150000 metric tons of demolition waste
+Materials: Concrete, Brick, Wood, Metal, Asphalt
+Processes: Demolition → Sorting → Crushing → Shredding → Recycling
+
+Company 246
+Name: BioFuel from Algae
+Industry: Biofuel from Algae
+Products: Biodiesel, Bioethanol
+Location: Ljubljana, Slovenia
+Volume: 10000 metric tons of algae biomass
+Materials: Algae
+Processes: Cultivation → Harvesting → Oil extraction → Transesterification
+
+Company 247
+Name: WasteTyre Recycling Solutions
+Industry: Waste Tyre Recycling
+Products: Rubber granules, Tyre-derived fuel, Civil engineering materials
+Location: Luxembourg City, Luxembourg
+Volume: 30000 metric tons of waste tyres
+Materials: Car tyres, Truck tyres, Industrial tyres
+Processes: Shredding → Granulation → Pyrolysis → Product manufacturing
+
+Company 248
+Name: GlassRecycle Solutions
+Industry: Glass Recycling
+Products: Glass cullet for new products, Reduced landfill waste
+Location: Athens, Greece
+Volume: 60000 metric tons of glass waste
+Materials: Glass bottles, Jars, Window panes, Flat glass
+Processes: Collection → Sorting → Crushing → Melting → Molding
+
+Company 249
+Name: ChemicalWaste Treatment Services
+Industry: Chemical Waste Treatment
+Products: Safe treatment and disposal of chemical waste, Regulatory compliance
+Location: Dublin, Ireland
+Volume: 15000 metric tons of chemical waste
+Materials: Acids, Bases, Solvents, Heavy metals, Lab chemicals
+Processes: Neutralization → Precipitation → Filtration → Incineration/Secure landfill
+
+Company 250
+Name: HospitalSharps Management
+Industry: Hospital
+Products: Secure collection and disposal of sharps, Prevention of injuries
+Location: Oslo, Norway
+Volume: 30000 metric tons of medical waste
+Materials: Needles, Syringes, Scalpels, Lancets, Broken glass
+Processes: Collection in approved containers → Incineration → Autoclaving → Secure landfill
+
+Company 251
+Name: MineWater Remediation
+Industry: Mine Water Remediation
+Products: Clean mine water, Restored aquatic ecosystems
+Location: Berlin, Germany
+Volume: 75000 cubic meters of mine water
+Materials: Acid mine drainage, Heavy metals, Sulfates
+Processes: Passive treatment systems → Active treatment systems → Monitoring
+
+Company 252
+Name: UsedOil Management
+Industry: Used Oil Management
+Products: Re-refined base oils, Fuel oil, Reduced environmental pollution
+Location: Paris, France
+Volume: 18000 metric tons of used oil
+Materials: Used engine oil, Industrial lubricants, Transformer oils
+Processes: Collection → Dehydration → Filtration → Distillation → Re-refining
+
+Company 253
+Name: BatteryRecycle Innovations
+Industry: Battery Recycling
+Products: Recovered critical materials for new batteries, Sustainable battery production
+Location: London, UK
+Volume: 10000 metric tons of battery waste
+Materials: Li-ion batteries, EV batteries, Consumer batteries
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy → Material purification
+
+Company 254
+Name: WoodWaste Biochar
+Industry: Wood Waste to Biochar
+Products: Biochar, Soil amendment, Carbon sequestration
+Location: Rome, Italy
+Volume: 20000 metric tons of wood waste
+Materials: Forest residues, Agricultural waste, Sawmill waste
+Processes: Pyrolysis → Grinding → Packaging
+
+Company 255
+Name: WasteToEnergy Plants
+Industry: Waste-to-Energy
+Products: Electricity, Heat, Reduced landfill volume
+Location: Madrid, Spain
+Volume: 140000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Industrial non-hazardous waste
+Processes: Incineration → Steam generation → Turbine power → Flue gas treatment
+
+Company 256
+Name: HospitalPharmaceutical Waste Management
+Industry: Hospital
+Products: Safe and compliant disposal of pharmaceutical waste, Environmental protection
+Location: Dublin, Ireland
+Volume: 37000 metric tons of medical waste
+Materials: Expired medications, Unused drugs, Chemotherapy waste, Controlled substances
+Processes: Segregation → Incineration → Chemical treatment → Secure landfill → Regulatory reporting
+
+Company 257
+Name: E-Waste Recycling Facilities
+Industry: Electronic Waste Recycling
+Products: Recycled raw materials, Reduced hazardous waste
+Location: Warsaw, Poland
+Volume: 60000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment
+Processes: Collection → Sorting → Shredding → Separation → Refining → Material recovery
+
+Company 258
+Name: PaperRecycle Solutions
+Industry: Paper Recycling
+Products: Recycled paper, Cardboard, Tissue products
+Location: Stockholm, Sweden
+Volume: 85000 metric tons of paper waste
+Materials: Office paper, Newspapers, Magazines, Corrugated cardboard, Mixed paper
+Processes: Pulping → De-inking → Papermaking → Converting
+
+Company 259
+Name: HazardousWaste Disposal Services
+Industry: Hazardous Waste Disposal
+Products: Secure and compliant disposal of hazardous waste, Risk reduction
+Location: Vienna, Austria
+Volume: 16000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Paints, Oils, Medical hazardous waste, Lab waste
+Processes: Collection → Transportation → Treatment → Secure landfill/Incineration
+
+Company 260
+Name: WaterTreatment Services
+Industry: Water Treatment
+Products: Potable water, Industrial process water, Wastewater treatment
+Location: Budapest, Hungary
+Volume: 120000 cubic meters of water
+Materials: Raw water, Wastewater, Industrial water
+Processes: Coagulation → Flocculation → Sedimentation → Filtration → Disinfection → Advanced treatment
+
+Company 261
+Name: PlasticRecycle Innovations
+Industry: Plastic Recycling
+Products: Innovative recycled plastic products, Circular economy solutions
+Location: Lisbon, Portugal
+Volume: 48000 metric tons of plastic waste
+Materials: PET, HDPE, PP, LDPE, Mixed plastics, Ocean plastics
+Processes: Sorting → Washing → Shredding → Melting → Pelletizing → Product design/manufacturing
+
+Company 262
+Name: HospitalInfectiousWaste Management
+Industry: Hospital
+Products: Safe and compliant management of infectious medical waste, Infection control
+Location: Copenhagen, Denmark
+Volume: 40000 metric tons of medical waste
+Materials: Blood-soaked materials, Contaminated sharps, Cultures, Swabs, Isolation waste
+Processes: Segregation → Autoclaving → Incineration → Secure landfill → Regulatory compliance
+
+Company 263
+Name: SludgeTreatment Solutions
+Industry: Sludge Treatment
+Products: Treated sludge, Biogas, Soil amendments
+Location: Prague, Czech Republic
+Volume: 30000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Industrial sludge, Biosolids
+Processes: Anaerobic digestion → Dewatering → Drying → Land application/Disposal
+
+Company 264
+Name: GreenBuilding Development
+Industry: Green Building Development
+Products: Sustainable buildings, Reduced environmental footprint
+Location: Helsinki, Finland
+Volume: 40000 metric tons of construction waste
+Materials: Recycled concrete, Wood, Steel, Glass, Insulation
+Processes: Sustainable design → Material selection → Waste reduction → Recycling
+
+Company 265
+Name: WasteToBiofuel Technologies
+Industry: Waste to Biofuel
+Products: Bioethanol, Biogas, Bio-oil
+Location: Amsterdam, Netherlands
+Volume: 30000 metric tons of organic waste
+Materials: Food waste, Agricultural residues, Municipal organic waste, Industrial organic waste
+Processes: Fermentation → Anaerobic digestion → Pyrolysis → Refining
+
+Company 266
+Name: MineWaste Remediation Services
+Industry: Mine Waste Remediation
+Products: Clean mine sites, Restored ecosystems, Reduced environmental liability
+Location: Sofia, Bulgaria
+Volume: 110000 metric tons of mine waste
+Materials: Tailings, Waste rock, Acid mine drainage, Contaminated soil
+Processes: Neutralization → Sedimentation → Revegetation → Long-term monitoring
+
+Company 267
+Name: UsedOil Recycling Services
+Industry: Used Oil Recycling
+Products: Re-refined base oils, Fuel oil, Environmentally responsible disposal
+Location: Bucharest, Romania
+Volume: 20000 metric tons of used oil
+Materials: Used engine oil, Industrial lubricants, Hydraulic fluids, Transmission fluids
+Processes: Collection → Transportation → Dehydration → Filtration → Distillation → Re-refining
+
+Company 268
+Name: BatteryRecycle Solutions
+Industry: Battery Recycling
+Products: Recovered valuable materials, Reduced hazardous waste, Sustainable battery life cycle
+Location: Zagreb, Croatia
+Volume: 13000 metric tons of battery waste
+Materials: Li-ion batteries, EV batteries, Consumer batteries, Industrial batteries, Lead-acid batteries
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy → Material purification → Product manufacturing
+
+Company 269
+Name: WoodWaste Management
+Industry: Wood Waste Management
+Products: Recycled wood products, Biomass fuel, Reduced landfill waste
+Location: Ljubljana, Slovenia
+Volume: 60000 metric tons of wood waste
+Materials: Pallets, Crates, Construction wood waste, Forest residues, Sawmill waste
+Processes: Collection → Sorting → Chipping → Grinding → Pelletizing → Product manufacturing
+
+Company 270
+Name: MunicipalWaste Management
+Industry: Municipal Solid Waste Management
+Products: Recyclables, Compost, Energy from waste, Reduced landfill volume
+Location: Luxembourg City, Luxembourg
+Volume: 130000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill
+
+Company 271
+Name: HospitalMedicalWaste Management
+Industry: Hospital
+Products: Comprehensive medical waste management, Compliance with all regulations
+Location: Athens, Greece
+Volume: 38000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive
+Processes: Segregation → Collection → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Disposal → Documentation
+
+Company 272
+Name: E-Waste Precious Metal Recovery
+Industry: Precious Metal Recovery from E-Waste
+Products: Gold, Silver, Platinum, Palladium, Copper, Aluminum
+Location: Dublin, Ireland
+Volume: 7000 metric tons of e-waste
+Materials: Circuit boards, Connectors, Processors, Wires, Cables
+Processes: Shredding → Chemical leaching → Electrorefining → Material purification
+
+Company 273
+Name: PaperRecycle Solutions
+Industry: Paper Recycling
+Products: Recycled paper, Cardboard, Pulp, Tissue products, Packaging materials
+Location: Oslo, Norway
+Volume: 80000 metric tons of paper waste
+Materials: Office paper, Newspapers, Magazines, Corrugated cardboard, Mixed paper, Books
+Processes: Collection → Sorting → Pulping → De-inking → Papermaking → Converting
+
+Company 274
+Name: HazardousWaste Treatment & Disposal
+Industry: Hazardous Waste Treatment & Disposal
+Products: Detoxified waste, Safe and compliant disposal, Environmental protection
+Location: Berlin, Germany
+Volume: 18000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Paints, Oils, Medical hazardous waste, Lab waste, Contaminated soil
+Processes: Chemical treatment → Physical treatment → Biological treatment → Solidification → Incineration → Secure landfill
+
+Company 275
+Name: WaterReuse Technologies
+Industry: Water Reuse
+Products: Reclaimed water for various uses, Reduced freshwater demand, Sustainable water management
+Location: Paris, France
+Volume: 90000 cubic meters of wastewater
+Materials: Municipal wastewater, Industrial wastewater, Stormwater
+Processes: Advanced treatment → Disinfection → Distribution → Monitoring
+
+Company 276
+Name: PlasticRecycle Systems
+Industry: Plastic Recycling
+Products: Recycled plastic pellets, Sustainable plastic products, Circular economy solutions
+Location: London, UK
+Volume: 55000 metric tons of plastic waste
+Materials: PET, HDPE, PP, LDPE, PVC, Mixed plastics, Ocean plastics, Agricultural plastics
+Processes: Collection → Sorting → Washing → Shredding → Melting → Pelletizing → Product design/manufacturing → Quality control
+
+Company 277
+Name: SludgeEnergy Recovery
+Industry: Sludge Energy Recovery
+Products: Biogas, Electricity, Heat, Reduced sludge volume
+Location: Rome, Italy
+Volume: 50000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Industrial sludge, Biosolids
+Processes: Anaerobic digestion → Combined heat and power → Sludge dewatering → Drying
+
+Company 278
+Name: GreenConstruction Materials
+Industry: Green Construction Materials
+Products: Sustainable building materials, Reduced embodied carbon, Recycled content
+Location: Madrid, Spain
+Volume: 70000 metric tons of construction waste
+Materials: Recycled concrete, Wood, Steel, Glass, Insulation, Drywall, Asphalt
+Processes: Recycling → Manufacturing → Certification
+
+Company 279
+Name: WasteToHydrogen Solutions
+Industry: Waste to Hydrogen
+Products: Green hydrogen, Syngas, Reduced waste to landfill
+Location: Dublin, Ireland
+Volume: 12000 metric tons of organic waste
+Materials: Biomass, Plastic waste, Sewage sludge, Agricultural waste
+Processes: Gasification → Syngas purification → Hydrogen production → Carbon capture
+
+Company 280
+Name: HospitalWaste Disposal & Recycling
+Industry: Hospital
+Products: Comprehensive medical waste disposal and recycling services, Environmental responsibility
+Location: Warsaw, Poland
+Volume: 45000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, and recyclable medical plastics
+Processes: Segregation → Collection → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Recycling → Disposal → Documentation → Auditing
+
+Company 281
+Name: AgriWaste Bioenergy Solutions
+Industry: Agricultural Waste Bioenergy
+Products: Biogas, Electricity, Heat, Organic fertilizer
+Location: Stockholm, Sweden
+Volume: 70000 metric tons of agricultural waste
+Materials: Animal manure, Crop residues, Food processing waste, Agricultural by-products
+Processes: Anaerobic digestion → Power generation → Digestate processing
+
+Company 282
+Name: UrbanWaste Management Solutions
+Industry: Urban Waste Management
+Products: Recyclables, Compost, Energy from waste, Sustainable urban environment
+Location: Vienna, Austria
+Volume: 100000 metric tons of urban waste
+Materials: Household waste, Commercial waste, Green waste, Construction and demolition waste, Street sweepings
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education
+
+Company 283
+Name: TextileRecycle Technologies
+Industry: Textile Recycling
+Products: Recycled fibers, Sustainable fabrics, Upcycled textile products, Reduced textile waste
+Location: Budapest, Hungary
+Volume: 15000 metric tons of textile waste
+Materials: Post-consumer textiles, Industrial textile waste, Fabric scraps, Used clothing
+Processes: Collection → Sorting → Shredding → Fiber regeneration → Yarn spinning → Fabric weaving → Product manufacturing
+
+Company 284
+Name: WasteHeat Recovery Solutions
+Industry: Waste Heat Recovery
+Products: Recovered heat for industrial processes, Electricity generation, Reduced energy costs
+Location: Lisbon, Portugal
+Volume: 50000 MWh of recovered heat
+Materials: Industrial exhaust gases, Hot liquids, Steam, Flue gases
+Processes: Heat exchange → Power generation → Process integration
+
+Company 285
+Name: BioFuel Production Technologies
+Industry: Biofuel Production
+Products: Biodiesel, Bioethanol, Biogas, Sustainable energy sources
+Location: Copenhagen, Denmark
+Volume: 40000 metric tons of biomass
+Materials: Algae, Corn, Sugarcane, Waste oils, Agricultural residues, Food waste
+Processes: Fermentation → Transesterification → Distillation → Gasification → Purification
+
+Company 286
+Name: MineWater Treatment & Remediation
+Industry: Mine Water Treatment & Remediation
+Products: Clean mine water, Restored aquatic ecosystems, Reduced environmental impact
+Location: Prague, Czech Republic
+Volume: 80000 cubic meters of mine water
+Materials: Acid mine drainage, Heavy metals, Sulfates, Suspended solids
+Processes: Neutralization → Sedimentation → Filtration → Ion exchange → Biological treatment → Monitoring
+
+Company 287
+Name: HospitalWaste Treatment & Disposal
+Industry: Hospital
+Products: Advanced medical waste treatment and disposal, Comprehensive compliance
+Location: Helsinki, Finland
+Volume: 40000 metric tons of medical waste
+Materials: Infectious waste, Pathological waste, Sharps, Pharmaceutical waste, Cytotoxic waste, Radioactive waste
+Processes: Segregation → Collection → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Disposal → Documentation → Auditing → Training
+
+Company 288
+Name: E-Waste Dismantling & Recycling
+Industry: Electronic Waste Dismantling & Recycling
+Products: Sorted components for reuse, Recycled raw materials, Reduced hazardous waste
+Location: Amsterdam, Netherlands
+Volume: 65000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards
+Processes: Manual dismantling → Component testing → Material sorting → Shredding → Separation → Refining → Material recovery
+
+Company 289
+Name: OrganicCompost & Bioenergy
+Industry: Organic Composting & Bioenergy
+Products: High-quality organic compost, Biogas, Electricity, Heat
+Location: Sofia, Bulgaria
+Volume: 90000 metric tons of organic waste
+Materials: Food scraps, Garden waste, Agricultural residues, Municipal organic waste
+Processes: Aerobic composting → Anaerobic digestion → Combined heat and power → Compost marketing
+
+Company 290
+Name: IndustrialWater Treatment & Reuse
+Industry: Industrial Water Treatment & Reuse
+Products: Treated industrial wastewater, Reused process water, Minimized water discharge
+Location: Bucharest, Romania
+Volume: 130000 cubic meters of industrial wastewater
+Materials: Chemical waste, Heavy metals, Suspended solids, Organic pollutants, Cooling water, Boiler feedwater
+Processes: Physical-chemical treatment → Biological treatment → Membrane filtration → Advanced oxidation → Recycling → Monitoring
+
+Company 291
+Name: MedicalWaste Disposal & Management
+Industry: Hospital
+Products: Secure and environmentally responsible medical waste disposal and management
+Location: Zagreb, Croatia
+Volume: 39000 metric tons of medical waste
+Materials: Infectious waste, Pathological waste, Sharps, Pharmaceutical waste, Cytotoxic waste, Radioactive waste, General medical waste
+Processes: Collection → Segregation → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Disposal → Documentation → Auditing → Training → Waste minimization
+
+Company 292
+Name: ConstructionRecycle & Reuse
+Industry: Construction Waste Recycling & Reuse
+Products: Recycled aggregates, Wood chips, Metal scrap, Reused building materials
+Location: Ljubljana, Slovenia
+Volume: 160000 metric tons of construction waste
+Materials: Concrete, Brick, Wood, Steel, Asphalt, Plasterboard, Roofing materials
+Processes: Demolition → Sorting → Crushing → Shredding → Magnetic separation → Reuse → Recycling
+
+Company 293
+Name: BioPlastics Research & Production
+Industry: Bioplastics Research & Production
+Products: Biodegradable packaging, Compostable products, Sustainable plastic alternatives
+Location: Luxembourg City, Luxembourg
+Volume: 20000 metric tons of bioplastic waste
+Materials: PLA, PHA, Starch-based polymers, Cellulose-based polymers, Lignin-based polymers
+Processes: Research & Development → Fermentation → Polymerization → Extrusion → Molding → Product testing
+
+Company 294
+Name: WasteOil Re-refining & Recycling
+Industry: Waste Oil Re-refining & Recycling
+Products: Re-refined base oils, Lubricants, Fuel oil, Reduced environmental pollution
+Location: Athens, Greece
+Volume: 22000 metric tons of waste oil
+Materials: Used engine oil, Industrial lubricants, Hydraulic fluids, Transmission fluids, Transformer oils
+Processes: Collection → Transportation → Dehydration → Filtration → Distillation → Hydrotreating → Blending → Quality control
+
+Company 295
+Name: BatteryRecycle & Material Recovery
+Industry: Battery Recycling & Material Recovery
+Products: Recovered critical materials for new batteries, Reduced hazardous waste, Sustainable battery life cycle
+Location: Dublin, Ireland
+Volume: 15000 metric tons of battery waste
+Materials: Li-ion batteries, EV batteries, Consumer batteries, Industrial batteries, Lead-acid batteries, NiMH batteries, Ni-Cd batteries
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy → Material purification → Product manufacturing → Research & Development
+
+Company 296
+Name: WoodWaste Energy & Products
+Industry: Wood Waste Energy & Products
+Products: Electricity, Heat, Biofuel, Recycled wood products, Reduced landfill waste
+Location: Oslo, Norway
+Volume: 70000 metric tons of wood waste
+Materials: Forest residues, Sawmill waste, Urban wood waste, Pallets, Crates, Construction wood waste
+Processes: Collection → Sorting → Chipping → Grinding → Pelletizing → Combustion → Steam generation → Power generation → Product manufacturing
+
+Company 297
+Name: MunicipalWaste Resource Recovery
+Industry: Municipal Solid Waste Resource Recovery
+Products: Recyclables, Compost, Energy from waste, Reduced landfill volume, Sustainable resource management
+Location: Berlin, Germany
+Volume: 140000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Street sweepings, Bulky waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy
+
+Company 298
+Name: HospitalWaste Solutions
+Industry: Hospital
+Products: Comprehensive medical waste solutions, Environmental compliance, Safety
+Location: Paris, France
+Volume: 42000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics
+Processes: Segregation → Collection → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Recycling → Disposal → Documentation → Auditing → Training → Waste minimization → Consulting
+
+Company 299
+Name: E-Waste Circular Economy
+Industry: Electronic Waste Circular Economy
+Products: Recycled materials for new electronics, Reusable components, Sustainable electronics production
+Location: London, UK
+Volume: 70000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity
+
+Company 300
+Name: PaperRecycle & Sustainable Packaging
+Industry: Paper Recycling & Sustainable Packaging
+Products: Recycled paper, Cardboard, Pulp, Tissue products, Sustainable packaging materials, Reduced deforestation
+Location: Rome, Italy
+Volume: 90000 metric tons of paper waste
+Materials: Office paper, Newspapers, Magazines, Corrugated cardboard, Mixed paper, Books, Packaging waste
+Processes: Collection → Sorting → Pulping → De-inking → Papermaking → Converting → Product design for sustainability → Marketing
+
+Company 301
+Name: HazardousWaste Environmental Services
+Industry: Hazardous Waste Environmental Services
+Products: Safe treatment and disposal of hazardous waste, Environmental remediation, Risk management
+Location: Madrid, Spain
+Volume: 20000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Paints, Oils, Medical hazardous waste, Lab waste, Contaminated soil, Asbestos, PCBs
+Processes: Chemical treatment → Physical treatment → Biological treatment → Solidification → Incineration → Secure landfill → Site remediation → Emergency response
+
+Company 302
+Name: WaterTreatment & Resource Recovery
+Industry: Water Treatment & Resource Recovery
+Products: Potable water, Industrial process water, Reclaimed water, Nutrient recovery, Energy recovery
+Location: Dublin, Ireland
+Volume: 130000 cubic meters of water
+Materials: Raw water, Wastewater, Industrial water, Sludge
+Processes: Coagulation → Flocculation → Sedimentation → Filtration → Disinfection → Advanced treatment → Nutrient removal → Energy generation → Resource recovery
+
+Company 303
+Name: PlasticRecycle & Circular Solutions
+Industry: Plastic Recycling & Circular Solutions
+Products: Recycled plastic pellets, Sustainable plastic products, Circular economy solutions, Reduced plastic pollution
+Location: Warsaw, Poland
+Volume: 60000 metric tons of plastic waste
+Materials: PET, HDPE, PP, LDPE, PVC, Mixed plastics, Ocean plastics, Agricultural plastics, Industrial plastics
+Processes: Collection → Sorting → Washing → Shredding → Melting → Pelletizing → Product design/manufacturing → Quality control → Market development
+
+Company 304
+Name: HospitalWaste Management & Consulting
+Industry: Hospital
+Products: Comprehensive medical waste management, Consulting services, Training, Compliance solutions
+Location: Stockholm, Sweden
+Volume: 48000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics
+Processes: Segregation → Collection → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Recycling → Disposal → Documentation → Auditing → Training → Waste minimization → Consulting → Policy development
+
+Company 305
+Name: SludgeResource Recovery
+Industry: Sludge Resource Recovery
+Products: Biogas, Electricity, Heat, Soil amendments, Phosphorus recovery
+Location: Vienna, Austria
+Volume: 55000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Industrial sludge, Biosolids
+Processes: Anaerobic digestion → Combined heat and power → Sludge dewatering → Drying → Nutrient recovery → Land application/Disposal
+
+Company 306
+Name: GreenConstruction & Sustainable Development
+Industry: Green Construction & Sustainable Development
+Products: Sustainable buildings, Reduced environmental footprint, Resource efficiency, Circular economy in construction
+Location: Budapest, Hungary
+Volume: 80000 metric tons of construction waste
+Materials: Recycled concrete, Wood, Steel, Glass, Insulation, Drywall, Asphalt, Reused building materials
+Processes: Sustainable design → Material selection → Waste reduction → Recycling → Reuse → Certification → Life cycle assessment
+
+Company 307
+Name: WasteToEnergy & Resource Recovery
+Industry: Waste to Energy & Resource Recovery
+Products: Electricity, Heat, Recyclables, Reduced landfill volume, Sustainable resource management
+Location: Lisbon, Portugal
+Volume: 150000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Industrial non-hazardous waste, Bulky waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery
+
+Company 308
+Name: BioFuel & Bioenergy Solutions
+Industry: Biofuel & Bioenergy Solutions
+Products: Biodiesel, Bioethanol, Biogas, Sustainable energy sources, Reduced greenhouse gas emissions
+Location: Copenhagen, Denmark
+Volume: 50000 metric tons of biomass
+Materials: Algae, Corn, Sugarcane, Waste oils, Agricultural residues, Food waste, Forest residues
+Processes: Fermentation → Transesterification → Distillation → Gasification → Purification → Power generation → Research & Development
+
+Company 309
+Name: MineWaste Environmental Solutions
+Industry: Mine Waste Environmental Solutions
+Products: Clean mine sites, Restored ecosystems, Reduced environmental impact, Sustainable mining practices
+Location: Prague, Czech Republic
+Volume: 90000 cubic meters of mine water
+Materials: Acid mine drainage, Heavy metals, Sulfates, Suspended solids, Tailings, Waste rock
+Processes: Neutralization → Sedimentation → Filtration → Ion exchange → Biological treatment → Revegetation → Monitoring → Research & Development
+
+Company 310
+Name: HospitalWaste Management & Innovation
+Industry: Hospital
+Products: Innovative medical waste management solutions, Enhanced safety, Environmental sustainability
+Location: Helsinki, Finland
+Volume: 45000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics
+Processes: Segregation → Collection → Transportation → Advanced treatment technologies (e.g., microwave, plasma gasification) → Recycling → Disposal → Documentation → Auditing → Training → Waste minimization → Research & Development → Policy advocacy
+
+Company 311
+Name: E-Waste Circular Solutions
+Industry: Electronic Waste Circular Solutions
+Products: Recycled materials for new electronics, Reusable components, Sustainable electronics production, Reduced e-waste generation
+Location: Amsterdam, Netherlands
+Volume: 75000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables, Displays
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity → Consumer education
+
+Company 312
+Name: OrganicWaste Circular Economy
+Industry: Organic Waste Circular Economy
+Products: High-quality organic compost, Biogas, Electricity, Heat, Sustainable agriculture, Reduced food waste
+Location: Sofia, Bulgaria
+Volume: 100000 metric tons of organic waste
+Materials: Food scraps, Garden waste, Agricultural residues, Municipal organic waste, Commercial food waste
+Processes: Aerobic composting → Anaerobic digestion → Combined heat and power → Compost marketing → Food waste prevention initiatives
+
+Company 313
+Name: IndustrialWater Circular Solutions
+Industry: Industrial Water Circular Solutions
+Products: Treated industrial wastewater, Reused process water, Minimized water discharge, Resource recovery, Sustainable industrial operations
+Location: Bucharest, Romania
+Volume: 140000 cubic meters of industrial wastewater
+Materials: Chemical waste, Heavy metals, Suspended solids, Organic pollutants, Cooling water, Boiler feedwater, Rinse water, Process water
+Processes: Physical-chemical treatment → Biological treatment → Membrane filtration → Advanced oxidation → Recycling → Resource recovery → Monitoring → Process optimization
+
+Company 314
+Name: MedicalWaste Circular Economy
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact
+Location: Zagreb, Croatia
+Volume: 42000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development
+
+Company 315
+Name: ConstructionWaste Circular Economy
+Industry: Construction Waste Circular Economy
+Products: Recycled aggregates, Wood chips, Metal scrap, Reused building materials, Sustainable construction
+Location: Ljubljana, Slovenia
+Volume: 170000 metric tons of construction waste
+Materials: Concrete, Brick, Wood, Steel, Asphalt, Plasterboard, Roofing materials, Glass, Insulation
+Processes: Demolition → Sorting → Crushing → Shredding → Magnetic separation → Reuse → Recycling → Product manufacturing → Sustainable design
+
+Company 316
+Name: BioPlastics Circular Economy
+Industry: Bioplastics Circular Economy
+Products: Biodegradable packaging, Compostable products, Sustainable plastic alternatives, Reduced plastic pollution
+Location: Luxembourg City, Luxembourg
+Volume: 25000 metric tons of bioplastic waste
+Materials: PLA, PHA, Starch-based polymers, Cellulose-based polymers, Lignin-based polymers, Biodegradable films
+Processes: Research & Development → Fermentation → Polymerization → Extrusion → Molding → Product testing → Composting → Anaerobic digestion
+
+Company 317
+Name: WasteOil Circular Economy
+Industry: Waste Oil Circular Economy
+Products: Re-refined base oils, Lubricants, Fuel oil, Reduced environmental pollution, Resource efficiency
+Location: Athens, Greece
+Volume: 25000 metric tons of waste oil
+Materials: Used engine oil, Industrial lubricants, Hydraulic fluids, Transmission fluids, Transformer oils, Marine oils
+Processes: Collection → Transportation → Dehydration → Filtration → Distillation → Hydrotreating → Blending → Quality control → Market development → Consumer education
+
+Company 318
+Name: BatteryCircular Economy
+Industry: Battery Circular Economy
+Products: Recovered critical materials for new batteries, Reduced hazardous waste, Sustainable battery life cycle, Closed-loop battery production
+Location: Dublin, Ireland
+Volume: 18000 metric tons of battery waste
+Materials: Li-ion batteries, EV batteries, Consumer batteries, Industrial batteries, Lead-acid batteries, NiMH batteries, Ni-Cd batteries, Battery components
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy → Material purification → Product manufacturing → Research & Development → Policy advocacy → Consumer education
+
+Company 319
+Name: WoodWaste Circular Economy
+Industry: Wood Waste Circular Economy
+Products: Electricity, Heat, Biofuel, Recycled wood products, Reduced landfill waste, Sustainable forest management
+Location: Oslo, Norway
+Volume: 80000 metric tons of wood waste
+Materials: Forest residues, Sawmill waste, Urban wood waste, Pallets, Crates, Construction wood waste, Demolition wood
+Processes: Collection → Sorting → Chipping → Grinding → Pelletizing → Combustion → Steam generation → Power generation → Product manufacturing → Sustainable forestry
+
+Company 320
+Name: MunicipalWaste Circular Economy
+Industry: Municipal Solid Waste Circular Economy
+Products: Recyclables, Compost, Energy from waste, Reduced landfill volume, Sustainable resource management, Community engagement
+Location: Berlin, Germany
+Volume: 160000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Street sweepings, Bulky waste, Food waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery → Community engagement
+
+Company 321
+Name: HospitalWaste Circular Economy
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact, Closed-loop medical supply chain
+Location: Paris, France
+Volume: 50000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging, Single-use devices
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration
+
+Company 322
+Name: E-Waste Recycling & Upcycling
+Industry: Electronic Waste Recycling & Upcycling
+Products: Recycled materials for new electronics, Reusable components, Upcycled electronic products, Sustainable electronics production
+Location: London, UK
+Volume: 80000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables, Displays, Electronic components
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity → Upcycling → Consumer education
+
+Company 323
+Name: PaperRecycle & Circular Packaging
+Industry: Paper Recycling & Circular Packaging
+Products: Recycled paper, Cardboard, Pulp, Tissue products, Sustainable packaging materials, Reduced deforestation, Circular packaging solutions
+Location: Rome, Italy
+Volume: 95000 metric tons of paper waste
+Materials: Office paper, Newspapers, Magazines, Corrugated cardboard, Mixed paper, Books, Packaging waste, Paperboard
+Processes: Collection → Sorting → Pulping → De-inking → Papermaking → Converting → Product design for sustainability → Marketing → Circular packaging design
+
+Company 324
+Name: HazardousWaste Circular Economy
+Industry: Hazardous Waste Circular Economy
+Products: Safe treatment and disposal of hazardous waste, Environmental remediation, Risk management, Resource recovery from hazardous waste
+Location: Madrid, Spain
+Volume: 22000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Paints, Oils, Medical hazardous waste, Lab waste, Contaminated soil, Asbestos, PCBs, Heavy metals
+Processes: Chemical treatment → Physical treatment → Biological treatment → Solidification → Incineration → Secure landfill → Site remediation → Emergency response → Resource recovery
+
+Company 325
+Name: WaterTreatment & Circular Economy
+Industry: Water Treatment & Circular Economy
+Products: Potable water, Industrial process water, Reclaimed water, Nutrient recovery, Energy recovery, Sustainable water management
+Location: Dublin, Ireland
+Volume: 140000 cubic meters of water
+Materials: Raw water, Wastewater, Industrial water, Sludge, Stormwater
+Processes: Coagulation → Flocculation → Sedimentation → Filtration → Disinfection → Advanced treatment → Nutrient removal → Energy generation → Resource recovery → Water conservation
+
+Company 326
+Name: PlasticRecycle & Advanced Solutions
+Industry: Plastic Recycling & Advanced Solutions
+Products: Recycled plastic pellets, Sustainable plastic products, Circular economy solutions, Reduced plastic pollution, Advanced recycling technologies
+Location: Warsaw, Poland
+Volume: 65000 metric tons of plastic waste
+Materials: PET, HDPE, PP, LDPE, PVC, Mixed plastics, Ocean plastics, Agricultural plastics, Industrial plastics, Difficult-to-recycle plastics
+Processes: Collection → Sorting → Washing → Shredding → Melting → Pelletizing → Product design/manufacturing → Quality control → Market development → Advanced recycling (e.g., chemical recycling)
+
+Company 327
+Name: HospitalWaste Management & Sustainability
+Industry: Hospital
+Products: Comprehensive medical waste management, Sustainability initiatives, Environmental compliance, Safety, Waste minimization
+Location: Stockholm, Sweden
+Volume: 50000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics, single-use devices
+Processes: Segregation → Collection → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Recycling → Disposal → Documentation → Auditing → Training → Waste minimization → Sustainability reporting → Policy development
+
+Company 328
+Name: SludgeResource Recovery & Sustainability
+Industry: Sludge Resource Recovery & Sustainability
+Products: Biogas, Electricity, Heat, Soil amendments, Phosphorus recovery, Sustainable sludge management
+Location: Vienna, Austria
+Volume: 60000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Industrial sludge, Biosolids, Organic waste
+Processes: Anaerobic digestion → Combined heat and power → Sludge dewatering → Drying → Nutrient recovery → Land application/Disposal → Sustainability assessment
+
+Company 329
+Name: GreenConstruction & Circular Economy
+Industry: Green Construction & Circular Economy
+Products: Sustainable buildings, Reduced environmental footprint, Resource efficiency, Circular economy in construction, Innovative building materials
+Location: Budapest, Hungary
+Volume: 90000 metric tons of construction waste
+Materials: Recycled concrete, Wood, Steel, Glass, Insulation, Drywall, Asphalt, Reused building materials, Bio-based materials
+Processes: Sustainable design → Material selection → Waste reduction → Recycling → Reuse → Certification → Life cycle assessment → Circular design principles
+
+Company 330
+Name: WasteToEnergy & Circular Economy Solutions
+Industry: Waste to Energy & Circular Economy Solutions
+Products: Electricity, Heat, Recyclables, Reduced landfill volume, Sustainable resource management, Circular economy integration
+Location: Lisbon, Portugal
+Volume: 160000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Industrial non-hazardous waste, Bulky waste, Food waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery → Circular economy integration
+
+Company 331
+Name: BioFuel & Circular Bioeconomy
+Industry: Biofuel & Circular Bioeconomy
+Products: Biodiesel, Bioethanol, Biogas, Sustainable energy sources, Reduced greenhouse gas emissions, Circular bioeconomy solutions
+Location: Copenhagen, Denmark
+Volume: 60000 metric tons of biomass
+Materials: Algae, Corn, Sugarcane, Waste oils, Agricultural residues, Food waste, Forest residues, Industrial organic waste
+Processes: Fermentation → Transesterification → Distillation → Gasification → Purification → Power generation → Research & Development → Circular bioeconomy integration
+
+Company 332
+Name: MineWaste Environmental & Circular Solutions
+Industry: Mine Waste Environmental & Circular Solutions
+Products: Clean mine sites, Restored ecosystems, Reduced environmental impact, Sustainable mining practices, Resource recovery from mine waste
+Location: Prague, Czech Republic
+Volume: 100000 cubic meters of mine water
+Materials: Acid mine drainage, Heavy metals, Sulfates, Suspended solids, Tailings, Waste rock, Contaminated soil
+Processes: Neutralization → Sedimentation → Filtration → Ion exchange → Biological treatment → Revegetation → Monitoring → Research & Development → Resource recovery → Circular mining practices
+
+Company 333
+Name: HospitalWaste Management & Circularity
+Industry: Hospital
+Products: Innovative medical waste management solutions, Enhanced safety, Environmental sustainability, Circularity in healthcare
+Location: Helsinki, Finland
+Volume: 50000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics, single-use devices, medical packaging
+Processes: Segregation → Collection → Transportation → Advanced treatment technologies (e.g., microwave, plasma gasification) → Recycling → Reprocessing → Product manufacturing → Disposal → Documentation → Auditing → Training → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Circular healthcare models
+
+Company 334
+Name: E-Waste Circular Economy & Innovation
+Industry: Electronic Waste Circular Economy & Innovation
+Products: Recycled materials for new electronics, Reusable components, Sustainable electronics production, Reduced e-waste generation, Innovative circular solutions
+Location: Amsterdam, Netherlands
+Volume: 85000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables, Displays, Electronic components, Rare earth metals
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity → Upcycling → Consumer education → Research & Development → Policy advocacy
+
+Company 335
+Name: OrganicWaste Circular Economy & Resource Recovery
+Industry: Organic Waste Circular Economy & Resource Recovery
+Products: High-quality organic compost, Biogas, Electricity, Heat, Sustainable agriculture, Reduced food waste, Resource recovery from organic waste
+Location: Sofia, Bulgaria
+Volume: 110000 metric tons of organic waste
+Materials: Food scraps, Garden waste, Agricultural residues, Municipal organic waste, Commercial food waste, Industrial organic waste
+Processes: Aerobic composting → Anaerobic digestion → Combined heat and power → Compost marketing → Food waste prevention initiatives → Nutrient recovery → Bioproducts manufacturing
+
+Company 336
+Name: IndustrialWater Circular Economy & Sustainability
+Industry: Industrial Water Circular Economy & Sustainability
+Products: Treated industrial wastewater, Reused process water, Minimized water discharge, Resource recovery, Sustainable industrial operations, Water stewardship
+Location: Bucharest, Romania
+Volume: 150000 cubic meters of industrial wastewater
+Materials: Chemical waste, Heavy metals, Suspended solids, Organic pollutants, Cooling water, Boiler feedwater, Rinse water, Process water, Industrial sludge
+Processes: Physical-chemical treatment → Biological treatment → Membrane filtration → Advanced oxidation → Recycling → Resource recovery → Monitoring → Process optimization → Water stewardship programs
+
+Company 337
+Name: MedicalWaste Circular Economy & Advanced Solutions
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact, Closed-loop medical supply chain, Advanced circular solutions
+Location: Zagreb, Croatia
+Volume: 45000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging, Single-use devices, Medical textiles
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Advanced recycling technologies → Circular healthcare models
+
+Company 338
+Name: ConstructionWaste Circular Economy & Innovation
+Industry: Construction Waste Circular Economy & Innovation
+Products: Recycled aggregates, Wood chips, Metal scrap, Reused building materials, Sustainable construction, Innovative circular solutions
+Location: Ljubljana, Slovenia
+Volume: 180000 metric tons of construction waste
+Materials: Concrete, Brick, Wood, Steel, Asphalt, Plasterboard, Roofing materials, Glass, Insulation, Bio-based materials, Demolition waste
+Processes: Demolition → Sorting → Crushing → Shredding → Magnetic separation → Reuse → Recycling → Product manufacturing → Sustainable design → Circular design principles → Research & Development
+
+Company 339
+Name: BioPlastics Circular Economy & Market Development
+Industry: Bioplastics Circular Economy & Market Development
+Products: Biodegradable packaging, Compostable products, Sustainable plastic alternatives, Reduced plastic pollution, Market development for bioplastics
+Location: Luxembourg City, Luxembourg
+Volume: 30000 metric tons of bioplastic waste
+Materials: PLA, PHA, Starch-based polymers, Cellulose-based polymers, Lignin-based polymers, Biodegradable films, Bioplastic composites
+Processes: Research & Development → Fermentation → Polymerization → Extrusion → Molding → Product testing → Composting → Anaerobic digestion → Market analysis → Business development
+
+Company 340
+Name: WasteOil Circular Economy & Sustainable Lubricants
+Industry: Waste Oil Circular Economy & Sustainable Lubricants
+Products: Re-refined base oils, Lubricants, Fuel oil, Reduced environmental pollution, Resource efficiency, Sustainable lubricant production
+Location: Athens, Greece
+Volume: 28000 metric tons of waste oil
+Materials: Used engine oil, Industrial lubricants, Hydraulic fluids, Transmission fluids, Transformer oils, Marine oils, Synthetic oils
+Processes: Collection → Transportation → Dehydration → Filtration → Distillation → Hydrotreating → Blending → Quality control → Market development → Sustainable lubricant formulation
+
+Company 341
+Name: BatteryCircular Economy & Advanced Recycling
+Industry: Battery Circular Economy & Advanced Recycling
+Products: Recovered critical materials for new batteries, Reduced hazardous waste, Sustainable battery life cycle, Closed-loop battery production, Advanced battery recycling
+Location: Dublin, Ireland
+Volume: 20000 metric tons of battery waste
+Materials: Li-ion batteries, EV batteries, Consumer batteries, Industrial batteries, Lead-acid batteries, NiMH batteries, Ni-Cd batteries, Battery components, Rare earth metals
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy → Material purification → Product manufacturing → Research & Development → Policy advocacy → Consumer education → Advanced recycling technologies
+
+Company 342
+Name: WoodWaste Circular Economy & Value Creation
+Industry: Wood Waste Circular Economy & Value Creation
+Products: Electricity, Heat, Biofuel, Recycled wood products, Reduced landfill waste, Sustainable forest management, Value-added wood products
+Location: Oslo, Norway
+Volume: 90000 metric tons of wood waste
+Materials: Forest residues, Sawmill waste, Urban wood waste, Pallets, Crates, Construction wood waste, Demolition wood, Wood composites
+Processes: Collection → Sorting → Chipping → Grinding → Pelletizing → Combustion → Steam generation → Power generation → Product manufacturing → Sustainable forestry → Value-added product development
+
+Company 343
+Name: MunicipalWaste Circular Economy & Smart Cities
+Industry: Municipal Solid Waste Circular Economy & Smart Cities
+Products: Recyclables, Compost, Energy from waste, Reduced landfill volume, Sustainable resource management, Community engagement, Smart city waste solutions
+Location: Berlin, Germany
+Volume: 180000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Street sweepings, Bulky waste, Food waste, Electronic waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery → Community engagement → Smart waste management systems
+
+Company 344
+Name: HospitalWaste Circular Economy & Digital Solutions
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact, Closed-loop medical supply chain, Digital waste management solutions
+Location: Paris, France
+Volume: 55000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging, Single-use devices, Medical textiles, Electronic medical waste
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Digital waste tracking → Circular healthcare models
+
+Company 345
+Name: E-Waste Circular Economy & Global Impact
+Industry: Electronic Waste Circular Economy & Global Impact
+Products: Recycled materials for new electronics, Reusable components, Sustainable electronics production, Reduced e-waste generation, Global impact on circular economy
+Location: London, UK
+Volume: 90000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables, Displays, Electronic components, Rare earth metals, Precious metals
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity → Upcycling → Consumer education → Research & Development → Policy advocacy → International collaboration
+
+Company 346
+Name: PaperRecycle & Circular Economy Leadership
+Industry: Paper Recycling & Circular Economy Leadership
+Products: Recycled paper, Cardboard, Pulp, Tissue products, Sustainable packaging materials, Reduced deforestation, Circular packaging solutions, Industry leadership
+Location: Rome, Italy
+Volume: 100000 metric tons of paper waste
+Materials: Office paper, Newspapers, Magazines, Corrugated cardboard, Mixed paper, Books, Packaging waste, Paperboard, Pulp waste
+Processes: Collection → Sorting → Pulping → De-inking → Papermaking → Converting → Product design for sustainability → Marketing → Circular packaging design → Industry advocacy
+
+Company 347
+Name: HazardousWaste Circular Economy & Risk Management
+Industry: Hazardous Waste Circular Economy & Risk Management
+Products: Safe treatment and disposal of hazardous waste, Environmental remediation, Risk management, Resource recovery from hazardous waste, Compliance leadership
+Location: Madrid, Spain
+Volume: 25000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Paints, Oils, Medical hazardous waste, Lab waste, Contaminated soil, Asbestos, PCBs, Heavy metals, Radioactive waste
+Processes: Chemical treatment → Physical treatment → Biological treatment → Solidification → Incineration → Secure landfill → Site remediation → Emergency response → Resource recovery → Risk assessment → Compliance management
+
+Company 348
+Name: WaterTreatment & Circular Economy Leadership
+Industry: Water Treatment & Circular Economy Leadership
+Products: Potable water, Industrial process water, Reclaimed water, Nutrient recovery, Energy recovery, Sustainable water management, Circular economy leadership in water
+Location: Dublin, Ireland
+Volume: 150000 cubic meters of water
+Materials: Raw water, Wastewater, Industrial water, Sludge, Stormwater, Agricultural runoff
+Processes: Coagulation → Flocculation → Sedimentation → Filtration → Disinfection → Advanced treatment → Nutrient removal → Energy generation → Resource recovery → Water conservation → Policy advocacy → Industry leadership
+
+Company 349
+Name: PlasticRecycle & Global Circular Economy
+Industry: Plastic Recycling & Global Circular Economy
+Products: Recycled plastic pellets, Sustainable plastic products, Circular economy solutions, Reduced plastic pollution, Global impact on circular economy
+Location: Warsaw, Poland
+Volume: 70000 metric tons of plastic waste
+Materials: PET, HDPE, PP, LDPE, PVC, Mixed plastics, Ocean plastics, Agricultural plastics, Industrial plastics, Difficult-to-recycle plastics, Post-consumer plastics
+Processes: Collection → Sorting → Washing → Shredding → Melting → Pelletizing → Product design/manufacturing → Quality control → Market development → Advanced recycling (e.g., chemical recycling) → International collaboration
+
+Company 350
+Name: HospitalWaste Management & Global Health
+Industry: Hospital
+Products: Comprehensive medical waste management, Sustainability initiatives, Environmental compliance, Safety, Waste minimization, Global health impact
+Location: Stockholm, Sweden
+Volume: 55000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics, single-use devices, medical textiles, electronic medical waste
+Processes: Segregation → Collection → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Recycling → Disposal → Documentation → Auditing → Training → Waste minimization → Sustainability reporting → Policy development → Global health partnerships
+
+Company 351
+Name: SludgeResource Recovery & Global Impact
+Industry: Sludge Resource Recovery & Global Impact
+Products: Biogas, Electricity, Heat, Soil amendments, Phosphorus recovery, Sustainable sludge management, Global impact on resource recovery
+Location: Vienna, Austria
+Volume: 65000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Industrial sludge, Biosolids, Organic waste, Agricultural waste
+Processes: Anaerobic digestion → Combined heat and power → Sludge dewatering → Drying → Nutrient recovery → Land application/Disposal → Sustainability assessment → International collaboration
+
+Company 352
+Name: GreenConstruction & Global Sustainability
+Industry: Green Construction & Global Sustainability
+Products: Sustainable buildings, Reduced environmental footprint, Resource efficiency, Circular economy in construction, Innovative building materials, Global sustainability impact
+Location: Budapest, Hungary
+Volume: 100000 metric tons of construction waste
+Materials: Recycled concrete, Wood, Steel, Glass, Insulation, Drywall, Asphalt, Reused building materials, Bio-based materials, Demolition waste
+Processes: Sustainable design → Material selection → Waste reduction → Recycling → Reuse → Certification → Life cycle assessment → Circular design principles → Research & Development → International collaboration
+
+Company 353
+Name: WasteToEnergy & Global Circular Economy
+Industry: Waste to Energy & Global Circular Economy
+Products: Electricity, Heat, Recyclables, Reduced landfill volume, Sustainable resource management, Circular economy integration, Global impact
+Location: Lisbon, Portugal
+Volume: 170000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Industrial non-hazardous waste, Bulky waste, Food waste, Electronic waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery → Circular economy integration → International collaboration
+
+Company 354
+Name: BioFuel & Global Bioeconomy
+Industry: Biofuel & Global Bioeconomy
+Products: Biodiesel, Bioethanol, Biogas, Sustainable energy sources, Reduced greenhouse gas emissions, Circular bioeconomy solutions, Global impact
+Location: Copenhagen, Denmark
+Volume: 70000 metric tons of biomass
+Materials: Algae, Corn, Sugarcane, Waste oils, Agricultural residues, Food waste, Forest residues, Industrial organic waste, Municipal organic waste
+Processes: Fermentation → Transesterification → Distillation → Gasification → Purification → Power generation → Research & Development → Circular bioeconomy integration → International collaboration
+
+Company 355
+Name: MineWaste Environmental & Global Solutions
+Industry: Mine Waste Environmental & Global Solutions
+Products: Clean mine sites, Restored ecosystems, Reduced environmental impact, Sustainable mining practices, Resource recovery from mine waste, Global solutions
+Location: Prague, Czech Republic
+Volume: 110000 cubic meters of mine water
+Materials: Acid mine drainage, Heavy metals, Sulfates, Suspended solids, Tailings, Waste rock, Contaminated soil, Mine sludge
+Processes: Neutralization → Sedimentation → Filtration → Ion exchange → Biological treatment → Revegetation → Monitoring → Research & Development → Resource recovery → Circular mining practices → International collaboration
+
+Company 356
+Name: HospitalWaste Management & Global Impact
+Industry: Hospital
+Products: Innovative medical waste management solutions, Enhanced safety, Environmental sustainability, Circularity in healthcare, Global impact
+Location: Helsinki, Finland
+Volume: 55000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics, single-use devices, medical textiles, electronic medical waste, medical packaging
+Processes: Segregation → Collection → Transportation → Advanced treatment technologies (e.g., microwave, plasma gasification) → Recycling → Reprocessing → Product manufacturing → Disposal → Documentation → Auditing → Training → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Circular healthcare models → International collaboration
+
+Company 357
+Name: E-Waste Circular Economy & Sustainable Development
+Industry: Electronic Waste Circular Economy & Sustainable Development
+Products: Recycled materials for new electronics, Reusable components, Sustainable electronics production, Reduced e-waste generation, Innovative circular solutions, Sustainable development
+Location: Amsterdam, Netherlands
+Volume: 95000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables, Displays, Electronic components, Rare earth metals, Precious metals, Plastics
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity → Upcycling → Consumer education → Research & Development → Policy advocacy → Sustainable development goals
+
+Company 358
+Name: OrganicWaste Circular Economy & Global Sustainability
+Industry: Organic Waste Circular Economy & Global Sustainability
+Products: High-quality organic compost, Biogas, Electricity, Heat, Sustainable agriculture, Reduced food waste, Resource recovery from organic waste, Global sustainability
+Location: Sofia, Bulgaria
+Volume: 120000 metric tons of organic waste
+Materials: Food scraps, Garden waste, Agricultural residues, Municipal organic waste, Commercial food waste, Industrial organic waste, Food processing waste
+Processes: Aerobic composting → Anaerobic digestion → Combined heat and power → Compost marketing → Food waste prevention initiatives → Nutrient recovery → Bioproducts manufacturing → International collaboration → Sustainable development goals
+
+Company 359
+Name: IndustrialWater Circular Economy & Global Impact
+Industry: Industrial Water Circular Economy & Global Impact
+Products: Treated industrial wastewater, Reused process water, Minimized water discharge, Resource recovery, Sustainable industrial operations, Water stewardship, Global impact
+Location: Bucharest, Romania
+Volume: 160000 cubic meters of industrial wastewater
+Materials: Chemical waste, Heavy metals, Suspended solids, Organic pollutants, Cooling water, Boiler feedwater, Rinse water, Process water, Industrial sludge, Textile dyes
+Processes: Physical-chemical treatment → Biological treatment → Membrane filtration → Advanced oxidation → Recycling → Resource recovery → Monitoring → Process optimization → Water stewardship programs → International collaboration → Sustainable development goals
+
+Company 360
+Name: MedicalWaste Circular Economy & Global Solutions
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact, Closed-loop medical supply chain, Advanced circular solutions, Global solutions
+Location: Zagreb, Croatia
+Volume: 48000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging, Single-use devices, Medical textiles, Electronic medical waste, Medical waste streams
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Advanced recycling technologies → Circular healthcare models → International collaboration
+
+Company 361
+Name: ConstructionWaste Circular Economy & Global Development
+Industry: Construction Waste Circular Economy & Global Development
+Products: Recycled aggregates, Wood chips, Metal scrap, Reused building materials, Sustainable construction, Innovative circular solutions, Global development
+Location: Ljubljana, Slovenia
+Volume: 190000 metric tons of construction waste
+Materials: Concrete, Brick, Wood, Steel, Asphalt, Plasterboard, Roofing materials, Glass, Insulation, Bio-based materials, Demolition waste, Construction debris
+Processes: Demolition → Sorting → Crushing → Shredding → Magnetic separation → Reuse → Recycling → Product manufacturing → Sustainable design → Circular design principles → Research & Development → International collaboration → Sustainable development goals
+
+Company 362
+Name: BioPlastics Circular Economy & Global Market
+Industry: Bioplastics Circular Economy & Global Market
+Products: Biodegradable packaging, Compostable products, Sustainable plastic alternatives, Reduced plastic pollution, Market development for bioplastics, Global market
+Location: Luxembourg City, Luxembourg
+Volume: 35000 metric tons of bioplastic waste
+Materials: PLA, PHA, Starch-based polymers, Cellulose-based polymers, Lignin-based polymers, Biodegradable films, Bioplastic composites, Bio-based polymers
+Processes: Research & Development → Fermentation → Polymerization → Extrusion → Molding → Product testing → Composting → Anaerobic digestion → Market analysis → Business development → International collaboration → Global market expansion
+
+Company 363
+Name: WasteOil Circular Economy & Global Sustainability
+Industry: Waste Oil Circular Economy & Global Sustainability
+Products: Re-refined base oils, Lubricants, Fuel oil, Reduced environmental pollution, Resource efficiency, Sustainable lubricant production, Global sustainability
+Location: Athens, Greece
+Volume: 30000 metric tons of waste oil
+Materials: Used engine oil, Industrial lubricants, Hydraulic fluids, Transmission fluids, Transformer oils, Marine oils, Synthetic oils, Waste oil mixtures
+Processes: Collection → Transportation → Dehydration → Filtration → Distillation → Hydrotreating → Blending → Quality control → Market development → Sustainable lubricant formulation → International collaboration → Sustainable development goals
+
+Company 364
+Name: BatteryCircular Economy & Global Impact
+Industry: Battery Circular Economy & Global Impact
+Products: Recovered critical materials for new batteries, Reduced hazardous waste, Sustainable battery life cycle, Closed-loop battery production, Advanced battery recycling, Global impact
+Location: Dublin, Ireland
+Volume: 22000 metric tons of battery waste
+Materials: Li-ion batteries, EV batteries, Consumer batteries, Industrial batteries, Lead-acid batteries, NiMH batteries, Ni-Cd batteries, Battery components, Rare earth metals, Precious metals
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy → Material purification → Product manufacturing → Research & Development → Policy advocacy → Consumer education → Advanced recycling technologies → International collaboration → Sustainable development goals
+
+Company 365
+Name: WoodWaste Circular Economy & Global Solutions
+Industry: Wood Waste Circular Economy & Global Solutions
+Products: Electricity, Heat, Biofuel, Recycled wood products, Reduced landfill waste, Sustainable forest management, Value-added wood products, Global solutions
+Location: Oslo, Norway
+Volume: 100000 metric tons of wood waste
+Materials: Forest residues, Sawmill waste, Urban wood waste, Pallets, Crates, Construction wood waste, Demolition wood, Wood composites, Lignocellulosic biomass
+Processes: Collection → Sorting → Chipping → Grinding → Pelletizing → Combustion → Steam generation → Power generation → Product manufacturing → Sustainable forestry → Value-added product development → International collaboration → Sustainable development goals
+
+Company 366
+Name: MunicipalWaste Circular Economy & Global Impact
+Industry: Municipal Solid Waste Circular Economy & Global Impact
+Products: Recyclables, Compost, Energy from waste, Reduced landfill volume, Sustainable resource management, Community engagement, Smart city waste solutions, Global impact
+Location: Berlin, Germany
+Volume: 200000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Street sweepings, Bulky waste, Food waste, Electronic waste, Hazardous household waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery → Community engagement → Smart waste management systems → International collaboration → Sustainable development goals
+
+Company 367
+Name: HospitalWaste Circular Economy & Global Sustainability
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact, Closed-loop medical supply chain, Digital waste management solutions, Global sustainability
+Location: Paris, France
+Volume: 60000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging, Single-use devices, Medical textiles, Electronic medical waste, Medical waste streams, Pharmaceutical waste
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Digital waste tracking → Circular healthcare models → International collaboration → Sustainable development goals
+
+Company 368
+Name: E-Waste Circular Economy & Global Leadership
+Industry: Electronic Waste Circular Economy & Global Leadership
+Products: Recycled materials for new electronics, Reusable components, Sustainable electronics production, Reduced e-waste generation, Global impact on circular economy, Industry leadership
+Location: London, UK
+Volume: 100000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables, Displays, Electronic components, Rare earth metals, Precious metals, Plastics, Glass
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity → Upcycling → Consumer education → Research & Development → Policy advocacy → International collaboration → Industry leadership
+
+Company 369
+Name: PaperRecycle & Circular Economy Global Impact
+Industry: Paper Recycling & Circular Economy Global Impact
+Products: Recycled paper, Cardboard, Pulp, Tissue products, Sustainable packaging materials, Reduced deforestation, Circular packaging solutions, Global impact
+Location: Rome, Italy
+Volume: 110000 metric tons of paper waste
+Materials: Office paper, Newspapers, Magazines, Corrugated cardboard, Mixed paper, Books, Packaging waste, Paperboard, Pulp waste, Paper sludge
+Processes: Collection → Sorting → Pulping → De-inking → Papermaking → Converting → Product design for sustainability → Marketing → Circular packaging design → Industry advocacy → International collaboration → Sustainable development goals
+
+Company 370
+Name: HazardousWaste Circular Economy & Global Solutions
+Industry: Hazardous Waste Circular Economy & Global Solutions
+Products: Safe treatment and disposal of hazardous waste, Environmental remediation, Risk management, Resource recovery from hazardous waste, Compliance leadership, Global solutions
+Location: Madrid, Spain
+Volume: 28000 metric tons of hazardous waste
+Materials: Industrial chemicals, Solvents, Paints, Oils, Medical hazardous waste, Lab waste, Contaminated soil, Asbestos, PCBs, Heavy metals, Radioactive waste, Chemical sludge
+Processes: Chemical treatment → Physical treatment → Biological treatment → Solidification → Incineration → Secure landfill → Site remediation → Emergency response → Resource recovery → Risk assessment → Compliance management → International collaboration → Sustainable development goals
+
+Company 371
+Name: WaterTreatment & Circular Economy Global Impact
+Industry: Water Treatment & Circular Economy Global Impact
+Products: Potable water, Industrial process water, Reclaimed water, Nutrient recovery, Energy recovery, Sustainable water management, Circular economy leadership in water, Global impact
+Location: Dublin, Ireland
+Volume: 160000 cubic meters of water
+Materials: Raw water, Wastewater, Industrial water, Sludge, Stormwater, Agricultural runoff, Industrial effluent
+Processes: Coagulation → Flocculation → Sedimentation → Filtration → Disinfection → Advanced treatment → Nutrient removal → Energy generation → Resource recovery → Water conservation → Policy advocacy → Industry leadership → International collaboration → Sustainable development goals
+
+Company 372
+Name: PlasticRecycle & Circular Economy Global Leadership
+Industry: Plastic Recycling & Circular Economy Global Leadership
+Products: Recycled plastic pellets, Sustainable plastic products, Circular economy solutions, Reduced plastic pollution, Global impact on circular economy, Industry leadership
+Location: Warsaw, Poland
+Volume: 75000 metric tons of plastic waste
+Materials: PET, HDPE, PP, LDPE, PVC, Mixed plastics, Ocean plastics, Agricultural plastics, Industrial plastics, Difficult-to-recycle plastics, Post-consumer plastics, Plastic films
+Processes: Collection → Sorting → Washing → Shredding → Melting → Pelletizing → Product design/manufacturing → Quality control → Market development → Advanced recycling (e.g., chemical recycling) → International collaboration → Industry leadership
+
+Company 373
+Name: HospitalWaste Management & Global Leadership
+Industry: Hospital
+Products: Comprehensive medical waste management, Sustainability initiatives, Environmental compliance, Safety, Waste minimization, Global health impact, Industry leadership
+Location: Stockholm, Sweden
+Volume: 60000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics, single-use devices, medical textiles, electronic medical waste, medical packaging, pharmaceutical waste
+Processes: Segregation → Collection → Transportation → Treatment (autoclaving/incineration/chemical/decay) → Recycling → Disposal → Documentation → Auditing → Training → Waste minimization → Sustainability reporting → Policy development → Global health partnerships → Industry leadership
+
+Company 374
+Name: SludgeResource Recovery & Global Leadership
+Industry: Sludge Resource Recovery & Global Leadership
+Products: Biogas, Electricity, Heat, Soil amendments, Phosphorus recovery, Sustainable sludge management, Global impact on resource recovery, Industry leadership
+Location: Vienna, Austria
+Volume: 70000 metric tons of sewage sludge
+Materials: Wastewater treatment sludge, Industrial sludge, Biosolids, Organic waste, Agricultural waste, Food waste
+Processes: Anaerobic digestion → Combined heat and power → Sludge dewatering → Drying → Nutrient recovery → Land application/Disposal → Sustainability assessment → International collaboration → Industry leadership
+
+Company 375
+Name: GreenConstruction & Global Leadership
+Industry: Green Construction & Global Leadership
+Products: Sustainable buildings, Reduced environmental footprint, Resource efficiency, Circular economy in construction, Innovative building materials, Global sustainability impact, Industry leadership
+Location: Budapest, Hungary
+Volume: 110000 metric tons of construction waste
+Materials: Recycled concrete, Wood, Steel, Glass, Insulation, Drywall, Asphalt, Reused building materials, Bio-based materials, Demolition waste, Construction debris, Building materials
+Processes: Sustainable design → Material selection → Waste reduction → Recycling → Reuse → Certification → Life cycle assessment → Circular design principles → Research & Development → International collaboration → Industry leadership
+
+Company 376
+Name: WasteToEnergy & Global Leadership
+Industry: Waste to Energy & Global Leadership
+Products: Electricity, Heat, Recyclables, Reduced landfill volume, Sustainable resource management, Circular economy integration, Global impact, Industry leadership
+Location: Lisbon, Portugal
+Volume: 180000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Industrial non-hazardous waste, Bulky waste, Food waste, Electronic waste, Hazardous household waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery → Circular economy integration → International collaboration → Industry leadership
+
+Company 377
+Name: BioFuel & Global Leadership
+Industry: Biofuel & Global Leadership
+Products: Biodiesel, Bioethanol, Biogas, Sustainable energy sources, Reduced greenhouse gas emissions, Circular bioeconomy solutions, Global impact, Industry leadership
+Location: Copenhagen, Denmark
+Volume: 80000 metric tons of biomass
+Materials: Algae, Corn, Sugarcane, Waste oils, Agricultural residues, Food waste, Forest residues, Industrial organic waste, Municipal organic waste, Lignocellulosic biomass
+Processes: Fermentation → Transesterification → Distillation → Gasification → Purification → Power generation → Research & Development → Circular bioeconomy integration → International collaboration → Industry leadership
+
+Company 378
+Name: MineWaste Environmental & Global Leadership
+Industry: Mine Waste Environmental & Global Leadership
+Products: Clean mine sites, Restored ecosystems, Reduced environmental impact, Sustainable mining practices, Resource recovery from mine waste, Global solutions, Industry leadership
+Location: Prague, Czech Republic
+Volume: 120000 cubic meters of mine water
+Materials: Acid mine drainage, Heavy metals, Sulfates, Suspended solids, Tailings, Waste rock, Contaminated soil, Mine sludge, Mine water
+Processes: Neutralization → Sedimentation → Filtration → Ion exchange → Biological treatment → Revegetation → Monitoring → Research & Development → Resource recovery → Circular mining practices → International collaboration → Industry leadership
+
+Company 379
+Name: HospitalWaste Management & Global Innovation
+Industry: Hospital
+Products: Innovative medical waste management solutions, Enhanced safety, Environmental sustainability, Circularity in healthcare, Global impact, Industry innovation
+Location: Helsinki, Finland
+Volume: 60000 metric tons of medical waste
+Materials: All types of medical waste, including infectious, pathological, sharps, pharmaceutical, cytotoxic, radioactive, general medical waste, recyclable medical plastics, single-use devices, medical textiles, electronic medical waste, medical packaging, pharmaceutical waste, medical waste streams
+Processes: Segregation → Collection → Transportation → Advanced treatment technologies (e.g., microwave, plasma gasification) → Recycling → Reprocessing → Product manufacturing → Disposal → Documentation → Auditing → Training → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Circular healthcare models → International collaboration → Industry innovation
+
+Company 380
+Name: E-Waste Circular Economy & Global Impact Leadership
+Industry: Electronic Waste Circular Economy & Global Impact Leadership
+Products: Recycled materials for new electronics, Reusable components, Sustainable electronics production, Reduced e-waste generation, Global impact on circular economy, Industry leadership, Policy advocacy
+Location: Amsterdam, Netherlands
+Volume: 100000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables, Displays, Electronic components, Rare earth metals, Precious metals, Plastics, Glass, Electronic waste streams
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity → Upcycling → Consumer education → Research & Development → Policy advocacy → International collaboration → Industry leadership → Policy development
+
+Company 381
+Name: OrganicWaste Circular Economy & Global Leadership
+Industry: Organic Waste Circular Economy & Global Leadership
+Products: High-quality organic compost, Biogas, Electricity, Heat, Sustainable agriculture, Reduced food waste, Resource recovery from organic waste, Global sustainability, Industry leadership
+Location: Sofia, Bulgaria
+Volume: 130000 metric tons of organic waste
+Materials: Food scraps, Garden waste, Agricultural residues, Municipal organic waste, Commercial food waste, Industrial organic waste, Food processing waste, Organic waste streams
+Processes: Aerobic composting → Anaerobic digestion → Combined heat and power → Compost marketing → Food waste prevention initiatives → Nutrient recovery → Bioproducts manufacturing → International collaboration → Sustainable development goals → Industry leadership
+
+Company 382
+Name: IndustrialWater Circular Economy & Global Leadership
+Industry: Industrial Water Circular Economy & Global Leadership
+Products: Treated industrial wastewater, Reused process water, Minimized water discharge, Resource recovery, Sustainable industrial operations, Water stewardship, Global impact, Industry leadership
+Location: Bucharest, Romania
+Volume: 170000 cubic meters of industrial wastewater
+Materials: Chemical waste, Heavy metals, Suspended solids, Organic pollutants, Cooling water, Boiler feedwater, Rinse water, Process water, Industrial sludge, Textile dyes, Industrial wastewater streams
+Processes: Physical-chemical treatment → Biological treatment → Membrane filtration → Advanced oxidation → Recycling → Resource recovery → Monitoring → Process optimization → Water stewardship programs → International collaboration → Sustainable development goals → Industry leadership
+
+Company 383
+Name: MedicalWaste Circular Economy & Global Leadership
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact, Closed-loop medical supply chain, Advanced circular solutions, Global solutions, Industry leadership
+Location: Zagreb, Croatia
+Volume: 50000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging, Single-use devices, Medical textiles, Electronic medical waste, Medical waste streams, Pharmaceutical waste, Cytotoxic waste
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Advanced recycling technologies → Circular healthcare models → International collaboration → Industry leadership
+
+Company 384
+Name: ConstructionWaste Circular Economy & Global Leadership
+Industry: Construction Waste Circular Economy & Global Leadership
+Products: Recycled aggregates, Wood chips, Metal scrap, Reused building materials, Sustainable construction, Innovative circular solutions, Global development, Industry leadership
+Location: Ljubljana, Slovenia
+Volume: 200000 metric tons of construction waste
+Materials: Concrete, Brick, Wood, Steel, Asphalt, Plasterboard, Roofing materials, Glass, Insulation, Bio-based materials, Demolition waste, Construction debris, Building materials, Construction waste streams
+Processes: Demolition → Sorting → Crushing → Shredding → Magnetic separation → Reuse → Recycling → Product manufacturing → Sustainable design → Circular design principles → Research & Development → International collaboration → Sustainable development goals → Industry leadership
+
+Company 385
+Name: BioPlastics Circular Economy & Global Leadership
+Industry: Bioplastics Circular Economy & Global Leadership
+Products: Biodegradable packaging, Compostable products, Sustainable plastic alternatives, Reduced plastic pollution, Market development for bioplastics, Global market, Industry leadership
+Location: Luxembourg City, Luxembourg
+Volume: 40000 metric tons of bioplastic waste
+Materials: PLA, PHA, Starch-based polymers, Cellulose-based polymers, Lignin-based polymers, Biodegradable films, Bioplastic composites, Bio-based polymers, Bioplastic waste streams
+Processes: Research & Development → Fermentation → Polymerization → Extrusion → Molding → Product testing → Composting → Anaerobic digestion → Market analysis → Business development → International collaboration → Global market expansion → Industry leadership
+
+Company 386
+Name: WasteOil Circular Economy & Global Leadership
+Industry: Waste Oil Circular Economy & Global Leadership
+Products: Re-refined base oils, Lubricants, Fuel oil, Reduced environmental pollution, Resource efficiency, Sustainable lubricant production, Global sustainability, Industry leadership
+Location: Athens, Greece
+Volume: 35000 metric tons of waste oil
+Materials: Used engine oil, Industrial lubricants, Hydraulic fluids, Transmission fluids, Transformer oils, Marine oils, Synthetic oils, Waste oil mixtures, Used oil streams
+Processes: Collection → Transportation → Dehydration → Filtration → Distillation → Hydrotreating → Blending → Quality control → Market development → Sustainable lubricant formulation → International collaboration → Sustainable development goals → Industry leadership
+
+Company 387
+Name: BatteryCircular Economy & Global Leadership
+Industry: Battery Circular Economy & Global Leadership
+Products: Recovered critical materials for new batteries, Reduced hazardous waste, Sustainable battery life cycle, Closed-loop battery production, Advanced battery recycling, Global impact, Industry leadership
+Location: Dublin, Ireland
+Volume: 25000 metric tons of battery waste
+Materials: Li-ion batteries, EV batteries, Consumer batteries, Industrial batteries, Lead-acid batteries, NiMH batteries, Ni-Cd batteries, Battery components, Rare earth metals, Precious metals, Battery waste streams
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy → Material purification → Product manufacturing → Research & Development → Policy advocacy → Consumer education → Advanced recycling technologies → International collaboration → Sustainable development goals → Industry leadership
+
+Company 388
+Name: WoodWaste Circular Economy & Global Leadership
+Industry: Wood Waste Circular Economy & Global Leadership
+Products: Electricity, Heat, Biofuel, Recycled wood products, Reduced landfill waste, Sustainable forest management, Value-added wood products, Global solutions, Industry leadership
+Location: Oslo, Norway
+Volume: 110000 metric tons of wood waste
+Materials: Forest residues, Sawmill waste, Urban wood waste, Pallets, Crates, Construction wood waste, Demolition wood, Wood composites, Lignocellulosic biomass, Wood waste streams
+Processes: Collection → Sorting → Chipping → Grinding → Pelletizing → Combustion → Steam generation → Power generation → Product manufacturing → Sustainable forestry → Value-added product development → International collaboration → Sustainable development goals → Industry leadership
+
+Company 389
+Name: MunicipalWaste Circular Economy & Global Leadership
+Industry: Municipal Solid Waste Circular Economy & Global Leadership
+Products: Recyclables, Compost, Energy from waste, Reduced landfill volume, Sustainable resource management, Community engagement, Smart city waste solutions, Global impact, Industry leadership
+Location: Berlin, Germany
+Volume: 220000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Street sweepings, Bulky waste, Food waste, Electronic waste, Hazardous household waste, Municipal waste streams
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery → Community engagement → Smart waste management systems → International collaboration → Sustainable development goals → Industry leadership
+
+Company 390
+Name: HospitalWaste Circular Economy & Global Leadership
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact, Closed-loop medical supply chain, Digital waste management solutions, Global sustainability, Industry leadership
+Location: Paris, France
+Volume: 65000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging, Single-use devices, Medical textiles, Electronic medical waste, Medical waste streams, Pharmaceutical waste, Cytotoxic waste, Radioactive waste
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Digital waste tracking → Circular healthcare models → International collaboration → Sustainable development goals → Industry leadership
+
+Company 391
+Name: E-Waste Circular Economy & Global Impact & Leadership
+Industry: Electronic Waste Circular Economy & Global Impact & Leadership
+Products: Recycled materials for new electronics, Reusable components, Sustainable electronics production, Reduced e-waste generation, Global impact on circular economy, Industry leadership, Policy advocacy, Innovation
+Location: London, UK
+Volume: 110000 metric tons of electronic waste
+Materials: Computers, Laptops, Mobile phones, TVs, Appliances, IT equipment, Circuit boards, Batteries, Cables, Displays, Electronic components, Rare earth metals, Precious metals, Plastics, Glass, Electronic waste streams, Hazardous materials
+Processes: Collection → Sorting → Dismantling → Shredding → Separation → Refining → Material recovery → Component reuse → Product design for circularity → Upcycling → Consumer education → Research & Development → Policy advocacy → International collaboration → Industry leadership → Policy development → Innovation
+
+Company 392
+Name: OrganicWaste Circular Economy & Global Impact & Leadership
+Industry: Organic Waste Circular Economy & Global Impact & Leadership
+Products: High-quality organic compost, Biogas, Electricity, Heat, Sustainable agriculture, Reduced food waste, Resource recovery from organic waste, Global sustainability, Industry leadership, Policy advocacy
+Location: Rome, Italy
+Volume: 140000 metric tons of organic waste
+Materials: Food scraps, Garden waste, Agricultural residues, Municipal organic waste, Commercial food waste, Industrial organic waste, Food processing waste, Organic waste streams, Biowaste
+Processes: Aerobic composting → Anaerobic digestion → Combined heat and power → Compost marketing → Food waste prevention initiatives → Nutrient recovery → Bioproducts manufacturing → International collaboration → Sustainable development goals → Industry leadership → Policy advocacy
+
+Company 393
+Name: IndustrialWater Circular Economy & Global Impact & Leadership
+Industry: Industrial Water Circular Economy & Global Impact & Leadership
+Products: Treated industrial wastewater, Reused process water, Minimized water discharge, Resource recovery, Sustainable industrial operations, Water stewardship, Global impact, Industry leadership, Policy advocacy
+Location: Madrid, Spain
+Volume: 180000 cubic meters of industrial wastewater
+Materials: Chemical waste, Heavy metals, Suspended solids, Organic pollutants, Cooling water, Boiler feedwater, Rinse water, Process water, Industrial sludge, Textile dyes, Industrial wastewater streams, Hazardous industrial waste
+Processes: Physical-chemical treatment → Biological treatment → Membrane filtration → Advanced oxidation → Recycling → Resource recovery → Monitoring → Process optimization → Water stewardship programs → International collaboration → Sustainable development goals → Industry leadership → Policy advocacy
+
+Company 394
+Name: MedicalWaste Circular Economy & Global Impact & Leadership
+Industry: Hospital
+Products: Sustainable medical waste management, Resource recovery from medical waste, Reduced environmental impact, Closed-loop medical supply chain, Advanced circular solutions, Global solutions, Industry leadership, Policy advocacy
+Location: Dublin, Ireland
+Volume: 55000 metric tons of medical waste
+Materials: Recyclable medical plastics, Sterilized instruments, Non-hazardous medical waste, Packaging, Single-use devices, Medical textiles, Electronic medical waste, Medical waste streams, Pharmaceutical waste, Cytotoxic waste, Radioactive waste, Medical hazardous waste
+Processes: Segregation → Collection → Sterilization → Recycling → Reprocessing → Product manufacturing → Waste minimization → Research & Development → Policy advocacy → Supplier collaboration → Advanced recycling technologies → Circular healthcare models → International collaboration → Sustainable development goals → Industry leadership → Policy advocacy
+
+Company 395
+Name: ConstructionWaste Circular Economy & Global Impact & Leadership
+Industry: Construction Waste Circular Economy & Global Impact & Leadership
+Products: Recycled aggregates, Wood chips, Metal scrap, Reused building materials, Sustainable construction, Innovative circular solutions, Global development, Industry leadership, Policy advocacy
+Location: Warsaw, Poland
+Volume: 210000 metric tons of construction waste
+Materials: Concrete, Brick, Wood, Steel, Asphalt, Plasterboard, Roofing materials, Glass, Insulation, Bio-based materials, Demolition waste, Construction debris, Building materials, Construction waste streams, Hazardous construction waste
+Processes: Demolition → Sorting → Crushing → Shredding → Magnetic separation → Reuse → Recycling → Product manufacturing → Sustainable design → Circular design principles → Research & Development → International collaboration → Sustainable development goals → Industry leadership → Policy advocacy
+
+Company 396
+Name: BioPlastics Circular Economy & Global Impact & Leadership
+Industry: Bioplastics Circular Economy & Global Impact & Leadership
+Products: Biodegradable packaging, Compostable products, Sustainable plastic alternatives, Reduced plastic pollution, Market development for bioplastics, Global market, Industry leadership, Policy advocacy
+Location: Stockholm, Sweden
+Volume: 45000 metric tons of bioplastic waste
+Materials: PLA, PHA, Starch-based polymers, Cellulose-based polymers, Lignin-based polymers, Biodegradable films, Bioplastic composites, Bio-based polymers, Bioplastic waste streams, Bioplastic products
+Processes: Research & Development → Fermentation → Polymerization → Extrusion → Molding → Product testing → Composting → Anaerobic digestion → Market analysis → Business development → International collaboration → Global market expansion → Industry leadership → Policy advocacy
+
+Company 397
+Name: WasteOil Circular Economy & Global Impact & Leadership
+Industry: Waste Oil Circular Economy & Global Impact & Leadership
+Products: Re-refined base oils, Lubricants, Fuel oil, Reduced environmental pollution, Resource efficiency, Sustainable lubricant production, Global sustainability, Industry leadership, Policy advocacy
+Location: Vienna, Austria
+Volume: 40000 metric tons of waste oil
+Materials: Used engine oil, Industrial lubricants, Hydraulic fluids, Transmission fluids, Transformer oils, Marine oils, Synthetic oils, Waste oil mixtures, Used oil streams, Hazardous waste oil
+Processes: Collection → Transportation → Dehydration → Filtration → Distillation → Hydrotreating → Blending → Quality control → Market development → Sustainable lubricant formulation → International collaboration → Sustainable development goals → Industry leadership → Policy advocacy
+
+Company 398
+Name: BatteryCircular Economy & Global Impact & Leadership
+Industry: Battery Circular Economy & Global Impact & Leadership
+Products: Recovered critical materials for new batteries, Reduced hazardous waste, Sustainable battery life cycle, Closed-loop battery production, Advanced battery recycling, Global impact, Industry leadership, Policy advocacy
+Location: Budapest, Hungary
+Volume: 30000 metric tons of battery waste
+Materials: Li-ion batteries, EV batteries, Consumer batteries, Industrial batteries, Lead-acid batteries, NiMH batteries, Ni-Cd batteries, Battery components, Rare earth metals, Precious metals, Battery waste streams, Hazardous battery waste
+Processes: Disassembly → Mechanical separation → Hydrometallurgy/Pyrometallurgy → Material purification → Product manufacturing → Research & Development → Policy advocacy → Consumer education → Advanced recycling technologies → International collaboration → Sustainable development goals → Industry leadership → Policy advocacy
+
+Company 399
+Name: WoodWaste Circular Economy & Global Impact & Leadership
+Industry: Wood Waste Circular Economy & Global Impact & Leadership
+Products: Electricity, Heat, Biofuel, Recycled wood products, Reduced landfill waste, Sustainable forest management, Value-added wood products, Global solutions, Industry leadership, Policy advocacy
+Location: Lisbon, Portugal
+Volume: 120000 metric tons of wood waste
+Materials: Forest residues, Sawmill waste, Urban wood waste, Pallets, Crates, Construction wood waste, Demolition wood, Wood composites, Lignocellulosic biomass, Wood waste streams, Hazardous wood waste
+Processes: Collection → Sorting → Chipping → Grinding → Pelletizing → Combustion → Steam generation → Power generation → Product manufacturing → Sustainable forestry → Value-added product development → International collaboration → Sustainable development goals → Industry leadership → Policy advocacy
+
+Company 400
+Name: MunicipalWaste Circular Economy & Global Impact & Leadership
+Industry: Municipal Solid Waste Circular Economy & Global Impact & Leadership
+Products: Recyclables, Compost, Energy from waste, Reduced landfill volume, Sustainable resource management, Community engagement, Smart city waste solutions, Global impact, Industry leadership, Policy advocacy
+Location: Copenhagen, Denmark
+Volume: 240000 metric tons of municipal solid waste
+Materials: Mixed household waste, Commercial waste, Green waste, Construction and demolition waste, Street sweepings, Bulky waste, Food waste, Electronic waste, Hazardous household waste, Municipal waste streams, Organic waste
+Processes: Collection → Sorting → Composting → Anaerobic digestion → Incineration → Landfill → Public education → Policy advocacy → Resource recovery → Community engagement → Smart waste management systems → International collaboration → Sustainable development goals → Industry leadership → Policy advocacy
+
+
