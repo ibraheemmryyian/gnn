@@ -1,4 +1,4 @@
-// Complete AI Matching Engine - Browser Compatible
+// Optimized AI Matching Engine - High Performance & Enhanced Accuracy
 
 interface Company {
   [key: string]: string;
@@ -11,12 +11,10 @@ interface SymbioticConnection {
   consumer_industry: string;
   symbiotic_material: string;
   waste_type: string;
-  match_type: string; // 'direct', 'category', 'processed', 'energy'
-  confidence_score: number; // 0-1 scale
-}
-
-interface IndustryConnectionCount {
-  [key: string]: number;
+  match_type: string;
+  confidence_score: number;
+  geographic_bonus?: number;
+  industry_synergy?: number;
 }
 
 interface MaterialCategory {
@@ -24,646 +22,456 @@ interface MaterialCategory {
   materials: string[];
   processing_methods?: string[];
   end_uses?: string[];
+  compatibility_score?: number;
 }
 
-function parseCompanyData(data: string): Company[] {
-  const companies: Company[] = [];
-  const companyBlocks = data.trim().split("\n\n");
-
-  for (const block of companyBlocks) {
-    const company: Company = {};
-    const lines = block.split("\n");
-    
-    for (const line of lines) {
-      if (line.includes(":")) {
-        const [key, ...valueParts] = line.split(": ");
-        const value = valueParts.join(": ");
-        company[key.trim()] = value.trim();
-      }
-    }
-    companies.push(company);
-  }
-  
-  return companies;
-}
-
-function createMaterialCategories(): MaterialCategory[] {
+// Optimized material categories with Gulf region specifics
+function createOptimizedMaterialCategories(): MaterialCategory[] {
   return [
     {
-      category: "metals",
-      materials: ["metal", "steel", "aluminum", "copper", "iron", "brass", "bronze", "zinc", "lead", "tin", "scrap metal", "metal scraps", "aluminum offcuts", "steel shavings", "copper wire", "vehicle parts", "containers", "raw metals", "pipelines", "catalysts"],
-      processing_methods: ["melting", "smelting", "recycling", "refining", "processing"],
-      end_uses: ["construction", "manufacturing", "automotive", "infrastructure", "packaging"]
+      category: "petrochemicals",
+      materials: ["crude oil", "natural gas", "petroleum", "petrochemicals", "hydrocarbons", "oil refinery waste", "gas condensate", "naphtha", "benzene", "ethylene", "propylene"],
+      processing_methods: ["refining", "cracking", "distillation", "separation"],
+      end_uses: ["fuel", "plastics", "chemicals", "energy"],
+      compatibility_score: 0.95
     },
     {
-      category: "plastics_polymers",
-      materials: ["plastic", "polymers", "polyethylene", "polypropylene", "pvc", "pet", "hdpe", "ldpe", "plastic wraps", "single-use plastics", "water bottles", "packaging films", "off-spec products", "edge trims", "molding waste", "syringes", "iv bags", "gloves", "sterile packaging", "packaging materials"],
-      processing_methods: ["melting", "shredding", "granulation", "reprocessing", "chemical recycling"],
-      end_uses: ["packaging", "manufacturing", "construction", "automotive", "textiles"]
+      category: "metals_advanced",
+      materials: ["aluminum", "steel", "copper", "titanium", "nickel", "zinc", "lead", "precious metals", "rare earth metals", "metal alloys", "scrap metal", "metal shavings"],
+      processing_methods: ["smelting", "refining", "alloying", "casting"],
+      end_uses: ["construction", "automotive", "aerospace", "electronics"],
+      compatibility_score: 0.92
     },
     {
-      category: "organic_waste",
-      materials: ["food scraps", "garden waste", "coffee grounds", "food processing waste", "agricultural produce", "food waste", "organic waste", "food & beverages", "biomass"],
+      category: "plastics_polymers_advanced",
+      materials: ["polyethylene", "polypropylene", "pvc", "pet", "hdpe", "ldpe", "abs", "polystyrene", "plastic waste", "polymer waste", "packaging materials"],
+      processing_methods: ["injection molding", "extrusion", "blow molding", "recycling"],
+      end_uses: ["packaging", "automotive", "construction", "electronics"],
+      compatibility_score: 0.88
+    },
+    {
+      category: "organic_waste_enhanced",
+      materials: ["food waste", "agricultural waste", "biomass", "organic matter", "food scraps", "crop residues", "animal waste", "palm oil waste", "date palm waste"],
       processing_methods: ["composting", "anaerobic digestion", "fermentation", "biogas production"],
-      end_uses: ["fertilizer", "soil amendment", "biogas", "energy", "animal feed"]
+      end_uses: ["fertilizer", "biogas", "biofuel", "soil amendment"],
+      compatibility_score: 0.85
     },
     {
-      category: "paper_cardboard",
-      materials: ["paper", "cardboard", "newspapers", "magazines", "cardboard boxes", "office waste", "paper products", "packaging materials"],
-      processing_methods: ["pulping", "deinking", "recycling", "processing"],
-      end_uses: ["packaging", "printing", "construction", "insulation"]
+      category: "construction_materials_gulf",
+      materials: ["concrete", "cement", "sand", "gravel", "limestone", "gypsum", "construction waste", "demolition debris", "building materials"],
+      processing_methods: ["crushing", "screening", "mixing", "curing"],
+      end_uses: ["construction", "infrastructure", "road building"],
+      compatibility_score: 0.82
     },
     {
-      category: "wood_biomass",
-      materials: ["wood", "wood scraps", "wooden pallets", "timber", "sawdust", "wood chips", "biomass"],
-      processing_methods: ["chipping", "grinding", "gasification", "pyrolysis", "burning"],
-      end_uses: ["fuel", "energy", "construction", "manufacturing", "landscaping"]
+      category: "water_wastewater_advanced",
+      materials: ["wastewater", "industrial water", "cooling water", "process water", "brine", "desalination waste", "produced water"],
+      processing_methods: ["treatment", "filtration", "reverse osmosis", "desalination"],
+      end_uses: ["irrigation", "industrial use", "cooling", "process water"],
+      compatibility_score: 0.90
     },
     {
-      category: "glass",
-      materials: ["glass", "bottles", "jars", "recycled glass", "window glass", "container glass"],
-      processing_methods: ["crushing", "melting", "reforming", "recycling"],
-      end_uses: ["containers", "construction", "manufacturing", "aggregates"]
+      category: "energy_thermal",
+      materials: ["waste heat", "steam", "hot water", "thermal energy", "exhaust gases", "flue gases"],
+      processing_methods: ["heat recovery", "cogeneration", "heat exchange"],
+      end_uses: ["heating", "power generation", "process heat"],
+      compatibility_score: 0.87
     },
     {
-      category: "construction_materials",
-      materials: ["concrete", "concrete rubble", "bricks", "tiles", "construction waste", "aggregate", "sand", "gravel", "plasterboard", "asphalt", "demolition waste"],
-      processing_methods: ["crushing", "sorting", "screening", "processing"],
-      end_uses: ["construction", "road base", "concrete production", "landscaping"]
-    },
-    {
-      category: "textiles",
-      materials: ["textile", "fabric", "clothing", "textile offcuts", "fabrics", "linens", "cotton", "polyester", "wool"],
-      processing_methods: ["shredding", "cutting", "sorting", "cleaning"],
-      end_uses: ["insulation", "stuffing", "rags", "new textiles", "automotive"]
-    },
-    {
-      category: "chemicals",
-      materials: ["chemicals", "solvents", "acids", "alkalis", "process chemicals", "spent solvents", "lubricants", "adhesives", "cleaning agents", "lab reagents", "cleaning supplies", "chemical coagulants", "disinfectants"],
-      processing_methods: ["distillation", "purification", "neutralization", "treatment"],
-      end_uses: ["manufacturing", "processing", "cleaning", "treatment"]
-    },
-    {
-      category: "oils_petroleum",
-      materials: ["oil", "petroleum", "engine oil", "hydraulic fluid", "used oil", "lubricants", "hydrocarbons", "fuel", "diesel", "gasoline"],
-      processing_methods: ["refining", "re-refining", "filtering", "distillation"],
-      end_uses: ["fuel", "lubricants", "energy", "heating", "manufacturing"]
-    },
-    {
-      category: "water_wastewater",
-      materials: ["water", "wastewater", "raw water", "treated water", "process water", "cooling water", "brine", "produced water"],
-      processing_methods: ["treatment", "filtration", "purification", "recycling"],
-      end_uses: ["process water", "irrigation", "cooling", "cleaning"]
-    },
-    {
-      category: "energy",
-      materials: ["energy", "electricity", "heat", "steam", "biogas", "fuel"],
-      processing_methods: ["generation", "conversion", "distribution"],
-      end_uses: ["power", "heating", "process energy", "manufacturing"]
-    },
-    {
-      category: "rubber",
-      materials: ["rubber", "tyres", "used vehicle tyres", "rubber scraps", "rubber products"],
-      processing_methods: ["shredding", "granulation", "devulcanization", "pyrolysis"],
-      end_uses: ["fuel", "rubber products", "playground surfaces", "road construction"]
-    },
-    {
-      category: "sludge_residues",
-      materials: ["sludge", "dewatered sludge cake", "biosolids", "chemical sludge", "drilling mud", "tank bottom sludge", "oily water treatment sludge"],
-      processing_methods: ["dewatering", "composting", "incineration", "stabilization"],
-      end_uses: ["fertilizer", "soil amendment", "energy", "landfill cover"]
-    },
-    {
-      category: "filter_media",
-      materials: ["filter media", "spent activated carbon", "sand filter media", "filtration media", "used filters"],
-      processing_methods: ["regeneration", "cleaning", "replacement", "processing"],
-      end_uses: ["filtration", "water treatment", "air purification", "aggregate"]
+      category: "chemicals_solvents",
+      materials: ["solvents", "acids", "bases", "catalysts", "chemical waste", "process chemicals", "cleaning agents"],
+      processing_methods: ["distillation", "purification", "neutralization"],
+      end_uses: ["manufacturing", "cleaning", "processing"],
+      compatibility_score: 0.83
     }
   ];
 }
 
-function identifySymbioticConnections(companies: Company[]): SymbioticConnection[] {
-  const connections: SymbioticConnection[] = [];
-  const materialCategories = createMaterialCategories();
-  
-  // Create comprehensive mapping of materials to categories
-  const materialToCategory = new Map<string, string>();
-  const categoryMaterials = new Map<string, Set<string>>();
-  
-  for (const category of materialCategories) {
-    categoryMaterials.set(category.category, new Set());
-    for (const material of category.materials) {
-      materialToCategory.set(material.toLowerCase(), category.category);
-      categoryMaterials.get(category.category)!.add(material.toLowerCase());
-    }
-    
-    // Add processing methods as potential materials
-    if (category.processing_methods) {
-      for (const method of category.processing_methods) {
-        materialToCategory.set(method.toLowerCase(), category.category);
-        categoryMaterials.get(category.category)!.add(method.toLowerCase());
-      }
-    }
-    
-    // Add end uses as potential materials
-    if (category.end_uses) {
-      for (const use of category.end_uses) {
-        materialToCategory.set(use.toLowerCase(), category.category);
-        categoryMaterials.get(category.category)!.add(use.toLowerCase());
-      }
-    }
+// Optimized geographic proximity calculator
+function calculateGeographicBonus(location1: string, location2: string): number {
+  const gulfRegions = {
+    "UAE": ["Dubai", "Abu Dhabi", "Sharjah", "Ajman", "Fujairah", "Ras Al Khaimah", "Umm Al Quwain"],
+    "Saudi Arabia": ["Riyadh", "Jeddah", "Dammam", "Mecca", "Medina", "Khobar", "Jubail"],
+    "Qatar": ["Doha", "Al Rayyan", "Al Wakrah", "Al Khor"],
+    "Kuwait": ["Kuwait City", "Hawalli", "Ahmadi", "Jahra"],
+    "Bahrain": ["Manama", "Riffa", "Muharraq", "Hamad Town"],
+    "Oman": ["Muscat", "Salalah", "Nizwa", "Sur", "Sohar"],
+    "Europe": ["London", "Paris", "Berlin", "Rome", "Madrid", "Amsterdam", "Vienna", "Brussels", "Stockholm", "Oslo", "Helsinki", "Dublin", "Warsaw", "Prague", "Budapest", "Lisbon", "Athens", "Zagreb", "Ljubljana", "Luxembourg City", "Vilnius", "Tallinn", "Sofia", "Bucharest", "Copenhagen", "Brno"]
+  };
+
+  // Same city = highest bonus
+  if (location1 === location2) return 0.3;
+
+  // Find regions for both locations
+  let region1 = null, region2 = null;
+  for (const [region, cities] of Object.entries(gulfRegions)) {
+    if (cities.some(city => location1.includes(city))) region1 = region;
+    if (cities.some(city => location2.includes(city))) region2 = region;
   }
 
-  // Enhanced material extraction and normalization
-  function extractMaterials(text: string): Set<string> {
-    const materials = new Set<string>();
-    if (!text) return materials;
-    
-    const cleanText = text.toLowerCase()
-      .replace(/[()]/g, '') // Remove parentheses
-      .replace(/\s+/g, ' ') // Normalize whitespace
-      .trim();
-    
-    // Split by various delimiters
-    const parts = cleanText.split(/[,;|&+\n]/).map(part => part.trim());
-    
-    for (const part of parts) {
-      if (part.length > 0) {
-        materials.add(part);
-        
-        // Also add individual words for better matching
-        const words = part.split(/\s+/);
-        for (const word of words) {
-          if (word.length > 2) { // Ignore very short words
-            materials.add(word);
-          }
-        }
-      }
-    }
-    
-    return materials;
-  }
+  // Same region = high bonus
+  if (region1 && region2 && region1 === region2) return 0.2;
 
-  // Function to calculate match confidence
-  function calculateConfidence(matchType: string, producerMat: string, consumerMat: string): number {
-    if (matchType === 'direct') return 1.0;
-    if (matchType === 'category') return 0.8;
-    if (matchType === 'processed') return 0.6;
-    if (matchType === 'energy') return 0.4;
-    
-    // Adjust based on material specificity
-    const avgLength = (producerMat.length + consumerMat.length) / 2;
-    if (avgLength > 10) return Math.min(1.0, 0.8 + (avgLength - 10) * 0.02);
-    
-    return 0.5;
-  }
+  // Both in Gulf = medium bonus
+  if (region1 && region2 && !["Europe"].includes(region1) && !["Europe"].includes(region2)) return 0.15;
 
-  // Function to find matches between waste and materials
-  function findMatches(wasteTerms: Set<string>, materialTerms: Set<string>): Array<{material: string, matchType: string, confidence: number}> {
-    const matches: Array<{material: string, matchType: string, confidence: number}> = [];
-    
-    // Direct matches
-    for (const waste of wasteTerms) {
-      for (const material of materialTerms) {
-        if (waste === material) {
-          matches.push({
-            material: waste,
-            matchType: 'direct',
-            confidence: calculateConfidence('direct', waste, material)
-          });
-        }
-      }
-    }
-    
-    // Category matches
-    for (const waste of wasteTerms) {
-      const wasteCategory = materialToCategory.get(waste);
-      if (wasteCategory) {
-        for (const material of materialTerms) {
-          const materialCategory = materialToCategory.get(material);
-          if (materialCategory && wasteCategory === materialCategory) {
-            matches.push({
-              material: `${waste} -> ${material}`,
-              matchType: 'category',
-              confidence: calculateConfidence('category', waste, material)
-            });
-          }
-        }
-      }
-    }
-    
-    // Substring matches (one contains the other)
-    for (const waste of wasteTerms) {
-      for (const material of materialTerms) {
-        if (waste.includes(material) || material.includes(waste)) {
-          if (Math.abs(waste.length - material.length) <= 3) { // Similar length
-            matches.push({
-              material: `${waste} ≈ ${material}`,
-              matchType: 'processed',
-              confidence: calculateConfidence('processed', waste, material)
-            });
-          }
-        }
-      }
-    }
-    
-    // Energy potential matches
-    const energyMaterials = ['biomass', 'wood', 'organic', 'waste', 'oil', 'gas', 'fuel'];
-    for (const waste of wasteTerms) {
-      if (energyMaterials.some(em => waste.includes(em))) {
-        for (const material of materialTerms) {
-          if (material.includes('energy') || material.includes('fuel') || material.includes('power')) {
-            matches.push({
-              material: `${waste} -> energy`,
-              matchType: 'energy',
-              confidence: calculateConfidence('energy', waste, material)
-            });
-          }
-        }
-      }
-    }
-    
-    return matches;
-  }
+  // Both in Europe = medium bonus
+  if (region1 === "Europe" && region2 === "Europe") return 0.1;
 
-  // Main matching logic
-  for (const producer of companies) {
-    if (!producer["Waste Materials"]) continue;
-    
-    const producerWasteTerms = extractMaterials(producer["Waste Materials"]);
-    
-    for (const consumer of companies) {
-      if (producer === consumer || !consumer["Materials"]) continue;
-      
-      const consumerMaterialTerms = extractMaterials(consumer["Materials"]);
-      const matches = findMatches(producerWasteTerms, consumerMaterialTerms);
-      
-      for (const match of matches) {
-        const volumeParts = producer["Volume"]?.split(" of ");
-        const wasteType = volumeParts && volumeParts.length > 1 
-          ? volumeParts[1].replace(/\n/g, "").toLowerCase()
-          : "general";
-        
-        connections.push({
-          producer_name: producer["Name"] || "",
-          producer_industry: producer["Industry"] || "",
-          consumer_name: consumer["Name"] || "",
-          consumer_industry: consumer["Industry"] || "",
-          symbiotic_material: match.material,
-          waste_type: wasteType,
-          match_type: match.matchType,
-          confidence_score: match.confidence
-        });
-      }
-    }
-  }
-  
-  // Remove duplicates and sort by confidence
-  const uniqueConnections = connections.filter((conn, index, self) => 
-    index === self.findIndex(c => 
-      c.producer_name === conn.producer_name &&
-      c.consumer_name === conn.consumer_name &&
-      c.symbiotic_material === conn.symbiotic_material
-    )
-  ).sort((a, b) => b.confidence_score - a.confidence_score);
-  
-  return uniqueConnections;
+  // Cross-region = small bonus
+  return 0.05;
 }
 
-// Main AIMatchingEngine class
-class AIMatchingEngine {
+// Optimized industry synergy calculator
+function calculateIndustrySynergy(industry1: string, industry2: string): number {
+  const synergyMatrix = {
+    "Oil & Gas": { "Petrochemicals": 0.95, "Power Generation": 0.85, "Manufacturing": 0.75 },
+    "Petrochemicals": { "Plastics": 0.90, "Chemicals": 0.85, "Manufacturing": 0.80 },
+    "Manufacturing": { "Recycling": 0.85, "Logistics": 0.75, "Construction": 0.70 },
+    "Power Generation": { "Water Treatment": 0.80, "Manufacturing": 0.75, "Desalination": 0.85 },
+    "Water Treatment": { "Agriculture": 0.90, "Manufacturing": 0.80, "Municipal": 0.85 },
+    "Construction": { "Cement": 0.95, "Steel": 0.90, "Aggregates": 0.85 },
+    "Food Processing": { "Agriculture": 0.95, "Packaging": 0.85, "Waste Management": 0.80 },
+    "Electronics": { "Metals": 0.85, "Plastics": 0.80, "Recycling": 0.90 },
+    "Textiles": { "Chemicals": 0.80, "Water Treatment": 0.75, "Recycling": 0.85 },
+    "Automotive": { "Metals": 0.90, "Plastics": 0.85, "Electronics": 0.80 }
+  };
+
+  // Direct lookup
+  if (synergyMatrix[industry1]?.[industry2]) {
+    return synergyMatrix[industry1][industry2];
+  }
+  if (synergyMatrix[industry2]?.[industry1]) {
+    return synergyMatrix[industry2][industry1];
+  }
+
+  // Fuzzy matching for partial industry names
+  for (const [key1, synergies] of Object.entries(synergyMatrix)) {
+    if (industry1.includes(key1) || key1.includes(industry1)) {
+      for (const [key2, score] of Object.entries(synergies)) {
+        if (industry2.includes(key2) || key2.includes(industry2)) {
+          return score;
+        }
+      }
+    }
+  }
+
+  return 0.5; // Default synergy
+}
+
+// High-performance material extraction with caching
+const materialCache = new Map<string, Set<string>>();
+
+function extractMaterialsOptimized(text: string): Set<string> {
+  if (materialCache.has(text)) {
+    return materialCache.get(text)!;
+  }
+
+  const materials = new Set<string>();
+  if (!text) return materials;
+
+  const cleanText = text.toLowerCase()
+    .replace(/[()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  // Split by delimiters and process
+  const parts = cleanText.split(/[,;|&+\n→]/).map(part => part.trim());
+  
+  for (const part of parts) {
+    if (part.length > 2) {
+      materials.add(part);
+      
+      // Add key terms for better matching
+      const words = part.split(/\s+/);
+      for (const word of words) {
+        if (word.length > 3) {
+          materials.add(word);
+        }
+      }
+    }
+  }
+
+  materialCache.set(text, materials);
+  return materials;
+}
+
+// Optimized matching algorithm with performance improvements
+class OptimizedAIMatchingEngine {
   private materialCategories: MaterialCategory[];
   private materialToCategory: Map<string, string>;
-  private categoryMaterials: Map<string, Set<string>>;
+  private categoryCompatibility: Map<string, Map<string, number>>;
 
   constructor() {
-    this.materialCategories = this.createMaterialCategories();
-    this.materialToCategory = new Map<string, string>();
-    this.categoryMaterials = new Map<string, Set<string>>();
-    this.initializeMaterialMappings();
+    this.materialCategories = createOptimizedMaterialCategories();
+    this.materialToCategory = new Map();
+    this.categoryCompatibility = new Map();
+    this.initializeMappings();
   }
 
-  private createMaterialCategories(): MaterialCategory[] {
-    return createMaterialCategories();
-  }
-
-  private initializeMaterialMappings(): void {
+  private initializeMappings(): void {
+    // Build material to category mapping
     for (const category of this.materialCategories) {
-      this.categoryMaterials.set(category.category, new Set());
       for (const material of category.materials) {
         this.materialToCategory.set(material.toLowerCase(), category.category);
-        this.categoryMaterials.get(category.category)!.add(material.toLowerCase());
       }
       
       if (category.processing_methods) {
         for (const method of category.processing_methods) {
           this.materialToCategory.set(method.toLowerCase(), category.category);
-          this.categoryMaterials.get(category.category)!.add(method.toLowerCase());
         }
       }
       
       if (category.end_uses) {
         for (const use of category.end_uses) {
           this.materialToCategory.set(use.toLowerCase(), category.category);
-          this.categoryMaterials.get(category.category)!.add(use.toLowerCase());
         }
       }
     }
+
+    // Build category compatibility matrix
+    for (const cat1 of this.materialCategories) {
+      const compatMap = new Map<string, number>();
+      for (const cat2 of this.materialCategories) {
+        if (cat1.category === cat2.category) {
+          compatMap.set(cat2.category, 1.0);
+        } else {
+          // Calculate compatibility based on category scores
+          const avgScore = ((cat1.compatibility_score || 0.5) + (cat2.compatibility_score || 0.5)) / 2;
+          compatMap.set(cat2.category, avgScore * 0.8); // Cross-category penalty
+        }
+      }
+      this.categoryCompatibility.set(cat1.category, compatMap);
+    }
+  }
+
+  private findOptimizedMatches(wasteTerms: Set<string>, materialTerms: Set<string>): Array<{material: string, matchType: string, confidence: number}> {
+    const matches: Array<{material: string, matchType: string, confidence: number}> = [];
+    const processedPairs = new Set<string>();
+
+    // Direct matches (highest priority)
+    for (const waste of wasteTerms) {
+      for (const material of materialTerms) {
+        const pairKey = `${waste}-${material}`;
+        if (processedPairs.has(pairKey)) continue;
+        processedPairs.add(pairKey);
+
+        if (waste === material) {
+          matches.push({
+            material: waste,
+            matchType: 'direct',
+            confidence: 0.98
+          });
+        }
+      }
+    }
+
+    // Category matches (high priority)
+    for (const waste of wasteTerms) {
+      const wasteCategory = this.materialToCategory.get(waste);
+      if (!wasteCategory) continue;
+
+      for (const material of materialTerms) {
+        const materialCategory = this.materialToCategory.get(material);
+        if (!materialCategory) continue;
+
+        const compatibility = this.categoryCompatibility.get(wasteCategory)?.get(materialCategory) || 0.5;
+        if (compatibility > 0.7) {
+          matches.push({
+            material: `${waste} → ${material}`,
+            matchType: 'category',
+            confidence: compatibility * 0.9
+          });
+        }
+      }
+    }
+
+    // Substring matches (medium priority)
+    for (const waste of wasteTerms) {
+      for (const material of materialTerms) {
+        if (waste.length > 4 && material.length > 4) {
+          if (waste.includes(material) || material.includes(waste)) {
+            const similarity = Math.min(waste.length, material.length) / Math.max(waste.length, material.length);
+            if (similarity > 0.6) {
+              matches.push({
+                material: `${waste} ≈ ${material}`,
+                matchType: 'processed',
+                confidence: 0.7 + (similarity * 0.2)
+              });
+            }
+          }
+        }
+      }
+    }
+
+    // Sort by confidence and return top matches
+    return matches
+      .sort((a, b) => b.confidence - a.confidence)
+      .slice(0, 5); // Limit to top 5 matches per company pair
   }
 
   public parseCompanyData(data: string): Company[] {
-    return parseCompanyData(data);
+    const companies: Company[] = [];
+    const companyBlocks = data.trim().split(/\n\s*\n/);
+
+    for (const block of companyBlocks) {
+      const company: Company = {};
+      const lines = block.split('\n');
+      
+      for (const line of lines) {
+        if (line.includes(':')) {
+          const [key, ...valueParts] = line.split(': ');
+          const value = valueParts.join(': ');
+          company[key.trim()] = value.trim();
+        }
+      }
+      
+      if (company.Name) {
+        companies.push(company);
+      }
+    }
+    
+    return companies;
   }
 
   public identifySymbioticConnections(companies: Company[]): SymbioticConnection[] {
-    return identifySymbioticConnections(companies);
+    const connections: SymbioticConnection[] = [];
+    const processedPairs = new Set<string>();
+
+    // Limit processing for performance (process in batches)
+    const maxConnections = Math.min(companies.length * 3, 500); // Limit total connections
+    let connectionCount = 0;
+
+    for (let i = 0; i < companies.length && connectionCount < maxConnections; i++) {
+      const producer = companies[i];
+      if (!producer.Materials && !producer.Products) continue;
+
+      // Create waste materials from products (what they produce can be waste for others)
+      const wasteTerms = extractMaterialsOptimized(
+        (producer.Products || '') + ' ' + (producer.Materials || '')
+      );
+
+      for (let j = i + 1; j < companies.length && connectionCount < maxConnections; j++) {
+        const consumer = companies[j];
+        if (!consumer.Materials) continue;
+
+        const pairKey = `${producer.Name}-${consumer.Name}`;
+        if (processedPairs.has(pairKey)) continue;
+        processedPairs.add(pairKey);
+
+        const materialTerms = extractMaterialsOptimized(consumer.Materials);
+        const matches = this.findOptimizedMatches(wasteTerms, materialTerms);
+
+        for (const match of matches) {
+          if (connectionCount >= maxConnections) break;
+
+          // Calculate bonuses
+          const geoBonus = calculateGeographicBonus(
+            producer.Location || '',
+            consumer.Location || ''
+          );
+          
+          const industryBonus = calculateIndustrySynergy(
+            producer.Industry || '',
+            consumer.Industry || ''
+          );
+
+          // Final confidence with bonuses
+          const finalConfidence = Math.min(
+            match.confidence + geoBonus + (industryBonus * 0.1),
+            1.0
+          );
+
+          // Only include high-quality matches
+          if (finalConfidence > 0.6) {
+            connections.push({
+              producer_name: producer.Name || '',
+              producer_industry: producer.Industry || '',
+              consumer_name: consumer.Name || '',
+              consumer_industry: consumer.Industry || '',
+              symbiotic_material: match.material,
+              waste_type: this.extractWasteType(producer.Volume || ''),
+              match_type: match.matchType,
+              confidence_score: finalConfidence,
+              geographic_bonus: geoBonus,
+              industry_synergy: industryBonus
+            });
+            connectionCount++;
+          }
+        }
+      }
+    }
+
+    // Return top connections sorted by confidence
+    return connections
+      .sort((a, b) => b.confidence_score - a.confidence_score)
+      .slice(0, Math.min(200, connections.length)); // Limit final output
   }
 
-  /**
-   * Predicts optimal connections between companies based on AI analysis
-   * This method is used by the network generator
-   * @param companies Array of companies to analyze
-   * @returns Promise resolving to array of predicted connections
-   */
+  private extractWasteType(volume: string): string {
+    const volumeParts = volume.split(' of ');
+    return volumeParts.length > 1 
+      ? volumeParts[1].replace(/\n/g, '').toLowerCase()
+      : 'general';
+  }
+
   public async predictOptimalConnections(companies: Company[]): Promise<SymbioticConnection[]> {
     if (!companies || companies.length < 2) {
       return [];
     }
 
-    // Use the existing identifySymbioticConnections method
+    console.log(`🚀 Processing ${companies.length} companies with optimized AI matching...`);
+    
+    const startTime = performance.now();
     const connections = this.identifySymbioticConnections(companies);
+    const endTime = performance.now();
     
-    // Sort by confidence score and return top connections (limit to prevent overwhelming results)
-    const sortedConnections = connections
-      .sort((a, b) => b.confidence_score - a.confidence_score)
-      .slice(0, Math.min(50, connections.length)); // Limit to top 50 connections
-    
-    return sortedConnections;
-  }
-
-  /**
-   * Find waste-to-input matches between two companies
-   * @param producer Company that produces waste
-   * @param consumer Company that might use the waste
-   * @returns Array of symbiotic connections
-   */
-  private findWasteToInputMatches(producer: Company, consumer: Company): SymbioticConnection[] {
-    const connections: SymbioticConnection[] = [];
-    
-    if (!producer["Waste Materials"] || !consumer["Materials"]) {
-      return connections;
-    }
-
-    const producerWasteTerms = this.extractMaterials(producer["Waste Materials"]);
-    const consumerMaterialTerms = this.extractMaterials(consumer["Materials"]);
-    
-    const matches = this.findMatches(producerWasteTerms, consumerMaterialTerms);
-    
-    for (const match of matches) {
-      const volumeParts = producer["Volume"]?.split(" of ");
-      const wasteType = volumeParts && volumeParts.length > 1 
-        ? volumeParts[1].replace(/\n/g, "").toLowerCase()
-        : "general";
-      
-      connections.push({
-        producer_name: producer["Name"] || "",
-        producer_industry: producer["Industry"] || "",
-        consumer_name: consumer["Name"] || "",
-        consumer_industry: consumer["Industry"] || "",
-        symbiotic_material: match.material,
-        waste_type: wasteType,
-        match_type: match.matchType,
-        confidence_score: match.confidence
-      });
-    }
+    console.log(`✅ Generated ${connections.length} connections in ${Math.round(endTime - startTime)}ms`);
     
     return connections;
-  }
-
-  /**
-   * Extract materials from text
-   */
-  private extractMaterials(text: string): Set<string> {
-    const materials = new Set<string>();
-    if (!text) return materials;
-    
-    const cleanText = text.toLowerCase()
-      .replace(/[()]/g, '') // Remove parentheses
-      .replace(/\s+/g, ' ') // Normalize whitespace
-      .trim();
-    
-    // Split by various delimiters
-    const parts = cleanText.split(/[,;|&+\n]/).map(part => part.trim());
-    
-    for (const part of parts) {
-      if (part.length > 0) {
-        materials.add(part);
-        
-        // Also add individual words for better matching
-        const words = part.split(/\s+/);
-        for (const word of words) {
-          if (word.length > 2) { // Ignore very short words
-            materials.add(word);
-          }
-        }
-      }
-    }
-    
-    return materials;
-  }
-
-  /**
-   * Find matches between waste and materials
-   */
-  private findMatches(wasteTerms: Set<string>, materialTerms: Set<string>): Array<{material: string, matchType: string, confidence: number}> {
-    const matches: Array<{material: string, matchType: string, confidence: number}> = [];
-    
-    // Direct matches
-    for (const waste of wasteTerms) {
-      for (const material of materialTerms) {
-        if (waste === material) {
-          matches.push({
-            material: waste,
-            matchType: 'direct',
-            confidence: this.calculateConfidence('direct', waste, material)
-          });
-        }
-      }
-    }
-    
-    // Category matches
-    for (const waste of wasteTerms) {
-      const wasteCategory = this.materialToCategory.get(waste);
-      if (wasteCategory) {
-        for (const material of materialTerms) {
-          const materialCategory = this.materialToCategory.get(material);
-          if (materialCategory && wasteCategory === materialCategory) {
-            matches.push({
-              material: `${waste} -> ${material}`,
-              matchType: 'category',
-              confidence: this.calculateConfidence('category', waste, material)
-            });
-          }
-        }
-      }
-    }
-    
-    // Substring matches (one contains the other)
-    for (const waste of wasteTerms) {
-      for (const material of materialTerms) {
-        if (waste.includes(material) || material.includes(waste)) {
-          if (Math.abs(waste.length - material.length) <= 3) { // Similar length
-            matches.push({
-              material: `${waste} ≈ ${material}`,
-              matchType: 'processed',
-              confidence: this.calculateConfidence('processed', waste, material)
-            });
-          }
-        }
-      }
-    }
-    
-    // Energy potential matches
-    const energyMaterials = ['biomass', 'wood', 'organic', 'waste', 'oil', 'gas', 'fuel'];
-    for (const waste of wasteTerms) {
-      if (energyMaterials.some(em => waste.includes(em))) {
-        for (const material of materialTerms) {
-          if (material.includes('energy') || material.includes('fuel') || material.includes('power')) {
-            matches.push({
-              material: `${waste} -> energy`,
-              matchType: 'energy',
-              confidence: this.calculateConfidence('energy', waste, material)
-            });
-          }
-        }
-      }
-    }
-    
-    return matches;
-  }
-
-  /**
-   * Calculate match confidence
-   */
-  private calculateConfidence(matchType: string, producerMat: string, consumerMat: string): number {
-    if (matchType === 'direct') return 1.0;
-    if (matchType === 'category') return 0.8;
-    if (matchType === 'processed') return 0.6;
-    if (matchType === 'energy') return 0.4;
-    
-    // Adjust based on material specificity
-    const avgLength = (producerMat.length + consumerMat.length) / 2;
-    if (avgLength > 10) return Math.min(1.0, 0.8 + (avgLength - 10) * 0.02);
-    
-    return 0.5;
-  }
-
-  public async processCompanies(data: string | File): Promise<{
-    companies: Company[];
-    connections: SymbioticConnection[];
-    metrics: {
-      totalCompanies: number;
-      totalConnections: number;
-      efficiency: number;
-      connectionDensity: number;
-      matchTypeDistribution: { [key: string]: number };
-      confidenceDistribution: {
-        high: number;
-        medium: number;
-        low: number;
-      };
-    };
-  }> {
-    try {
-      let companyDataRaw: string;
-      
-      if (typeof data === 'string') {
-        // If it's already a string, use it directly
-        companyDataRaw = data;
-      } else if (data instanceof File) {
-        // If it's a File object (browser), read it
-        companyDataRaw = await data.text();
-      } else {
-        throw new Error("Invalid data type. Expected string or File object.");
-      }
-
-      const companies = this.parseCompanyData(companyDataRaw);
-      const connections = this.identifySymbioticConnections(companies);
-
-      // Calculate metrics
-      const potentialProducers = companies.filter(c => c["Waste Materials"]).length;
-      const potentialConsumers = companies.filter(c => c["Materials"]).length;
-      const efficiency = potentialProducers > 0 && potentialConsumers > 0 
-        ? (connections.length / (potentialProducers * potentialConsumers)) * 100 
-        : 0;
-      
-      const maxPossibleConnections = companies.length * (companies.length - 1);
-      const connectionDensity = maxPossibleConnections > 0 
-        ? connections.length / maxPossibleConnections 
-        : 0;
-
-      const matchTypeDistribution: { [key: string]: number } = {};
-      for (const conn of connections) {
-        matchTypeDistribution[conn.match_type] = (matchTypeDistribution[conn.match_type] || 0) + 1;
-      }
-
-      const confidenceDistribution = {
-        high: connections.filter(c => c.confidence_score >= 0.8).length,
-        medium: connections.filter(c => c.confidence_score >= 0.6 && c.confidence_score < 0.8).length,
-        low: connections.filter(c => c.confidence_score < 0.6).length
-      };
-
-      return {
-        companies,
-        connections,
-        metrics: {
-          totalCompanies: companies.length,
-          totalConnections: connections.length,
-          efficiency,
-          connectionDensity,
-          matchTypeDistribution,
-          confidenceDistribution
-        }
-      };
-    } catch (error) {
-      console.error("Error processing companies:", error);
-      throw error;
-    }
   }
 
   public getMatchingStats(connections: SymbioticConnection[]): {
     byIndustry: { [key: string]: number };
     byMaterial: { [key: string]: number };
     byConfidence: { [key: string]: number };
+    byRegion: { [key: string]: number };
   } {
     const byIndustry: { [key: string]: number } = {};
     const byMaterial: { [key: string]: number } = {};
     const byConfidence: { [key: string]: number } = {};
+    const byRegion: { [key: string]: number } = {};
 
     for (const conn of connections) {
-      const industryPair = `${conn.producer_industry} -> ${conn.consumer_industry}`;
+      // Industry stats
+      const industryPair = `${conn.producer_industry} → ${conn.consumer_industry}`;
       byIndustry[industryPair] = (byIndustry[industryPair] || 0) + 1;
       
+      // Material stats
       byMaterial[conn.symbiotic_material] = (byMaterial[conn.symbiotic_material] || 0) + 1;
       
-      const confidenceRange = conn.confidence_score >= 0.8 ? 'high' : 
-                             conn.confidence_score >= 0.6 ? 'medium' : 'low';
+      // Confidence stats
+      const confidenceRange = conn.confidence_score >= 0.9 ? 'excellent' : 
+                             conn.confidence_score >= 0.8 ? 'high' : 
+                             conn.confidence_score >= 0.7 ? 'medium' : 'low';
       byConfidence[confidenceRange] = (byConfidence[confidenceRange] || 0) + 1;
+
+      // Region stats (simplified)
+      const region = conn.geographic_bonus > 0.15 ? 'gulf_region' : 
+                    conn.geographic_bonus > 0.05 ? 'same_region' : 'cross_region';
+      byRegion[region] = (byRegion[region] || 0) + 1;
     }
 
-    return { byIndustry, byMaterial, byConfidence };
+    return { byIndustry, byMaterial, byConfidence, byRegion };
   }
 }
 
-// Export the class and interfaces
+// Export optimized engine
 export {
-  AIMatchingEngine,
-  parseCompanyData,
-  identifySymbioticConnections,
+  OptimizedAIMatchingEngine as AIMatchingEngine,
   Company,
   SymbioticConnection,
   MaterialCategory
 };
 
-// Default export for easier importing
-export default AIMatchingEngine;
+export default OptimizedAIMatchingEngine;
