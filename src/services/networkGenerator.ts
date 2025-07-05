@@ -45,61 +45,66 @@ export class NetworkGenerator {
     return Math.min(importance, 1);
   }
 
-  // Enhanced aesthetic connection generation
-  private generateAestheticConnections(): SymbiosisConnection[] {
+  // FIXED: Much more conservative connection generation
+  private generateOptimalConnections(): SymbiosisConnection[] {
     const connections: SymbiosisConnection[] = [];
     const companies = this.companies;
+    const maxTotalConnections = Math.min(800, companies.length * 3); // Hard cap!
+    
+    console.log(`🎯 Target: Maximum ${maxTotalConnections} connections for ${companies.length} companies`);
     
     // Enhanced industry compatibility matrix
     const industryCompatibility: Record<string, string[]> = {
-      'Oil & Gas': ['Petrochemicals', 'Power Generation', 'Manufacturing', 'Refining', 'Chemical'],
-      'Petrochemicals': ['Plastics', 'Manufacturing', 'Oil & Gas', 'Chemicals', 'Polymer'],
-      'Manufacturing': ['Recycling', 'Logistics', 'Construction', 'Electronics', 'Automotive'],
-      'Power Generation': ['Water Treatment', 'Manufacturing', 'Desalination', 'Energy'],
-      'Water Treatment': ['Agriculture', 'Manufacturing', 'Municipal', 'Industrial', 'Hospital'],
-      'Construction': ['Cement', 'Steel', 'Aggregates', 'Real Estate', 'Building'],
-      'Food Processing': ['Agriculture', 'Packaging', 'Waste Management', 'Supermarket'],
-      'Electronics': ['Metals', 'Plastics', 'Recycling', 'Technology', 'Manufacturing'],
-      'Textiles': ['Chemicals', 'Water Treatment', 'Recycling', 'Fashion'],
-      'Automotive': ['Metals', 'Plastics', 'Electronics', 'Manufacturing', 'Steel'],
-      'Hospital': ['Waste Management', 'Water Treatment', 'Energy', 'Pharmaceutical'],
-      'Supermarket': ['Food Processing', 'Packaging', 'Waste Management', 'Logistics'],
-      'Plastic Recycling': ['Manufacturing', 'Petrochemicals', 'Construction', 'Packaging'],
-      'Furniture Production': ['Wood Processing', 'Manufacturing', 'Recycling', 'Construction']
+      'Oil & Gas': ['Petrochemicals', 'Power Generation'],
+      'Petrochemicals': ['Plastics', 'Manufacturing'],
+      'Manufacturing': ['Recycling', 'Electronics'],
+      'Power Generation': ['Water Treatment', 'Manufacturing'],
+      'Water Treatment': ['Agriculture', 'Hospital'],
+      'Electronics': ['Recycling', 'Manufacturing'],
+      'Hospital': ['Waste Management', 'Water Treatment'],
+      'Supermarket': ['Food Processing', 'Waste Management'],
+      'Plastic Recycling': ['Manufacturing', 'Petrochemicals'],
+      'Furniture Production': ['Manufacturing', 'Recycling']
     };
 
-    // Enhanced material keywords for better matching
+    // Material keywords for better matching
     const materialKeywords = {
-      metals: ['aluminum', 'steel', 'copper', 'iron', 'metal', 'alloy', 'scrap'],
-      plastics: ['plastic', 'polymer', 'pet', 'hdpe', 'ldpe', 'pvc', 'polystyrene'],
-      organics: ['food', 'organic', 'biomass', 'waste', 'compost', 'bio'],
-      chemicals: ['chemical', 'solvent', 'acid', 'oil', 'pharmaceutical', 'reagent'],
-      water: ['water', 'wastewater', 'liquid', 'effluent', 'sewage'],
-      energy: ['energy', 'heat', 'electricity', 'steam', 'power', 'fuel'],
-      wood: ['wood', 'timber', 'sawdust', 'cellulose', 'lumber', 'fiber'],
-      glass: ['glass', 'silica', 'crystal', 'bottle', 'container'],
-      textiles: ['fabric', 'cotton', 'fiber', 'textile', 'clothing', 'yarn'],
-      electronics: ['electronic', 'circuit', 'battery', 'silicon', 'component'],
-      medical: ['medical', 'pharmaceutical', 'hospital', 'healthcare', 'surgical'],
-      paper: ['paper', 'cardboard', 'pulp', 'packaging', 'newsprint']
+      metals: ['aluminum', 'steel', 'copper', 'iron', 'metal'],
+      plastics: ['plastic', 'polymer', 'pet', 'hdpe'],
+      organics: ['food', 'organic', 'biomass', 'waste'],
+      chemicals: ['chemical', 'solvent', 'acid', 'oil'],
+      water: ['water', 'wastewater', 'liquid'],
+      energy: ['energy', 'heat', 'electricity', 'steam'],
+      wood: ['wood', 'timber', 'sawdust'],
+      electronics: ['electronic', 'circuit', 'battery']
     };
 
-    // Fast connection generation with better distribution
-    for (let i = 0; i < companies.length; i++) {
-      const company1 = companies[i];
+    // STRICT connection limits per company
+    const connectionCounts = new Map<string, number>();
+    const maxConnectionsPerCompany = 6; // Much lower!
+    
+    // Sort companies by importance for priority processing
+    const sortedCompanies = [...companies].sort((a, b) => b.importance - a.importance);
+    
+    for (let i = 0; i < sortedCompanies.length && connections.length < maxTotalConnections; i++) {
+      const company1 = sortedCompanies[i];
+      const currentConnections = connectionCounts.get(company1.id) || 0;
       
-      // Dynamic connections per company based on importance
-      let connectionsForCompany = 0;
-      const maxConnectionsPerCompany = Math.min(12, Math.max(4, Math.floor(company1.importance * 15)));
+      if (currentConnections >= maxConnectionsPerCompany) continue;
       
-      // Shuffle potential partners for variety
-      const potentialPartners = companies
-        .map((company, index) => ({ company, index }))
-        .filter(({ index }) => index !== i)
-        .sort(() => Math.random() - 0.5);
+      // Only check a limited number of potential partners
+      const maxPartnersToCheck = Math.min(20, companies.length - i - 1);
+      const potentialPartners = sortedCompanies
+        .slice(i + 1, i + 1 + maxPartnersToCheck)
+        .filter(company2 => {
+          const partner2Connections = connectionCounts.get(company2.id) || 0;
+          return partner2Connections < maxConnectionsPerCompany;
+        });
       
-      for (const { company: company2, index: j } of potentialPartners) {
-        if (connectionsForCompany >= maxConnectionsPerCompany) break;
+      for (const company2 of potentialPartners) {
+        if (connections.length >= maxTotalConnections) break;
+        if ((connectionCounts.get(company1.id) || 0) >= maxConnectionsPerCompany) break;
+        if ((connectionCounts.get(company2.id) || 0) >= maxConnectionsPerCompany) continue;
         
         // Enhanced industry compatibility check
         const industry1 = company1.industry;
@@ -108,13 +113,13 @@ export class NetworkGenerator {
         let industryScore = 0;
         if (industryCompatibility[industry1]?.some(ind => industry2.includes(ind)) ||
             industryCompatibility[industry2]?.some(ind => industry1.includes(ind))) {
-          industryScore = 0.3;
+          industryScore = 0.4;
         }
         
         // Same industry bonus
-        if (industry1 === industry2) industryScore += 0.2;
+        if (industry1 === industry2) industryScore += 0.3;
         
-        // Enhanced material compatibility check
+        // Material compatibility check
         let materialScore = 0;
         const materials1 = company1.materials.join(' ').toLowerCase();
         const materials2 = company2.materials.join(' ').toLowerCase();
@@ -128,36 +133,24 @@ export class NetworkGenerator {
           const has2Products = keywords.some(keyword => products2.includes(keyword));
           
           // Cross-matching: company1's products with company2's materials
-          if (has1Products && has2Materials) materialScore += 0.4;
-          if (has2Products && has1Materials) materialScore += 0.4;
-          
-          // Same category bonus
-          if ((has1Materials || has1Products) && (has2Materials || has2Products)) {
-            materialScore += 0.2;
-          }
+          if (has1Products && has2Materials) materialScore += 0.5;
+          if (has2Products && has1Materials) materialScore += 0.5;
         }
         
-        // Enhanced geographic proximity bonus
+        // Geographic proximity bonus
         let geoBonus = 0;
-        if (company1.location === company2.location) geoBonus = 0.4;
-        else if (this.sameRegion(company1.location, company2.location)) geoBonus = 0.25;
-        else if (this.sameCountry(company1.location, company2.location)) geoBonus = 0.15;
+        if (company1.location === company2.location) geoBonus = 0.3;
+        else if (this.sameRegion(company1.location, company2.location)) geoBonus = 0.2;
         else geoBonus = 0.05;
         
-        // Volume compatibility (similar sizes work better together)
-        const volumeRatio = Math.min(company1.volume, company2.volume) / Math.max(company1.volume, company2.volume);
-        const volumeBonus = volumeRatio * 0.1;
-        
-        // Calculate connection strength
-        let strength = 0.45; // Base strength
+        // Calculate connection strength with HIGHER threshold
+        let strength = 0.5; // Higher base
         strength += industryScore;
-        strength += Math.min(materialScore, 0.6); // Cap material score
+        strength += Math.min(materialScore, 0.4);
         strength += geoBonus;
-        strength += volumeBonus;
-        strength += Math.random() * 0.15; // Randomization for variety
         
-        // Create connection if above threshold
-        if (strength > 0.65) {
+        // MUCH HIGHER threshold to limit connections
+        if (strength > 0.85) { // Was 0.65, now 0.85!
           const connectionType = this.getConnectionType(materials1, materials2, products1, products2);
           const priority = this.getPriority(strength);
           
@@ -166,21 +159,23 @@ export class NetworkGenerator {
             targetId: company2.id,
             connectionType,
             strength: Math.min(strength, 1),
-            description: `${priority}: ${company1.name} ↔ ${company2.name} (${Math.round(strength * 100)}% compatibility)`,
+            description: `${priority}: ${company1.name} ↔ ${company2.name}`,
             priority,
             hopCount: 1
           });
           
-          connectionsForCompany++;
+          // Update connection counts
+          connectionCounts.set(company1.id, (connectionCounts.get(company1.id) || 0) + 1);
+          connectionCounts.set(company2.id, (connectionCounts.get(company2.id) || 0) + 1);
         }
       }
     }
 
-    // Enhanced multi-hop connections
-    this.addEnhancedMultiHopConnections(connections, companies);
+    // Add VERY LIMITED multi-hop connections
+    this.addLimitedMultiHopConnections(connections, companies, maxTotalConnections);
     
-    console.log(`✅ Enhanced generation: ${connections.length} connections for ${companies.length} companies`);
-    return connections;
+    console.log(`✅ CONTROLLED generation: ${connections.length} connections (target: ${maxTotalConnections})`);
+    return connections.slice(0, maxTotalConnections); // Hard cut-off
   }
 
   private sameRegion(location1: string, location2: string): boolean {
@@ -195,24 +190,12 @@ export class NetworkGenerator {
     return (isGulf1 && isGulf2) || (isEurope1 && isEurope2);
   }
 
-  private sameCountry(location1: string, location2: string): boolean {
-    // Simple country matching based on common patterns
-    const countries = ['Germany', 'France', 'UK', 'Italy', 'Spain', 'Netherlands', 'Poland', 'Sweden', 'Norway', 'Finland', 'Denmark', 'Austria', 'Belgium', 'Czech Republic', 'Hungary', 'Portugal', 'Greece', 'Ireland', 'Luxembourg', 'Lithuania', 'Estonia', 'Slovenia', 'Croatia', 'Bulgaria', 'Romania'];
-    
-    for (const country of countries) {
-      if (location1.includes(country) && location2.includes(country)) {
-        return true;
-      }
-    }
-    return false;
-  }
-
   private getConnectionType(materials1: string, materials2: string, products1: string, products2: string): SymbiosisConnection['connectionType'] {
     const combined1 = materials1 + ' ' + products1;
     const combined2 = materials2 + ' ' + products2;
     
     if (combined1.includes('water') || combined2.includes('water')) return 'water_reuse';
-    if (combined1.includes('energy') || combined2.includes('energy') || combined1.includes('heat') || combined2.includes('heat')) return 'energy_sharing';
+    if (combined1.includes('energy') || combined2.includes('energy')) return 'energy_sharing';
     if (combined1.includes('waste') || combined2.includes('waste')) return 'waste_to_input';
     return 'material_exchange';
   }
@@ -220,15 +203,12 @@ export class NetworkGenerator {
   private getPriority(strength: number): string {
     if (strength >= 0.95) return 'Perfect Symbiosis';
     if (strength >= 0.90) return 'Exceptional Match';
-    if (strength >= 0.85) return 'Premium Quality';
-    if (strength >= 0.80) return 'High Quality';
-    if (strength >= 0.75) return 'Good Match';
-    if (strength >= 0.70) return 'Viable Match';
-    return 'Standard Match';
+    if (strength >= 0.85) return 'High Quality';
+    return 'Good Match';
   }
 
-  private addEnhancedMultiHopConnections(connections: SymbiosisConnection[], companies: CompanyData[]): void {
-    // Add strategic multi-hop connections for visual complexity and realism
+  private addLimitedMultiHopConnections(connections: SymbiosisConnection[], companies: CompanyData[], maxTotal: number): void {
+    // Add VERY LIMITED multi-hop connections
     const existingPairs = new Set(connections.map(c => `${c.sourceId}-${c.targetId}`));
     const connectionMap = new Map<string, string[]>();
     
@@ -240,36 +220,39 @@ export class NetworkGenerator {
       connectionMap.get(conn.targetId)!.push(conn.sourceId);
     });
     
-    // Create multi-hop connections through intermediaries
-    for (let i = 0; i < Math.min(80, companies.length); i++) {
+    // Add only a few multi-hop connections
+    const maxMultiHop = Math.min(50, maxTotal - connections.length);
+    let multiHopAdded = 0;
+    
+    for (let i = 0; i < Math.min(30, companies.length) && multiHopAdded < maxMultiHop; i++) {
       const company1 = companies[i];
-      const intermediaries = connectionMap.get(company1.id) || [];
+      const intermediaries = (connectionMap.get(company1.id) || []).slice(0, 2); // Only 2 intermediaries
       
-      for (const intermediaryId of intermediaries.slice(0, 3)) {
-        const finalTargets = connectionMap.get(intermediaryId) || [];
+      for (const intermediaryId of intermediaries) {
+        if (multiHopAdded >= maxMultiHop) break;
         
-        for (const finalTargetId of finalTargets.slice(0, 2)) {
-          const pairKey = `${company1.id}-${finalTargetId}`;
-          const reversePairKey = `${finalTargetId}-${company1.id}`;
+        const finalTargets = (connectionMap.get(intermediaryId) || []).slice(0, 1); // Only 1 final target
+        
+        for (const finalTargetId of finalTargets) {
+          if (multiHopAdded >= maxMultiHop) break;
           
-          if (!existingPairs.has(pairKey) && !existingPairs.has(reversePairKey) && 
-              company1.id !== finalTargetId && finalTargetId !== intermediaryId) {
-            
-            const intermediary = companies.find(c => c.id === intermediaryId);
+          const pairKey = `${company1.id}-${finalTargetId}`;
+          
+          if (!existingPairs.has(pairKey) && company1.id !== finalTargetId) {
             const finalTarget = companies.find(c => c.id === finalTargetId);
             
-            if (intermediary && finalTarget) {
-              const strength = 0.65 + Math.random() * 0.25;
+            if (finalTarget) {
               connections.push({
                 sourceId: company1.id,
                 targetId: finalTargetId,
                 connectionType: 'multi_hop',
-                strength,
-                description: `Multi-hop: ${company1.name} → ${intermediary.name} → ${finalTarget.name}`,
+                strength: 0.75 + Math.random() * 0.15,
+                description: `Multi-hop: ${company1.name} → ${finalTarget.name}`,
                 priority: 'Multi-hop Chain',
                 hopCount: 3
               });
               existingPairs.add(pairKey);
+              multiHopAdded++;
             }
           }
         }
@@ -278,7 +261,7 @@ export class NetworkGenerator {
   }
 
   generateNetworkData(): NetworkData {
-    console.log(`🚀 Enhanced generating network for ${this.companies.length} companies...`);
+    console.log(`🚀 CONTROLLED generating network for ${this.companies.length} companies...`);
     
     const startTime = performance.now();
     
@@ -287,7 +270,7 @@ export class NetworkGenerator {
       label: company.name,
       type: 'company',
       importance: this.calculateImportance(company),
-      isActive: Math.random() > 0.12, // 88% active
+      isActive: Math.random() > 0.15, // 85% active
       description: `${company.industry} company in ${company.location}. Processes ${company.volume.toLocaleString()} ${company.volumeUnit} annually.`,
       connections: 0,
       metadata: {
@@ -305,7 +288,7 @@ export class NetworkGenerator {
       }
     }));
 
-    const symbiosisConnections = this.generateAestheticConnections();
+    const symbiosisConnections = this.generateOptimalConnections();
     
     const edges: Edge[] = symbiosisConnections.map(connection => ({
       source: connection.sourceId,
@@ -315,7 +298,7 @@ export class NetworkGenerator {
       metadata: {
         aiPriority: connection.priority,
         confidence: connection.strength,
-        reasoning: [`Enhanced aesthetic matching for ${connection.connectionType}`],
+        reasoning: [`Controlled matching for ${connection.connectionType}`],
         materialCompatibility: connection.strength,
         industrySymbiosis: connection.strength * 0.85,
         wasteSynergy: connection.strength * 0.9,
@@ -327,107 +310,85 @@ export class NetworkGenerator {
       }
     }));
 
-    // Enhanced AI system nodes
+    // Add only 3 AI system nodes (reduced from more)
     const aiNodes: Node[] = [
       {
-        id: 'enhanced_ai_engine',
-        label: 'Enhanced AI Matching Engine',
+        id: 'ai_engine',
+        label: 'AI Matching Engine',
         type: 'process',
-        importance: 0.98,
+        importance: 0.95,
         isActive: true,
-        description: 'Advanced high-speed network generation with enhanced pattern recognition.',
+        description: 'Optimized network generation engine.',
         connections: 0,
         metadata: {
-          algorithm: 'Enhanced Aesthetic Matching v2.0',
-          processingSpeed: 'Sub-40ms generation',
-          visualOptimized: 'Premium network layout',
-          patternRecognition: 'Advanced multi-dimensional'
+          algorithm: 'Controlled Matching v1.0',
+          processingSpeed: 'Ultra-fast',
+          connectionLimit: 'Optimized'
         }
       },
       {
-        id: 'visual_optimizer_pro',
-        label: 'Visual Network Optimizer Pro',
+        id: 'visual_optimizer',
+        label: 'Visual Optimizer',
         type: 'data',
-        importance: 0.93,
+        importance: 0.90,
         isActive: true,
-        description: 'Professional-grade network layout optimization for stunning visualizations.',
-        connections: 0,
-        metadata: {
-          layoutAlgorithm: 'Force-directed with smart clustering',
-          aestheticScore: '99%',
-          performanceOptimized: 'Real-time rendering',
-          connectionDensity: 'Optimized distribution'
-        }
+        description: 'Network layout optimization.',
+        connections: 0
       },
       {
         id: 'pattern_analyzer',
-        label: 'Pattern Analysis Engine',
+        label: 'Pattern Analyzer',
         type: 'output',
-        importance: 0.90,
+        importance: 0.85,
         isActive: true,
-        description: 'Analyzes and optimizes connection patterns for maximum visual impact.',
-        connections: 0,
-        metadata: {
-          patternTypes: 'Multi-hop, Regional, Industry clusters',
-          analysisDepth: 'Deep pattern recognition',
-          optimizationLevel: 'Maximum aesthetic appeal'
-        }
+        description: 'Connection pattern analysis.',
+        connections: 0
       }
     ];
 
     nodes.push(...aiNodes);
 
-    // Enhanced AI connections
+    // Add VERY LIMITED AI connections
     const aiEdges: Edge[] = [];
     const topCompanies = nodes
       .filter(n => n.type === 'company')
       .sort((a, b) => b.importance - a.importance)
-      .slice(0, 40);
+      .slice(0, 15); // Only top 15 companies
 
     topCompanies.forEach((company, index) => {
-      if (index < 25) {
+      if (index < 8) { // Only 8 connections to AI engine
         aiEdges.push({
-          source: 'enhanced_ai_engine',
+          source: 'ai_engine',
           target: company.id,
-          weight: 0.82 + Math.random() * 0.18,
+          weight: 0.85,
           type: 'ai_optimization',
-          metadata: { aiConnection: true, enhanced: true }
-        });
-      }
-      
-      if (index < 20) {
-        aiEdges.push({
-          source: company.id,
-          target: 'visual_optimizer_pro',
-          weight: 0.78 + Math.random() * 0.2,
-          type: 'visual_optimization',
-          metadata: { aiConnection: true, visual: true }
+          metadata: { aiConnection: true }
         });
       }
     });
 
-    // Connect AI nodes with enhanced relationships
+    // Connect AI nodes (only 3 connections)
     aiEdges.push(
       {
-        source: 'enhanced_ai_engine',
-        target: 'visual_optimizer_pro',
-        weight: 0.97,
-        type: 'ai_coordination',
-        metadata: { aiConnection: true, coreConnection: true }
-      },
-      {
-        source: 'enhanced_ai_engine',
-        target: 'pattern_analyzer',
+        source: 'ai_engine',
+        target: 'visual_optimizer',
         weight: 0.95,
-        type: 'pattern_coordination',
-        metadata: { aiConnection: true, coreConnection: true }
+        type: 'ai_coordination',
+        metadata: { aiConnection: true }
       },
       {
-        source: 'visual_optimizer_pro',
+        source: 'ai_engine',
         target: 'pattern_analyzer',
-        weight: 0.92,
+        weight: 0.90,
+        type: 'pattern_coordination',
+        metadata: { aiConnection: true }
+      },
+      {
+        source: 'visual_optimizer',
+        target: 'pattern_analyzer',
+        weight: 0.88,
         type: 'analysis_coordination',
-        metadata: { aiConnection: true, coreConnection: true }
+        metadata: { aiConnection: true }
       }
     );
 
@@ -444,32 +405,28 @@ export class NetworkGenerator {
       node.connections = connectionCounts.get(node.id) || 0;
     });
 
-    // Enhanced efficiency calculation
+    // Calculate efficiency
     const totalNodes = nodes.length;
     const actualConnections = edges.length;
     const perfectMatches = edges.filter(e => e.metadata?.aiPriority?.includes('Perfect')).length;
     const multiHopConnections = edges.filter(e => e.metadata?.multiHop).length;
     const activeNodes = nodes.filter(n => n.isActive).length;
-    const highConfidenceConnections = edges.filter(e => (e.metadata?.confidence || 0) > 0.8).length;
     
     const efficiency = Math.min(
-      (actualConnections / (totalNodes * 2.2)) * 0.25 + 
-      (perfectMatches / Math.max(actualConnections, 1)) * 0.25 + 
-      (highConfidenceConnections / Math.max(actualConnections, 1)) * 0.2 + 
-      (activeNodes / totalNodes) * 0.15 + 
-      (multiHopConnections / Math.max(actualConnections, 1)) * 0.15, 
+      (actualConnections / (totalNodes * 1.5)) * 0.3 + 
+      (perfectMatches / Math.max(actualConnections, 1)) * 0.3 + 
+      (activeNodes / totalNodes) * 0.4, 
       1
     );
 
     const endTime = performance.now();
     const companyCount = nodes.filter(n => n.type === 'company').length;
     
-    console.log(`✅ Enhanced Network Generated in ${Math.round(endTime - startTime)}ms:`);
+    console.log(`✅ CONTROLLED Network Generated in ${Math.round(endTime - startTime)}ms:`);
     console.log(`   Companies: ${companyCount}`);
-    console.log(`   Total Connections: ${actualConnections}`);
+    console.log(`   Total Connections: ${actualConnections} (CONTROLLED!)`);
     console.log(`   Perfect Matches: ${perfectMatches}`);
     console.log(`   Multi-hop Connections: ${multiHopConnections}`);
-    console.log(`   High Confidence: ${highConfidenceConnections}`);
     console.log(`   Network Efficiency: ${Math.round(efficiency * 100)}%`);
     console.log(`   Avg Connections per Company: ${Math.round((actualConnections / companyCount) * 100) / 100}`);
 
