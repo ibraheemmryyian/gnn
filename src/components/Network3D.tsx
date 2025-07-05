@@ -28,58 +28,43 @@ interface Connection3DProps {
 const Node3D: React.FC<Node3DProps> = ({ node, position, onClick, isProcessing, connections }) => {
   const meshRef = useRef<THREE.Mesh>(null);
   const groupRef = useRef<THREE.Group>(null);
-  const glowRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
   const [clicked, setClicked] = useState(false);
 
   const nodeColor = useMemo(() => {
     const colors = {
-      company: '#00FFFF',    // Cyan
-      process: '#FF00FF',    // Magenta  
-      data: '#FFFF00',       // Yellow
-      output: '#00FF00'      // Green
+      company: '#FF6B6B',
+      process: '#4ECDC4', 
+      data: '#FFE66D',
+      output: '#00D4FF'
     };
-    return colors[node.type] || '#FFFFFF';
+    return colors[node.type] || '#A8A8A8';
   }, [node.type]);
 
   const nodeSize = useMemo(() => {
-    return 0.3 + node.importance * 1.2;
+    return 0.4 + node.importance * 0.8;
   }, [node.importance]);
 
   useFrame((state) => {
     if (groupRef.current) {
+      // Keep the group at the EXACT position
       groupRef.current.position.copy(position);
       
+      // Only animate the mesh within the group for subtle floating effect
       if (meshRef.current) {
-        // MAGICAL FLOATING ANIMATION
-        const time = state.clock.elapsedTime;
-        meshRef.current.position.y = Math.sin(time * 2 + position.x) * 0.08;
+        // Very small floating animation so connections stay aligned
+        meshRef.current.position.y = Math.sin(state.clock.elapsedTime + position.x) * 0.01;
         
-        // BRAIN-LIKE PULSING
+        // Rotation based on activity
         if (node.isActive && isProcessing) {
-          const pulse = 1 + Math.sin(time * 4) * 0.3;
-          meshRef.current.scale.setScalar(pulse);
-          
-          // MAGICAL ROTATION
-          meshRef.current.rotation.y += 0.02;
-          meshRef.current.rotation.x += 0.01;
+          meshRef.current.rotation.y += 0.005;
+          meshRef.current.rotation.x += 0.002;
         }
 
-        // NEURAL FIRING EFFECT
+        // Very subtle pulsing effect for important nodes
         if (node.importance > 0.8) {
-          const neuralPulse = 1 + Math.sin(time * 6 + position.length()) * 0.4;
-          meshRef.current.scale.setScalar(neuralPulse);
-        }
-      }
-
-      // MAGICAL GLOW EFFECT
-      if (glowRef.current) {
-        const time = state.clock.elapsedTime;
-        const glowIntensity = 0.5 + Math.sin(time * 3) * 0.3;
-        glowRef.current.scale.setScalar(2 + glowIntensity);
-        
-        if (glowRef.current.material instanceof THREE.MeshBasicMaterial) {
-          glowRef.current.material.opacity = 0.2 + glowIntensity * 0.3;
+          const scale = 1 + Math.sin(state.clock.elapsedTime * 2) * 0.02;
+          meshRef.current.scale.setScalar(scale);
         }
       }
     }
@@ -88,121 +73,72 @@ const Node3D: React.FC<Node3DProps> = ({ node, position, onClick, isProcessing, 
   const handleClick = (e: any) => {
     e.stopPropagation();
     setClicked(true);
-    setTimeout(() => setClicked(false), 300);
+    setTimeout(() => setClicked(false), 200);
     onClick(node);
   };
 
   return (
     <group ref={groupRef} position={position}>
-      {/* MAGICAL OUTER GLOW */}
-      <mesh ref={glowRef}>
-        <sphereGeometry args={[nodeSize * 2, 16, 16]} />
-        <meshBasicMaterial
-          color={nodeColor}
-          transparent
-          opacity={0.15}
-          side={THREE.BackSide}
-        />
-      </mesh>
-
-      {/* NEURAL ENERGY RINGS */}
-      {node.isActive && isProcessing && (
-        <>
-          <mesh rotation={[Math.PI / 2, 0, 0]}>
-            <ringGeometry args={[nodeSize * 1.8, nodeSize * 2.2, 32]} />
-            <meshBasicMaterial
-              color={nodeColor}
-              transparent
-              opacity={0.6}
-              side={THREE.DoubleSide}
-            />
-          </mesh>
-          <mesh rotation={[0, Math.PI / 2, 0]}>
-            <ringGeometry args={[nodeSize * 1.6, nodeSize * 2.0, 32]} />
-            <meshBasicMaterial
-              color={nodeColor}
-              transparent
-              opacity={0.4}
-              side={THREE.DoubleSide}
-            />
-          </mesh>
-        </>
-      )}
-
-      {/* MAIN NEURAL NODE */}
+      {/* Main node sphere */}
       <mesh
         ref={meshRef}
         onClick={handleClick}
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
-        scale={clicked ? 1.5 : hovered ? 1.3 : 1}
+        scale={clicked ? 1.3 : hovered ? 1.15 : 1}
       >
         <sphereGeometry args={[nodeSize, 32, 32]} />
         <meshStandardMaterial
           color={nodeColor}
           emissive={nodeColor}
-          emissiveIntensity={hovered ? 0.8 : node.isActive ? 0.5 : 0.3}
-          roughness={0.1}
-          metalness={0.9}
-          transparent
-          opacity={0.9}
+          emissiveIntensity={hovered ? 0.4 : node.isActive ? 0.25 : 0.1}
+          roughness={0.2}
+          metalness={0.8}
         />
       </mesh>
 
-      {/* NEURAL SPIKES */}
-      {node.importance > 0.7 && (
-        <>
-          {[...Array(8)].map((_, i) => {
-            const angle = (i / 8) * Math.PI * 2;
-            const spikeLength = nodeSize * 0.8;
-            return (
-              <mesh
-                key={i}
-                position={[
-                  Math.cos(angle) * (nodeSize + spikeLength/2),
-                  0,
-                  Math.sin(angle) * (nodeSize + spikeLength/2)
-                ]}
-                rotation={[0, angle, 0]}
-              >
-                <coneGeometry args={[0.02, spikeLength, 4]} />
-                <meshBasicMaterial color={nodeColor} transparent opacity={0.7} />
-              </mesh>
-            );
-          })}
-        </>
+      {/* Outer glow ring for active nodes */}
+      {node.isActive && isProcessing && (
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <ringGeometry args={[nodeSize * 1.6, nodeSize * 2.0, 32]} />
+          <meshBasicMaterial
+            color={nodeColor}
+            transparent
+            opacity={0.4}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
       )}
 
-      {/* CONNECTION INDICATOR */}
-      {connections.length > 5 && (
-        <mesh position={[0, nodeSize + 0.4, 0]}>
-          <sphereGeometry args={[0.1, 8, 8]} />
+      {/* Connection indicators */}
+      {connections.length > 8 && (
+        <mesh position={[0, nodeSize + 0.3, 0]}>
+          <sphereGeometry args={[0.08, 8, 8]} />
           <meshBasicMaterial color="#FFD700" />
         </mesh>
       )}
 
-      {/* MAGICAL LABEL */}
-      {(hovered || nodeSize > 0.8) && (
-        <Html distanceFactor={15} position={[0, nodeSize + 1.2, 0]}>
-          <div className="bg-black/95 text-white px-4 py-3 rounded-xl text-sm whitespace-nowrap pointer-events-none border-2 border-cyan-400 shadow-2xl backdrop-blur-sm">
-            <div className="font-bold text-cyan-400">{node.label}</div>
+      {/* Node label */}
+      {(hovered || nodeSize > 0.7) && (
+        <Html distanceFactor={12} position={[0, nodeSize + 0.8, 0]}>
+          <div className="bg-black/90 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap pointer-events-none border border-gray-600">
+            <div className="font-semibold">{node.label}</div>
             <div className="text-xs text-gray-300">{node.metadata?.location}</div>
-            <div className="text-xs text-purple-400">Neural Activity: {Math.round(node.importance * 100)}%</div>
           </div>
         </Html>
       )}
 
-      {/* NEURAL TYPE SYMBOL */}
+      {/* Type indicator */}
       <Text
-        position={[0, 0, nodeSize + 0.2]}
-        fontSize={0.3}
+        position={[0, 0, nodeSize + 0.15]}
+        fontSize={0.25}
         color="white"
         anchorX="center"
         anchorY="middle"
       >
-        {node.type === 'company' ? '🧠' : 
-         node.type === 'process' ? '⚡' : 
-         node.type === 'data' ? '🔮' : '✨'}
+        {node.type === 'company' ? '🏭' : 
+         node.type === 'process' ? '⚙️' : 
+         node.type === 'data' ? '📊' : '📈'}
       </Text>
     </group>
   );
@@ -213,15 +149,16 @@ const Connection3D: React.FC<Connection3DProps> = ({ edge, sourcePosition, targe
   const materialRef = useRef<THREE.LineBasicMaterial>(null);
 
   const points = useMemo(() => {
+    // Use exact positions without any modification
     const start = sourcePosition.clone();
     const end = targetPosition.clone();
     
-    // MAGICAL CURVED NEURAL PATHWAYS
+    // Create a very gentle curve for the connection
     const distance = start.distanceTo(end);
     const midPoint = start.clone().lerp(end, 0.5);
     
-    // Create beautiful brain-like curves
-    const curveHeight = distance * 0.15 * edge.weight;
+    // Much smaller curve so lines stay close to nodes
+    const curveHeight = distance * 0.02 * edge.weight;
     const perpendicular = new THREE.Vector3()
       .crossVectors(start, end)
       .normalize()
@@ -229,31 +166,16 @@ const Connection3D: React.FC<Connection3DProps> = ({ edge, sourcePosition, targe
     
     midPoint.add(perpendicular);
 
-    // Add extra control points for more organic curves
-    const curve = new THREE.CatmullRomCurve3([
-      start,
-      start.clone().lerp(midPoint, 0.3),
-      midPoint,
-      midPoint.clone().lerp(end, 0.7),
-      end
-    ]);
-    
-    return curve.getPoints(50);
+    const curve = new THREE.QuadraticBezierCurve3(start, midPoint, end);
+    return curve.getPoints(30);
   }, [sourcePosition, targetPosition, edge.weight]);
 
   useFrame((state) => {
     if (materialRef.current && isProcessing) {
+      // Animated flow effect
       const time = state.clock.elapsedTime;
-      
-      // MAGICAL NEURAL PULSE ANIMATION
-      const pulse = Math.sin(time * 3 + edge.weight * 10) * 0.5 + 0.5;
-      const baseOpacity = 0.3 + edge.weight * 0.5;
-      materialRef.current.opacity = baseOpacity + pulse * 0.4;
-      
-      // COLOR SHIFTING MAGIC
-      const hue = (time * 0.1 + edge.weight * 2) % 1;
-      const color = new THREE.Color().setHSL(hue, 0.8, 0.6);
-      materialRef.current.color = color;
+      const baseOpacity = 0.4 + edge.weight * 0.4;
+      materialRef.current.opacity = baseOpacity + Math.sin(time * 2 + edge.weight * 8) * 0.15;
     }
   });
 
@@ -269,27 +191,26 @@ const Connection3D: React.FC<Connection3DProps> = ({ edge, sourcePosition, targe
       </bufferGeometry>
       <lineBasicMaterial
         ref={materialRef}
-        color={edge.weight > 0.8 ? '#00FFFF' : edge.weight > 0.6 ? '#FF00FF' : '#FFFF00'}
+        color={edge.weight > 0.7 ? '#00FF88' : edge.weight > 0.4 ? '#FFAA00' : '#FF6B6B'}
         transparent
-        opacity={0.3 + edge.weight * 0.5}
-        linewidth={Math.max(2, edge.weight * 8)}
+        opacity={0.4 + edge.weight * 0.4}
+        linewidth={Math.max(1, edge.weight * 4)}
       />
     </line>
   );
 };
 
-const MagicalParticleSystem: React.FC<{ isProcessing: boolean }> = ({ isProcessing }) => {
+const ParticleSystem: React.FC<{ isProcessing: boolean }> = ({ isProcessing }) => {
   const particlesRef = useRef<THREE.Points>(null);
-  const particleCount = 2000;
+  const particleCount = 300;
 
   const particles = useMemo(() => {
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
-    const sizes = new Float32Array(particleCount);
     
     for (let i = 0; i < particleCount; i++) {
-      // MAGICAL BRAIN-SHAPED DISTRIBUTION
-      const radius = 40 + Math.random() * 30;
+      // Distribute particles in a larger sphere around the network
+      const radius = 35 + Math.random() * 25;
       const theta = Math.random() * Math.PI * 2;
       const phi = Math.acos(2 * Math.random() - 1);
       
@@ -297,30 +218,18 @@ const MagicalParticleSystem: React.FC<{ isProcessing: boolean }> = ({ isProcessi
       positions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
       positions[i * 3 + 2] = radius * Math.cos(phi);
       
-      // RAINBOW NEURAL COLORS
-      const hue = Math.random();
-      const color = new THREE.Color().setHSL(hue, 0.8, 0.7);
-      colors[i * 3] = color.r;
-      colors[i * 3 + 1] = color.g;
-      colors[i * 3 + 2] = color.b;
-      
-      sizes[i] = Math.random() * 0.1 + 0.02;
+      colors[i * 3] = 0.4 + Math.random() * 0.6;
+      colors[i * 3 + 1] = 0.4 + Math.random() * 0.6;
+      colors[i * 3 + 2] = 0.7 + Math.random() * 0.3;
     }
     
-    return { positions, colors, sizes };
+    return { positions, colors };
   }, []);
 
   useFrame((state) => {
     if (particlesRef.current && isProcessing) {
-      const time = state.clock.elapsedTime;
-      
-      // MAGICAL SWIRLING MOTION
-      particlesRef.current.rotation.y += 0.002;
-      particlesRef.current.rotation.x += 0.001;
-      
-      // PULSING EFFECT
-      const scale = 1 + Math.sin(time * 2) * 0.1;
-      particlesRef.current.scale.setScalar(scale);
+      particlesRef.current.rotation.y += 0.0008;
+      particlesRef.current.rotation.x += 0.0004;
     }
   });
 
@@ -339,85 +248,15 @@ const MagicalParticleSystem: React.FC<{ isProcessing: boolean }> = ({ isProcessi
           array={particles.colors}
           itemSize={3}
         />
-        <bufferAttribute
-          attach="attributes-size"
-          count={particleCount}
-          array={particles.sizes}
-          itemSize={1}
-        />
       </bufferGeometry>
       <pointsMaterial
-        size={0.05}
+        size={0.03}
         vertexColors
         transparent
-        opacity={0.8}
+        opacity={0.5}
         sizeAttenuation
-        blending={THREE.AdditiveBlending}
       />
     </points>
-  );
-};
-
-const MagicalLightning: React.FC<{ isProcessing: boolean }> = ({ isProcessing }) => {
-  const lightningRef = useRef<THREE.Group>(null);
-
-  useFrame((state) => {
-    if (lightningRef.current && isProcessing) {
-      const time = state.clock.elapsedTime;
-      
-      // RANDOM LIGHTNING FLASHES
-      if (Math.random() < 0.02) {
-        lightningRef.current.children.forEach((child, index) => {
-          if (child instanceof THREE.Mesh && child.material instanceof THREE.MeshBasicMaterial) {
-            child.material.opacity = Math.random() * 0.8 + 0.2;
-            child.visible = Math.random() > 0.7;
-          }
-        });
-      }
-    }
-  });
-
-  const lightningBolts = useMemo(() => {
-    const bolts = [];
-    for (let i = 0; i < 20; i++) {
-      const start = new THREE.Vector3(
-        (Math.random() - 0.5) * 60,
-        (Math.random() - 0.5) * 60,
-        (Math.random() - 0.5) * 60
-      );
-      const end = new THREE.Vector3(
-        (Math.random() - 0.5) * 60,
-        (Math.random() - 0.5) * 60,
-        (Math.random() - 0.5) * 60
-      );
-      
-      const points = [start, end];
-      bolts.push(points);
-    }
-    return bolts;
-  }, []);
-
-  return (
-    <group ref={lightningRef}>
-      {lightningBolts.map((points, index) => (
-        <line key={index}>
-          <bufferGeometry>
-            <bufferAttribute
-              attach="attributes-position"
-              count={points.length}
-              array={new Float32Array(points.flatMap(p => [p.x, p.y, p.z]))}
-              itemSize={3}
-            />
-          </bufferGeometry>
-          <lineBasicMaterial
-            color="#FFFFFF"
-            transparent
-            opacity={0.1}
-            linewidth={3}
-          />
-        </line>
-      ))}
-    </group>
   );
 };
 
@@ -425,23 +264,23 @@ const CameraController: React.FC = () => {
   const { camera } = useThree();
   
   useEffect(() => {
-    camera.position.set(30, 20, 30);
+    camera.position.set(25, 15, 25);
     camera.lookAt(0, 0, 0);
   }, [camera]);
 
   return null;
 };
 
-// MAGICAL FORCE-DIRECTED LAYOUT
-const calculateMagicalLayout = (nodes: Node[], edges: Edge[]): Map<string, THREE.Vector3> => {
+// Force-directed layout algorithm
+const calculateForceDirectedLayout = (nodes: Node[], edges: Edge[]): Map<string, THREE.Vector3> => {
   const positions = new Map<string, THREE.Vector3>();
   const velocities = new Map<string, THREE.Vector3>();
   
-  // BRAIN-SHAPED INITIAL POSITIONING
-  nodes.forEach((node, index) => {
-    const angle = (index / nodes.length) * Math.PI * 4;
-    const radius = 8 + node.importance * 15;
-    const height = Math.sin(angle * 2) * 8;
+  // Initialize random positions
+  nodes.forEach(node => {
+    const angle = Math.random() * Math.PI * 2;
+    const radius = 5 + Math.random() * 15;
+    const height = (Math.random() - 0.5) * 10;
     
     positions.set(node.id, new THREE.Vector3(
       Math.cos(angle) * radius,
@@ -451,21 +290,31 @@ const calculateMagicalLayout = (nodes: Node[], edges: Edge[]): Map<string, THREE
     velocities.set(node.id, new THREE.Vector3(0, 0, 0));
   });
 
-  // MAGICAL FORCE SIMULATION
-  const iterations = 200;
-  const k = 12;
-  const repulsionStrength = 150;
-  const attractionStrength = 0.15;
-  const damping = 0.85;
+  // Build adjacency map for faster lookups
+  const adjacency = new Map<string, Set<string>>();
+  edges.forEach(edge => {
+    if (!adjacency.has(edge.source)) adjacency.set(edge.source, new Set());
+    if (!adjacency.has(edge.target)) adjacency.set(edge.target, new Set());
+    adjacency.get(edge.source)!.add(edge.target);
+    adjacency.get(edge.target)!.add(edge.source);
+  });
+
+  // Run force simulation
+  const iterations = 300;
+  const k = 8; // Optimal distance between connected nodes
+  const repulsionStrength = 100;
+  const attractionStrength = 0.1;
+  const damping = 0.9;
 
   for (let iter = 0; iter < iterations; iter++) {
     const forces = new Map<string, THREE.Vector3>();
     
+    // Initialize forces
     nodes.forEach(node => {
       forces.set(node.id, new THREE.Vector3(0, 0, 0));
     });
 
-    // NEURAL REPULSION
+    // Repulsion forces (all nodes repel each other)
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
         const node1 = nodes[i];
@@ -483,7 +332,7 @@ const calculateMagicalLayout = (nodes: Node[], edges: Edge[]): Map<string, THREE
       }
     }
 
-    // NEURAL ATTRACTION
+    // Attraction forces (connected nodes attract each other)
     edges.forEach(edge => {
       const pos1 = positions.get(edge.source);
       const pos2 = positions.get(edge.target);
@@ -499,19 +348,21 @@ const calculateMagicalLayout = (nodes: Node[], edges: Edge[]): Map<string, THREE
       }
     });
 
-    // APPLY MAGICAL FORCES
+    // Apply forces and update positions
     nodes.forEach(node => {
       const force = forces.get(node.id)!;
       const velocity = velocities.get(node.id)!;
       const position = positions.get(node.id)!;
       
+      // Update velocity
       velocity.add(force.multiplyScalar(0.01));
       velocity.multiplyScalar(damping);
       
+      // Update position
       position.add(velocity);
       
-      // BRAIN BOUNDARY
-      const maxDistance = 35;
+      // Keep nodes within bounds
+      const maxDistance = 30;
       if (position.length() > maxDistance) {
         position.normalize().multiplyScalar(maxDistance);
       }
@@ -527,9 +378,29 @@ const NetworkScene: React.FC<{ data: NetworkData; onNodeClick: (node: Node) => v
   isProcessing 
 }) => {
   const nodePositions = useMemo(() => {
-    console.log('🧠 Calculating MAGICAL brain neural layout...');
-    const positions = calculateMagicalLayout(data.nodes, data.edges);
-    console.log(`✨ MAGICAL positioning complete for ${data.nodes.length} neural nodes`);
+    console.log('🔄 Calculating force-directed layout based on actual connections...');
+    
+    // Use force-directed layout to position nodes based on their actual connections
+    const positions = calculateForceDirectedLayout(data.nodes, data.edges);
+    
+    // Apply some clustering based on node types for better organization
+    const typeOffsets = {
+      company: new THREE.Vector3(0, 0, 0),
+      process: new THREE.Vector3(0, 8, 0),
+      data: new THREE.Vector3(0, -8, 0),
+      output: new THREE.Vector3(0, 12, 0)
+    };
+
+    // Adjust positions based on node type
+    data.nodes.forEach(node => {
+      const pos = positions.get(node.id);
+      if (pos) {
+        const offset = typeOffsets[node.type] || new THREE.Vector3(0, 0, 0);
+        pos.add(offset);
+      }
+    });
+
+    console.log(`✅ Positioned ${data.nodes.length} nodes based on ${data.edges.length} connections`);
     return positions;
   }, [data.nodes, data.edges]);
 
@@ -537,24 +408,21 @@ const NetworkScene: React.FC<{ data: NetworkData; onNodeClick: (node: Node) => v
     <>
       <CameraController />
       
-      {/* MAGICAL LIGHTING SETUP */}
-      <ambientLight intensity={0.3} color="#4A00E0" />
-      <pointLight position={[20, 20, 20]} intensity={2} color="#00FFFF" />
-      <pointLight position={[-20, -20, -20]} intensity={1.5} color="#FF00FF" />
-      <pointLight position={[0, 30, 0]} intensity={1} color="#FFFF00" />
-      <directionalLight position={[10, 10, 10]} intensity={0.8} color="#FFFFFF" />
+      {/* Enhanced lighting setup */}
+      <ambientLight intensity={0.4} />
+      <pointLight position={[15, 15, 15]} intensity={1.2} color="#ffffff" />
+      <pointLight position={[-15, -15, -15]} intensity={0.6} color="#4ECDC4" />
+      <pointLight position={[0, 20, 0]} intensity={0.4} color="#FFE66D" />
+      <directionalLight position={[8, 8, 8]} intensity={0.3} />
       
-      {/* MAGICAL ENVIRONMENT */}
-      <Stars radius={200} depth={100} count={8000} factor={8} saturation={0} fade speed={0.5} />
+      {/* Environment */}
+      <Stars radius={150} depth={80} count={4000} factor={5} saturation={0} fade speed={0.3} />
       <Environment preset="night" />
       
-      {/* MAGICAL PARTICLE SYSTEM */}
-      <MagicalParticleSystem isProcessing={isProcessing} />
+      {/* Particle system */}
+      <ParticleSystem isProcessing={isProcessing} />
       
-      {/* MAGICAL LIGHTNING */}
-      <MagicalLightning isProcessing={isProcessing} />
-      
-      {/* NEURAL CONNECTIONS */}
+      {/* Connections - render first so they appear behind nodes */}
       {data.edges.map((edge, index) => {
         const sourcePos = nodePositions.get(edge.source);
         const targetPos = nodePositions.get(edge.target);
@@ -573,7 +441,7 @@ const NetworkScene: React.FC<{ data: NetworkData; onNodeClick: (node: Node) => v
         return null;
       })}
       
-      {/* NEURAL NODES */}
+      {/* Nodes - render after connections so they appear on top */}
       {data.nodes.map((node) => {
         const position = nodePositions.get(node.id);
         if (!position) return null;
@@ -592,40 +460,40 @@ const NetworkScene: React.FC<{ data: NetworkData; onNodeClick: (node: Node) => v
         );
       })}
       
-      {/* MAGICAL CENTRAL CORE */}
+      {/* Central core indicator */}
       <mesh>
-        <sphereGeometry args={[0.5, 32, 32]} />
+        <sphereGeometry args={[0.3, 16, 16]} />
         <meshStandardMaterial
           color="#FFFFFF"
           emissive="#FFFFFF"
-          emissiveIntensity={0.3}
+          emissiveIntensity={0.15}
           transparent
-          opacity={0.1}
+          opacity={0.08}
         />
       </mesh>
 
-      {/* MAGICAL GRID */}
-      <gridHelper args={[80, 80, '#00FFFF', '#FF00FF']} position={[0, -25, 0]} />
+      {/* Grid helper for reference */}
+      <gridHelper args={[60, 60, '#333333', '#333333']} position={[0, -20, 0]} />
     </>
   );
 };
 
 export const Network3D: React.FC<Network3DProps> = ({ data, onNodeClick, isProcessing }) => {
   return (
-    <div className="w-full h-full bg-gradient-to-b from-purple-900 via-black to-blue-900">
+    <div className="w-full h-full bg-gradient-to-b from-gray-900 to-black">
       <Canvas
-        camera={{ position: [30, 20, 30], fov: 75 }}
+        camera={{ position: [25, 15, 25], fov: 60 }}
         gl={{ antialias: true, alpha: true }}
       >
         <OrbitControls
           enablePan={true}
           enableZoom={true}
           enableRotate={true}
-          minDistance={15}
-          maxDistance={120}
+          minDistance={10}
+          maxDistance={100}
           autoRotate={isProcessing}
-          autoRotateSpeed={0.5}
-          dampingFactor={0.05}
+          autoRotateSpeed={0.2}
+          dampingFactor={0.08}
           enableDamping={true}
         />
         
@@ -636,41 +504,43 @@ export const Network3D: React.FC<Network3DProps> = ({ data, onNodeClick, isProce
         />
       </Canvas>
       
-      {/* MAGICAL CONTROLS */}
-      <div className="absolute bottom-4 left-4 bg-black/90 backdrop-blur-sm text-white p-4 rounded-xl text-sm border-2 border-cyan-400 shadow-2xl">
+      {/* Enhanced 3D Controls Info */}
+      <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm text-white p-4 rounded-xl text-sm border border-gray-600/30">
         <div className="space-y-2">
-          <div className="text-cyan-400 font-bold mb-2 flex items-center gap-2">
-            🧠 MAGICAL NEURAL BRAIN
+          <div className="text-cyan-400 font-semibold mb-2">3D Navigation</div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+            <span>Left drag: Orbit around network</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-            <span>Neural pathways firing</span>
+            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+            <span>Right drag: Pan view</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-magenta-400 rounded-full animate-pulse"></div>
-            <span>Brain synapses active</span>
+            <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+            <span>Scroll: Zoom in/out</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-            <span>Consciousness flowing</span>
+            <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+            <span>Click sphere: Company details</span>
           </div>
         </div>
       </div>
 
-      {/* MAGICAL STATUS */}
-      <div className="absolute top-4 right-4 bg-black/90 backdrop-blur-sm text-white p-3 rounded-xl text-sm border-2 border-purple-400 shadow-2xl">
+      {/* Real Data Status */}
+      <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white p-3 rounded-xl text-sm border border-gray-600/30">
         <div className="space-y-1">
-          <div className="text-purple-400 font-bold flex items-center gap-2">
-            <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
-            NEURAL MAGIC ACTIVE
+          <div className="text-cyan-400 font-semibold flex items-center gap-2">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+            Real Company Data
           </div>
-          <div>Neural Nodes: {data.nodes.filter(n => n.type === 'company').length}</div>
-          <div>Synapses: {data.edges.length}</div>
-          <div>Brain Power: {Math.round(data.efficiency * 100)}%</div>
+          <div>Companies: {data.nodes.filter(n => n.type === 'company').length}</div>
+          <div>Connections: {data.edges.length}</div>
+          <div>Efficiency: {Math.round(data.efficiency * 100)}%</div>
           {isProcessing && (
-            <div className="flex items-center gap-2 text-cyan-400">
-              <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-              CONSCIOUSNESS EXPANDING
+            <div className="flex items-center gap-2 text-green-400">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              AI Analysis Active
             </div>
           )}
         </div>
